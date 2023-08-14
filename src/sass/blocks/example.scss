@@ -1,0 +1,68 @@
+.example {
+  background-color: $background-color-secondary;
+}
+
+.example__wrapper {
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+
+    flex-direction: row;
+  }
+}
+
+.example__description {
+  @include indent-reset;
+  width: 280px;
+
+  font: $font-text-normal-mobile;
+  color: $color-special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+
+    font: $font-text-normal-tablet;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 436px;
+
+    font: $font-text-normal-desktop;
+  }
+}
+
+.example__advantages-wrapper {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    display: flex;
+  }
+}
+
+.example__list {
+  @include indent-reset;
+
+  display: flex;
+}
+
+.example__module-description {
+  @include indent-reset;
+}
+
+.example__result-wrapper {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}

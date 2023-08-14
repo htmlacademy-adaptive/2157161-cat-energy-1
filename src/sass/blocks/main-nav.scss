@@ -1,0 +1,42 @@
+.main-nav {
+  display: flex;
+  width: 320px;
+  min-height: 65px;
+
+  @media (min-width: $tablet-width) {
+    width: 769px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.main-nav__wrapper {
+  display: flex;
+
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+.main-nav__logo-wrapper {
+  display: flex;
+}
+
+.main-nav__logo {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+}
