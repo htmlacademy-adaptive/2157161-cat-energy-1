@@ -1,1 +1,22 @@
 // Начните писать стили здесь
+
+/* GLOBAL */
+@import "global/variables";
+@import "global/global";
+@import "global/fonts";
+@import "global/mixins";
+
+/* BLOCKS */
+@import "blocks/address-description";
+@import "blocks/advantages";
+@import "blocks/cat-energy-icon";
+@import "blocks/copyright";
+@import "blocks/diet-type";
+@import "blocks/example";
+@import "blocks/footer";
+@import "blocks/gain-type";
+@import "blocks/main-nav";
+@import "blocks/nav-list";
+@import "blocks/program-types";
+@import "blocks/program";
+@import "blocks/social";
