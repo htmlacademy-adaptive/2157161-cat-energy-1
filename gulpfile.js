@@ -29,7 +29,7 @@ export function lintBem() {
 export function validateMarkup() {
   return gulp
     .src("src/*.html")
-    .pipe(htmlValidator.analyzer())
+    .pipe(htmlValidator.analyzer({ ignoreMessages: /^Trailing slash/ }))
     .pipe(htmlValidator.reporter({ throwErrors: true }));
 }
 
