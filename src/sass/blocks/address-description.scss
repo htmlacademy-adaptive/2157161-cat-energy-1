@@ -1,0 +1,17 @@
+.address-description {
+  padding: 0 20px;
+  width: 320px;
+  min-height: 112px;
+
+  display: flex;
+
+  background-color: $background-color-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 80px;
+  }
+}

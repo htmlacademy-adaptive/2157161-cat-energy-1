@@ -1,0 +1,15 @@
+.gain-type {
+  width: 280px;
+  min-height: 266px;
+
+  background-color: $background-color-secondary;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
