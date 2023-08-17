@@ -1,7 +1,10 @@
 .main-nav {
   display: flex;
+
   width: 320px;
   min-height: 65px;
+
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 769px;
@@ -14,6 +17,7 @@
 
 .main-nav__wrapper {
   display: flex;
+  flex-direction: column;
 
   margin: 0 auto;
   padding: 0 20px;
@@ -37,6 +41,49 @@
   @media (min-width: $tablet-width) {
     &:nth-child(2) {
       display: none;
+    }
+  }
+}
+
+.main-nav--closed {
+  .main-nav__toggle {
+    @include button-reset;
+
+    order: 3;
+    width: 24px;
+    height: 2px;
+    background-color: $color-black;
+    box-shadow: 0 8px 0 0 $color-black, 0 16px 0 0 $color-black;
+
+    position: absolute;
+    top: 24px;
+    right: 20px;
+  }
+}
+
+.main-nav--opened {
+  .main-nav__toggle {
+    @include button-reset;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: $background-color-black;
+
+      position: absolute;
+      top: 32px;
+      right: 20px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
     }
   }
 }
