@@ -1,6 +1,8 @@
 .nav-list {
   @include list-reset;
 
+  // position: absolute;
+
   font: $font-nav-list-mobile;
   text-transform: uppercase;
 
