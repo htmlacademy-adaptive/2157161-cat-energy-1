@@ -1,15 +1,13 @@
 .nav-list {
   @include list-reset;
 
-  // position: absolute;
-
   font: $font-nav-list-mobile;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font: $font-nav-list-tablet;
-
     display: flex;
+
+    font: $font-nav-list-tablet;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,6 +24,27 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+
+    margin-right: 34px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      position: relative;
+
+      ::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -16px;
+        height: 3px;
+
+        background-color: $background-color-primary;
+      }
+    }
   }
 }
 
@@ -40,6 +59,13 @@
   font: $font-nav-list-mobile;
   font-weight: 600;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font: $font-nav-list-tablet;
+  }
+  &--current {
+    border-bottom: 2px solid $background-color-primary;
+  }
 
   &:first-child {
     border-top: 1px solid #e6e6e6;
@@ -58,12 +84,3 @@
     border: none;
   }
 }
-
-// .main-nav__toggle {
-//   @media (min-width: $tablet-width) {
-//     &::after,
-//     &::before {
-//       display: none;
-//     }
-//   }
-// }
