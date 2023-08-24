@@ -45,6 +45,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-left: 88px;
+
     background: none;
     width: 769px;
   }
@@ -66,6 +68,8 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+
     font: $font-title-main-normal-tablet;
     color: $color-black;
     text-align: left;
@@ -85,14 +89,31 @@
     font: $font-slogan-normal-tablet;
     text-align: left;
     color: $color-black;
+
+    margin-bottom: 49px;
   }
 }
 
 .program__link {
   @include link-reset;
+  display: block;
+
+  padding: 8px 44px;
+
+  font-family: "Oswald", Arial, sans-serif;
+  text-align: center;
   text-transform: uppercase;
+  color: $color-white;
+
+  position: relative;
+  z-index: 1;
+
+  background-color: $background-color-primary;
 
   @media (min-width: $tablet-width) {
-    color: $color-black;
+    padding: 14px 26px;
+    width: 244px;
+
+    font: $font-slogan-normal-tablet;
   }
 }
