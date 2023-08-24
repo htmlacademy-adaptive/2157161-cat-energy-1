@@ -41,7 +41,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    margin-top: 69px;
+    padding-right: 110px;
   }
 }
 
@@ -65,6 +66,19 @@
     @media (min-width: $tablet-width) {
       margin-top: 0;
       margin-left: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 53px;
+      margin-left: 110px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 0.6;
+      }
     }
   }
 

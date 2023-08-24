@@ -6,12 +6,15 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px 34px;
 
     font: $font-nav-list-tablet;
   }
 
   @media (min-width: $desktop-width) {
-    font: $font-nav-list-desktop;
+    min-width: 478px;
+    max-width: 600px;
   }
 }
 
@@ -24,8 +27,6 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-
-    margin-right: 34px;
 
     &:last-child {
       margin-right: 0;
@@ -63,6 +64,7 @@
   @media (min-width: $tablet-width) {
     font: $font-nav-list-tablet;
   }
+
   &--current {
     border-bottom: 2px solid $background-color-primary;
   }
@@ -82,5 +84,17 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $font-nav-list-desktop;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
