@@ -6,10 +6,12 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
     padding: 0 110px;
 
     flex-direction: row;
