@@ -31,6 +31,14 @@
 
 .advantages__list {
   @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .advantages__item {
@@ -41,10 +49,83 @@
   font: $font-text-normal-mobile;
   color: $color-special-dark-grey;
 
+  position: relative;
+  z-index: 2;
+
   @media (min-width: $tablet-width) {
     flex-direction: column;
 
     font: $font-text-normal-tablet;
+
+    min-height: 280px;
+
+    &:nth-child(1) {
+      margin-right: 154px;
+
+      width: 230px;
+
+      &::before {
+        content: "1";
+
+        position: absolute;
+        top: -35px;
+        right: 6px;
+        z-index: -1;
+
+        font: $font-advantages-number-tablet;
+        color: $color-secondary;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 246px;
+
+      &::before {
+        content: "2";
+
+        position: absolute;
+        top: -40px;
+        right: 1px;
+        z-index: -1;
+
+        font: $font-advantages-number-tablet;
+        color: $color-secondary;
+      }
+    }
+
+    &:nth-child(3) {
+      margin-right: 137px;
+
+      width: 247px;
+
+      &::before {
+        content: "3";
+
+        position: absolute;
+        top: -40px;
+        right: -1px;
+        z-index: -1;
+
+        font: $font-advantages-number-tablet;
+        color: $color-secondary;
+      }
+    }
+
+    &:nth-child(4) {
+      width: 249px;
+
+      &::before {
+        content: "4";
+
+        position: absolute;
+        top: -40px;
+        right: -1px;
+        z-index: -1;
+
+        font: $font-advantages-number-tablet;
+        color: $color-secondary;
+      }
+    }
   }
 }
 
@@ -63,6 +144,9 @@
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
+
+    margin-right: 0;
+    margin-bottom: 31px;
   }
 }
 
@@ -70,4 +154,8 @@
   @include indent-reset;
 
   font: $font-text-normal-mobile;
+
+  @media (min-width: $tablet-width) {
+    font: $font-text-normal-tablet;
+  }
 }
