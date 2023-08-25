@@ -7,8 +7,14 @@
   background-color: $background-color-secondary;
 
   @media (min-width: $tablet-width) {
+    padding-top: 77px;
+    padding-right: 62px;
+    padding-left: 54px;
+    padding-bottom: 53px;
     width: 708px;
     min-height: 372px;
+
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,6 +32,14 @@
   z-index: 1;
   margin-bottom: 25px;
 
+  @media (min-width: $tablet-width) {
+    order: 2;
+
+    position: absolute;
+    top: 92px;
+    right: -10px;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -37,6 +51,11 @@
 
     background-color: $background-color-primary;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+    }
   }
 }
 
@@ -45,6 +64,11 @@
   position: relative;
   top: 10px;
   right: 10px;
+
+  @media (min-width: $tablet-width) {
+    top: 45px;
+    right: 34px;
+  }
 }
 
 .gain-type__title {
@@ -55,6 +79,13 @@
   text-transform: uppercase;
 
   align-self: flex-start;
+
+  @media (min-width: $tablet-width) {
+    font: $font-title-program-type-tablet;
+
+    margin-bottom: 24px;
+    padding: 0;
+  }
 }
 
 .gain-type__description {
@@ -76,5 +107,13 @@
     @media (min-width: $tablet-width) {
       display: none;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    font: $font-text-normal-tablet;
+    color: $color-black;
+
+    margin-bottom: 48px;
+    width: 340px;
   }
 }
