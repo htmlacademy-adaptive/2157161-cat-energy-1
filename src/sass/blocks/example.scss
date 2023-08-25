@@ -106,7 +106,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 327px;
+
     flex-direction: row;
+    justify-content: space-between;
+
+    margin-left: 0;
   }
 }
 
