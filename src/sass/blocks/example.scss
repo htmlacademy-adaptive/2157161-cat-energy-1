@@ -3,7 +3,7 @@
 }
 
 .example__wrapper {
-  padding: 0 20px;
+  padding: 25px 20px 40px;
 
   display: flex;
   flex-direction: column;
@@ -19,9 +19,19 @@
   }
 }
 
+.example__title {
+  @include indent-reset;
+
+  margin-bottom: 40px;
+
+  font: $font-title-normal-mobile;
+}
+
 .example__description {
   @include indent-reset;
   width: 280px;
+
+  margin-bottom: 20px;
 
   font: $font-text-normal-mobile;
   color: $color-special-dark-grey;
@@ -40,7 +50,7 @@
 }
 
 .example__advantages-wrapper {
-  @media (min-width: $tablet-width) and (max-width: 1439px) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     display: flex;
   }
 }
@@ -49,10 +59,30 @@
   @include indent-reset;
 
   display: flex;
+
+  margin-bottom: 20px;
+}
+
+.example__module-item {
+  font: $font-module-item-mobile;
+
+  @media (min-width: $tablet-width) {
+    font: $font-module-item-tablet;
+  }
 }
 
 .example__module-description {
   @include indent-reset;
+
+  font: $font-module-description-mobile;
+  color: $color-special-dark-grey;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .example__result-wrapper {
@@ -64,5 +94,21 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+  }
+}
+
+.example__expenses {
+  font: $font-example-result-mobile;
+
+  @media (min-width: $tablet-width) {
+    font: $font-example-result-tablet;
+  }
+}
+
+.example__price {
+  font: $font-example-result-mobile;
+
+  @media (min-width: $tablet-width) {
+    font: $font-example-result-tablet;
   }
 }
