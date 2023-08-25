@@ -1,4 +1,6 @@
 .gain-type {
+  padding: 20px 20px 18px;
+
   width: 280px;
   min-height: 266px;
 
@@ -11,5 +13,68 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
+  }
+}
+
+.gain-type__wrapper-title {
+  display: flex;
+  align-items: center;
+}
+
+.gain-type__icon {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 25px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    z-index: -1;
+
+    background-color: $background-color-primary;
+    border-radius: 50%;
+  }
+}
+
+.gain-type__icons {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+
+.gain-type__title {
+  @include indent-reset;
+  padding-top: 5px;
+
+  font: $font-title-program-type-mobile;
+  text-transform: uppercase;
+
+  align-self: flex-start;
+}
+
+.gain-type__description {
+  @include indent-reset;
+
+  font: $font-text-normal-mobile;
+  color: $color-special-dark-grey;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    margin-top: 23px;
+
+    background-color: #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
