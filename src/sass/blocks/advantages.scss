@@ -15,6 +15,13 @@
   }
 }
 
+.advantages__title {
+  @include indent-reset;
+  margin-bottom: 40px;
+
+  font: $font-title-normal-mobile;
+}
+
 .advantages__list {
   @include list-reset;
 }
