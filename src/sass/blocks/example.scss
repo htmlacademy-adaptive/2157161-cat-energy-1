@@ -9,7 +9,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 43px 30px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,6 +25,12 @@
   margin-bottom: 40px;
 
   font: $font-title-normal-mobile;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+
+    font: $font-title-normal-tablet;
+  }
 }
 
 .example__description {
@@ -37,12 +43,14 @@
   color: $color-special-dark-grey;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+
     width: 708px;
 
     font: $font-text-normal-tablet;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 436px;
 
     font: $font-text-normal-desktop;
@@ -65,6 +73,7 @@
 
 .example__module-item {
   font: $font-module-item-mobile;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font: $font-module-item-tablet;
@@ -90,6 +99,10 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+
+    margin-left: 167px;
+
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
