@@ -1,16 +1,10 @@
 .gain-type {
-  padding: 20px 20px 18px;
-
   width: 280px;
   min-height: 266px;
 
   background-color: $background-color-secondary;
 
   @media (min-width: $tablet-width) {
-    padding-top: 77px;
-    padding-right: 62px;
-    padding-left: 54px;
-    padding-bottom: 53px;
     width: 708px;
     min-height: 372px;
 
@@ -25,6 +19,18 @@
 .gain-type__wrapper-title {
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: flex-start;
+    min-height: 101px;
+
+    margin-bottom: 43px;
+  }
 }
 
 .gain-type__icon {
@@ -38,6 +44,15 @@
     position: absolute;
     top: 92px;
     right: -10px;
+
+    @media (min-width: $desktop-width) {
+      order: 2;
+
+      position: static;
+
+      margin-bottom: 0;
+      margin-right: 25px;
+    }
   }
 
   &::before {
@@ -56,6 +71,11 @@
       width: 200px;
       height: 200px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+    }
   }
 }
 
@@ -68,6 +88,11 @@
   @media (min-width: $tablet-width) {
     top: 45px;
     right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 19px;
+    right: 19px;
   }
 }
 
@@ -85,6 +110,14 @@
 
     margin-bottom: 24px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+
+    margin-bottom: 10px;
+
+    align-self: center;
   }
 }
 
@@ -116,4 +149,14 @@
     margin-bottom: 48px;
     width: 340px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 451px;
+
+    font: $font-text-normal-desktop;
+  }
+}
+
+.gain-type__image {
+  display: block;
 }

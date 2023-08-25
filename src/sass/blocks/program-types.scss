@@ -18,4 +18,27 @@
 
 .program-types__diet-type {
   margin-bottom: 20px;
+  padding: 20px 20px 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    padding: 77px 62px 53px 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding: 47px 52px 55px;
+  }
+}
+
+.program-types__gain-type {
+  padding: 20px 20px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 62px 53px 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 52px 55px;
+  }
 }
