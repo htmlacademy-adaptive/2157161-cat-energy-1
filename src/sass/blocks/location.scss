@@ -1,0 +1,13 @@
+.location__map {
+  display: block;
+  border: none;
+  width: 100%;
+
+  @media (max-width: $mobile-width-only) {
+    height: 362px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
