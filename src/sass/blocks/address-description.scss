@@ -5,6 +5,20 @@
   display: flex;
 
   background-color: $background-color-white;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 60px 63px 80px;
+    width: 565px;
+
+    position: absolute;
+    z-index: 2;
+    top: 2255px;
+    left: 110px;
+  }
 }
 
 .address-description__wrapper {
@@ -21,18 +35,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 80px;
+    padding: 0;
   }
 }
 
 .address-description__title {
   @include indent-reset;
+  margin-right: 20px;
 
   text-transform: uppercase;
   font: $font-address-description-title-mobile;
 
   @media (min-width: $tablet-width) {
     font: $font-address-description-title-tablet;
+
+    margin-right: 0;
   }
 }
 
