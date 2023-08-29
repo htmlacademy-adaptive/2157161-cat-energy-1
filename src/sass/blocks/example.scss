@@ -37,6 +37,8 @@
   @include indent-reset;
   width: 280px;
 
+  display: flex;
+
   margin-bottom: 20px;
 
   font: $font-text-normal-mobile;
@@ -82,16 +84,20 @@
 
 .example__module-description {
   @include indent-reset;
+  display: flex;
+  flex-direction: column;
 
   font: $font-module-description-mobile;
   color: $color-special-dark-grey;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    br {
-      display: none;
-    }
+    flex-direction: row;
   }
+}
+
+.example__module-text {
+  @include indent-reset;
 }
 
 .example__result-wrapper {
