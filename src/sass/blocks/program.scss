@@ -37,7 +37,7 @@
     top: 0;
     z-index: 0;
 
-    background-color: rgba($background-color-primary, 0.85);
+    background-color: rgba($background-color-3, 0.85);
 
     @media (min-width: $tablet-width) {
       background: none;
@@ -62,7 +62,7 @@
 
   font: $font-title-main-normal-mobile;
   text-align: center;
-  color: $color-white;
+  color: $color-2;
 
   position: relative;
   z-index: 1;
@@ -71,14 +71,14 @@
     margin-bottom: 41px;
 
     font: $font-title-main-normal-tablet;
-    color: $color-black;
+    color: $color-1;
     text-align: left;
   }
 }
 
 .program__slogan {
   font: $font-slogan-normal-mobile;
-  color: $color-white;
+  color: $color-2;
   text-transform: uppercase;
   text-align: center;
 
@@ -88,7 +88,7 @@
   @media (min-width: $tablet-width) {
     font: $font-slogan-normal-tablet;
     text-align: left;
-    color: $color-black;
+    color: $color-1;
 
     margin-bottom: 49px;
   }
@@ -103,12 +103,12 @@
   font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
   text-transform: uppercase;
-  color: $color-white;
+  color: $color-2;
 
   position: relative;
   z-index: 1;
 
-  background-color: $background-color-primary;
+  background-color: $background-color-3;
 
   @media (min-width: $tablet-width) {
     padding: 14px 26px;

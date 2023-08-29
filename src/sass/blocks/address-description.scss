@@ -4,7 +4,7 @@
 
   display: flex;
 
-  background-color: $background-color-white;
+  background-color: $background-color-2;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -60,7 +60,7 @@
 .address-description__container {
   font: $font-text-normal-mobile;
   line-height: 1.42;
-  color: $color-special-dark-grey;
+  color: $color-6;
 
   @media (min-width: $tablet-width) {
     font: $font-text-normal-tablet;

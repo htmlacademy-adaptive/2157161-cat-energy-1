@@ -29,7 +29,7 @@
   position: absolute;
   top: 65px;
   z-index: 10;
-  background-color: $background-color-white;
+  background-color: $background-color-2;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -119,9 +119,8 @@
   position: absolute;
   top: 1px;
 
-  background-color: $background-color-black;
-  box-shadow: 0 7px 0 0 $background-color-black,
-    0 14px 0 0 $background-color-black;
+  background-color: $background-color-1;
+  box-shadow: 0 7px 0 0 $background-color-1, 0 14px 0 0 $background-color-1;
 }
 
 .main-nav--opened .main-nav__toggle::before,
@@ -130,7 +129,7 @@
   display: block;
   width: 24px;
   height: 2px;
-  background-color: $background-color-black;
+  background-color: $background-color-1;
 
   position: absolute;
   top: 9px;
