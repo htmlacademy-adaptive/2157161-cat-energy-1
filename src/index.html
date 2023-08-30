@@ -9,47 +9,49 @@
   <body>
     <!-- Шапка -->
     <header class="header">
-      <nav class="header__main-nav main-nav">
-        <div class="main-nav__wrapper">
-          <div class="main-nav__logo-wrapper">
-            <a class="main-nav__logo" href="index.html">
-              <picture>
-                <source
-                  srcset="img/cat-energy-logo-tablet.svg"
-                  width="174"
-                  height="52"
-                  media="(min-width: 769px) and (max-width: 1439px)"
-                />
-                <source
-                  srcset="img/cat-energy-logo-desktop.svg"
-                  width="202"
-                  height="59"
-                  media="(min-width: 1440px)"
-                />
-                <img
-                  src="img/cat-energy-icon-mobile.svg"
-                  width="33"
-                  height="38"
-                  alt="Кэт энерджи"
-                />
-              </picture>
-            </a>
-            <a class="main-nav__logo" href="index.html">
+      <nav class="header__main-nav main-nav main-nav--closed">
+        <div class="main-nav__mobile-wrapper">
+          <a class="main-nav__logo" href="index.html">
+            <picture>
+              <source
+                srcset="img/cat-energy-logo-tablet.svg"
+                width="174"
+                height="52"
+                media="(min-width: 769px) and (max-width: 1439px)"
+              />
+              <source
+                srcset="img/cat-energy-logo-desktop.svg"
+                width="202"
+                height="59"
+                media="(min-width: 1440px)"
+              />
               <img
-                src="img/cat-energy-name-mobile.svg"
-                width="101"
-                height="18"
+                src="img/cat-energy-icon-mobile.svg"
+                width="33"
+                height="38"
                 alt="Кэт энерджи"
               />
-            </a>
-          </div>
+            </picture>
+          </a>
+          <a class="main-nav__logo" href="index.html">
+            <img
+              src="img/cat-energy-name-mobile.svg"
+              width="101"
+              height="18"
+              alt="Кэт энерджи"
+            />
+          </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
+        </div>
 
+        <div class="main-nav__wrapper">
           <ul class="main-nav__nav-list nav-list">
-            <li class="nav-list__item nav-list__item--current">
-              <a class="nav-list__link" href="index.html">Главная</a>
+            <li class="nav-list__item nav-list__item--active">
+              <a class="nav-list__link nav-list__link--active" href="index.html"
+                >Главная</a
+              >
             </li>
             <li class="nav-list__item">
               <a class="nav-list__link" href="#">Каталог продукции</a>
@@ -98,30 +100,32 @@
           <div
             class="program-types__diet-type diet-type diet-type--lose-weight"
           >
-            <div class="diet-type__icon diet-type-icon">
-              <picture>
-                <source
-                  srcset="img/lose-weight-cat-tablet.svg"
-                  width="140"
-                  height="194"
-                  media="(min-width: 769px) and (max-width: 1439px)"
-                />
-                <source
-                  srcset="img/lose-weight-cat-desktop.svg"
-                  width="70"
-                  height="97"
-                  media="(min-width: 1440px)"
-                />
-                <img
-                  class="diet-type-icon__image"
-                  src="img/lose-weight-cat-mobile.svg"
-                  width="36"
-                  height="50"
-                  alt="кот в программе для похудения"
-                />
-              </picture>
+            <div class="diet-type__wrapper-title">
+              <div class="diet-type__icon diet-type-icon">
+                <picture class="diet-type__icons">
+                  <source
+                    srcset="img/lose-weight-cat-tablet.svg"
+                    width="140"
+                    height="194"
+                    media="(min-width: 769px) and (max-width: 1439px)"
+                  />
+                  <source
+                    srcset="img/lose-weight-cat-desktop.svg"
+                    width="70"
+                    height="97"
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="diet-type__image"
+                    src="img/lose-weight-cat-mobile.svg"
+                    width="36"
+                    height="50"
+                    alt="кот в программе для похудения"
+                  />
+                </picture>
+              </div>
+              <h2 class="diet-type__title">Похудение</h2>
             </div>
-            <h2 class="diet-type__title">Похудение</h2>
             <p class="diet-type__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
@@ -146,32 +150,34 @@
             </a>
           </div>
           <div
-            class="program-types__gain-type gain-type gain-type--weight-gain"
+            class="program-types__gain-type gain-type gain-type--gain-weight"
           >
-            <div class="gain-type__icon gain-type-icon">
-              <picture>
-                <source
-                  srcset="img/weight-gain-cat-tablet.svg"
-                  width="268"
-                  height="112"
-                  media="(min-width: 769px) and (max-width: 1439px)"
-                />
-                <source
-                  srcset="img/weight-gain-cat-desktop.svg"
-                  width="134"
-                  height="57"
-                  media="(min-width: 1440px)"
-                />
-                <img
-                  class="gain-type-icon__image"
-                  src="img/weight-gain-cat-mobile.svg"
-                  width="67"
-                  height="28"
-                  alt="кот в программе для похудения"
-                />
-              </picture>
+            <div class="gain-type__wrapper-title">
+              <div class="gain-type__icon gain-type-icon">
+                <picture class="gain-type__icons">
+                  <source
+                    srcset="img/weight-gain-cat-tablet.svg"
+                    width="268"
+                    height="112"
+                    media="(min-width: 769px) and (max-width: 1439px)"
+                  />
+                  <source
+                    srcset="img/weight-gain-cat-desktop.svg"
+                    width="134"
+                    height="57"
+                    media="(min-width: 1440px)"
+                  />
+                  <img
+                    class="gain-type__image"
+                    src="img/weight-gain-cat-mobile.svg"
+                    width="67"
+                    height="28"
+                    alt="кот в программе для похудения"
+                  />
+                </picture>
+              </div>
+              <h2 class="gain-type__title">Набор массы</h2>
             </div>
-            <h2 class="gain-type__title">Набор массы</h2>
             <p class="gain-type__description">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -329,11 +335,17 @@
               <dl class="example__list">
                 <div class="example__item">
                   <dt class="example__module-item">5 кг</dt>
-                  <dd class="example__module-description">снижение веса</dd>
+                  <dd class="example__module-description">
+                    <p class="example__module-text">снижение</p>
+                    <p class="example__module-text">веса</p>
+                  </dd>
                 </div>
                 <div class="example__item">
                   <dt class="example__module-item">60 дней</dt>
-                  <dd class="example__module-description">затрачено времени</dd>
+                  <dd class="example__module-description">
+                    <p class="example__module-text">затрачено</p>
+                    <p class="example__module-text">времени</p>
+                  </dd>
                 </div>
               </dl>
               <div class="example__result-wrapper">
@@ -366,22 +378,39 @@
       <section class="location">
         <div class="location__wrapper">
           <h2 class="visually-hidden">Локация</h2>
-          <div class="location__address address-description">
-            <h3 class="address-description__title">
-              Приглашаем<br />
-              к сотрудничеству<br />
-              дилеров!<br />
-            </h3>
-            <div class="address-description__wrapper">
-              <address class="address-description__address">
-                ул. Большая <br />
-                Конюшенная, д. 19/8
-              </address>
-              <div class="address-description__city">Санкт-Петербург</div>
+          <div class="location__map-contaier">
+            <div class="location__address address-description">
+              <div class="address-description__wrapper">
+                <h3 class="address-description__title">
+                  <p class="address-description__text">Приглашаем</p>
+                  <p class="address-description__text">к сотрудничеству</p>
+                  <p class="address-description__text">дилеров!</p>
+                </h3>
+                <div class="address-description__container">
+                  <address class="address-description__address">
+                    <p class="address-description__address-text">ул. Большая</p>
+                    <p class="address-description__address-text">
+                      Конюшенная, д. 19/8
+                    </p>
+                    <p class="address-description__address-text">
+                      Санкт-Петербург
+                    </p>
+                  </address>
+                </div>
+              </div>
             </div>
+            <!-- Тут будет карта -->
+            <iframe
+              class="map location__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224469757427!2d30.314833977330657!3d59.968268659713594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1692994636461!5m2!1sru!2sru"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-          <!-- Тут будет карта -->
-          <div class="location__map"></div>
         </div>
       </section>
     </main>

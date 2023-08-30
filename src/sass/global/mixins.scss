@@ -10,6 +10,12 @@
 }
 
 @mixin link-reset {
-  color: $color-black;
+  color: $color-1;
   text-decoration: none;
+}
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  cursor: pointer;
 }
