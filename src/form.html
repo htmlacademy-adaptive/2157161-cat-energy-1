@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Шапка -->
+    <header class="header">
+      <nav class="header__main-nav main-nav main-nav--closed">
+        <div class="main-nav__mobile-wrapper">
+          <a class="main-nav__logo" href="index.html">
+            <picture>
+              <source
+                srcset="img/cat-energy-logo-tablet.svg"
+                width="174"
+                height="52"
+                media="(min-width: 769px) and (max-width: 1439px)"
+              />
+              <source
+                srcset="img/cat-energy-logo-desktop.svg"
+                width="202"
+                height="59"
+                media="(min-width: 1440px)"
+              />
+              <img
+                src="img/cat-energy-icon-mobile.svg"
+                width="33"
+                height="38"
+                alt="Кэт энерджи"
+              />
+            </picture>
+          </a>
+          <a class="main-nav__logo" href="index.html">
+            <img
+              src="img/cat-energy-name-mobile.svg"
+              width="101"
+              height="18"
+              alt="Кэт энерджи"
+            />
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__nav-list nav-list">
+            <li class="nav-list__item nav-list__item">
+              <a class="nav-list__link nav-list__link" href="index.html"
+                >Главная</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="catalog.html"
+                >Каталог продукции</a
+              >
+            </li>
+            <li class="nav-list__item--active">
+              <a class="nav-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Главное содержание -->
+    <main class="main-container">
+      <h1 class="visually-hidden">Форма - подбор программы</h1>
+      <form class="form-selection" action="#" method="post">
+        <!-- Подбор программы -->
+        <section class="program-selection">
+          <div class="program-selection__wrapper">
+            <h2 class="program-selection__title">Подбор программы</h2>
+
+            <div class="program-selection__description">
+              <p class="program-selection__text">
+                Заполните анкету, и мы подберем
+              </p>
+              <p class="program-selection__text">
+                программу питания для вашего кота
+              </p>
+            </div>
+
+            <div class="program-selection__input-fields">
+              <label class="program-selection__field-label"
+                >Имя:*
+                <input
+                  class="program-selection__input"
+                  name="name"
+                  placeholder="барсик"
+                />
+              </label>
+              <label class="program-selection__field-label"
+                >Вес(кг):*
+                <input
+                  class="program-selection__input"
+                  name="name"
+                  placeholder="7"
+                />
+              </label>
+              <label class="program-selection__field-label"
+                >Возраст(лет):
+                <input
+                  class="program-selection__input"
+                  name="age"
+                  placeholder="7"
+                />
+              </label>
+            </div>
+
+            <div class="program-selection__input-fields">
+              <label class="program-selection__field-label">
+                <input
+                  class="program-selection__input"
+                  type="radio"
+                  name="weight-loss"
+                />Похудение
+              </label>
+              <label class="program-selection__field-label">
+                <input
+                  class="program-selection__input"
+                  type="radio"
+                  name="weight-gain"
+                />Набор массы
+              </label>
+              <label class="program-selection__field-label">
+                <input
+                  class="program-selection__input"
+                  type="radio"
+                  name="your-advice"
+                />Не знаю (Нужен ваш совет)
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <!-- Контактные данные -->
+        <section class="contant-details">
+          <div class="contant-details__wrapper">
+            <h1 class="contact-details__wrapper">
+              Контактные данные (владельца кота)
+            </h1>
+            <div class="contact-details__fields">
+              <label class="contact-details__label"
+                >E-mail:*<input
+                  class="contact-details__input"
+                  name="email"
+                  placeholder="kuklachev@gmail.com"
+              /></label>
+              <label class="contact-details__label"
+                >Телефон<input
+                  class="contact-details__input"
+                  name="phone"
+                  placeholder="8 (960) 900-60-90"
+              /></label>
+            </div>
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
