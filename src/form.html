@@ -70,7 +70,7 @@
       <h1 class="visually-hidden">Форма - подбор программы</h1>
       <form class="form-selection" action="#" method="post">
         <!-- Подбор программы -->
-        <section class="program-selection">
+        <section class="form-selection__program-selection program-selection">
           <div class="program-selection__wrapper">
             <h2 class="program-selection__title">Подбор программы</h2>
 
@@ -115,21 +115,21 @@
                 <input
                   class="program-selection__input"
                   type="radio"
-                  name="weight-loss"
+                  name="weight"
                 />Похудение
               </label>
               <label class="program-selection__field-label">
                 <input
                   class="program-selection__input"
                   type="radio"
-                  name="weight-gain"
+                  name="weight"
                 />Набор массы
               </label>
               <label class="program-selection__field-label">
                 <input
                   class="program-selection__input"
                   type="radio"
-                  name="your-advice"
+                  name="weight"
                 />Не знаю (Нужен ваш совет)
               </label>
             </div>
@@ -137,11 +137,11 @@
         </section>
 
         <!-- Контактные данные -->
-        <section class="contant-details">
+        <section class="form-selection__contant-details contant-details">
           <div class="contant-details__wrapper">
-            <h1 class="contact-details__wrapper">
+            <h2 class="contact-details__wrapper">
               Контактные данные (владельца кота)
-            </h1>
+            </h2>
             <div class="contact-details__fields">
               <label class="contact-details__label"
                 >E-mail:*<input
@@ -160,15 +160,102 @@
         </section>
 
         <!-- Комментарий -->
-        <section class="comments">
+        <section class="form-selection__comments comments">
           <div class="comments__wrapper">
-            <h1 class="comments__title">Комментарий</h1>
+            <h2 class="comments__title">Комментарий</h2>
             <textarea
               class="comments__textarea"
               rows="5"
               cols="40"
               placeholder="Расскажите обо всех повАдках кота"
             ></textarea>
+          </div>
+        </section>
+
+        <!-- Дополнительно -->
+        <section class="form-selection__additionally additionally">
+          <div class="additionally__wrapper">
+            <h2 class="additionally__title">Дополнительно</h2>
+            <div class="additionally__fields">
+              <label class="additionally__label"
+                ><input
+                  class="additionally__input"
+                  type="checkbox"
+                  name="sweetener"
+                  checked
+                />Сахарозаменитель</label
+              >
+              <label class="additionally__label"
+                ><input
+                  class="additionally__input"
+                  type="checkbox"
+                  name="drinking-water"
+                />Питьевая вода</label
+              >
+              <label class="additionally__label"
+                ><input
+                  class="additionally__input"
+                  type="checkbox"
+                  name="milk"
+                />Молоко</label
+              >
+              <label class="additionally__label"
+                ><input
+                  class="additionally__input"
+                  type="checkbox"
+                  name="vitamins"
+                />Витамины</label
+              >
+            </div>
+
+            <div class="additionally__submit-container">
+              <button class="button additionally__button" type="submit">
+                Отправить заявку
+              </button>
+              <div class="additionally__slogan">* — Обязательные поля</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Локация -->
+        <section class="form-selection__location location">
+          <div class="location__wrapper">
+            <h2 class="visually-hidden">Локация</h2>
+            <div class="location__map-contaier">
+              <div class="location__address address-description">
+                <div class="address-description__wrapper">
+                  <h3 class="address-description__title">
+                    Приглашаем<br />
+                    к сотрудничеству<br />
+                    дилеров!
+                  </h3>
+                  <div class="address-description__container">
+                    <address class="address-description__address">
+                      <p class="address-description__address-text">
+                        ул. Большая
+                      </p>
+                      <p class="address-description__address-text">
+                        Конюшенная, д. 19/8
+                      </p>
+                      <p class="address-description__address-text">
+                        Санкт-Петербург
+                      </p>
+                    </address>
+                  </div>
+                </div>
+              </div>
+              <!-- Тут будет карта -->
+              <iframe
+                class="map location__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224469757427!2d30.314833977330657!3d59.968268659713594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1692994636461!5m2!1sru!2sru"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </section>
       </form>
