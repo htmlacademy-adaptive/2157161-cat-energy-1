@@ -21,10 +21,6 @@
 .nav-list__item {
   text-align: center;
 
-  @media (min-width: $mobile-width-only) {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     display: block;
 
