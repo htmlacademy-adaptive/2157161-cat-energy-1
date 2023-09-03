@@ -4,6 +4,10 @@
   font: $font-nav-list-mobile;
   text-transform: uppercase;
 
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
