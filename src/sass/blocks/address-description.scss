@@ -39,10 +39,6 @@
   }
 }
 
-.address-description__text {
-  @include indent-reset;
-}
-
 .address-description__title {
   @include indent-reset;
   margin-right: 20px;
