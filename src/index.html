@@ -8,45 +8,47 @@
   <body>
     <!-- Шапка -->
     <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <img
-          src="./img/logo-cat-energy-icon-mobile.svg"
-          width="33"
-          height="38"
-          alt="иконка кэт энерджи"
-        />
-      </a>
-      <div class="main-header__name-logo logo">
-        <img
-          src="./img/logo-cat-energy-name-mobile.svg"
-          width="101"
-          height="18"
-          alt="Кэт энерджи"
-        />
-      </div>
-
-      <!-- Навигация -->
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden"> Открыть меню </span>
-        </button>
-
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site__item site__item--current">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site__item">
-              <a class="site-list__link" href="catalog.html"
-                >Каталог продукции</a
-              >
-            </li>
-            <li class="site__item">
-              <a class="site-list__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
+      <div class="main-header__wrapper container">
+        <a class="main-header__logo" href="#">
+          <img
+            src="./img/logo-cat-energy-icon-mobile.svg"
+            width="33"
+            height="38"
+            alt="иконка кэт энерджи"
+          />
+        </a>
+        <div class="main-header__name-logo logo">
+          <img
+            src="./img/logo-cat-energy-name-mobile.svg"
+            width="101"
+            height="18"
+            alt="Кэт энерджи"
+          />
         </div>
-      </nav>
+
+        <!-- Навигация -->
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden"> Открыть меню </span>
+          </button>
+
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site__item site__item--current">
+                <a class="site-list__link" href="index.html">Главная</a>
+              </li>
+              <li class="site__item">
+                <a class="site-list__link" href="catalog.html"
+                  >Каталог продукции</a
+                >
+              </li>
+              <li class="site__item">
+                <a class="site-list__link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- Главное содержимое -->
@@ -57,7 +59,7 @@
 
       <!-- Программа -->
       <section class="program">
-        <div class="program__wrapper">
+        <div class="program__wrapper container">
           <h2 class="program__title">Функциональное питание для котов</h2>
           <p class="program__slogan">Занялся собой? Займись котом!</p>
           <button class="program__link button" type="button">
@@ -68,7 +70,7 @@
 
       <!-- Виды программ -->
       <section class="program-types">
-        <div class="program-types__wrapper">
+        <div class="program-types__wrapper container">
           <h2 class="visually-hidden">Виды программ</h2>
           <div
             class="program-types__type program-type program-type--weight-loss"
@@ -95,7 +97,7 @@
 
       <!-- Преимущества -->
       <section class="advantages">
-        <div class="advantages__wrapper">
+        <div class="advantages__wrapper container">
           <h2 class="advantages__title title">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -140,7 +142,7 @@
 
       <!-- Живой пример -->
       <section class="example">
-        <div class="example__wrapper">
+        <div class="example__wrapper container">
           <h2 class="example__title title">Живой пример</h2>
           <p class="example__description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
@@ -183,7 +185,7 @@
 
       <!-- Локация -->
       <section class="location">
-        <div class="location__wrapper">
+        <div class="location__wrapper container">
           <div class="location__address-wrapper">
             <h2 class="location__address-wrapper-title">
               приглашаем к сотрудничеству дилеров!
@@ -203,57 +205,59 @@
 
     <!-- Подвал -->
     <footer class="main-footer">
-      <!-- логотип кэт энереджи -->
-      <div class="main-footer__logo logo-cat-energy">
-        <a class="logo-cat-energy__image" href="index.html">
-          <img
-            src="./img/logo-cat-energy-name-mobile.svg"
-            width="128"
-            height="24"
-            alt="Кэт энерджи"
-          />
-        </a>
-      </div>
+      <div class="main-footer__wrapper container">
+        <!-- логотип кэт энереджи -->
+        <div class="main-footer__logo logo-cat-energy">
+          <a class="logo-cat-energy__image" href="index.html">
+            <img
+              src="./img/logo-cat-energy-name-mobile.svg"
+              width="128"
+              height="24"
+              alt="Кэт энерджи"
+            />
+          </a>
+        </div>
 
-      <!-- соц. сети -->
-      <div class="main-footer__social social">
-        <ul class="social-list">
-          <li class="social__item">
-            <a
-              class="social__link social__link--vkontakte"
-              href="https://vk.com/htmlacademy"
-              >Вконтакте</a
-            >
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--youtube"
-              href="https://www.youtube.com/user/htmlacademyru"
-              >Ютуб</a
-            >
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--telegram"
-              href="https://t.me/htmlacademy"
-              >Телеграм</a
-            >
-          </li>
-        </ul>
-      </div>
+        <!-- соц. сети -->
+        <div class="main-footer__social social">
+          <ul class="social-list">
+            <li class="social__item">
+              <a
+                class="social__link social__link--vkontakte"
+                href="https://vk.com/htmlacademy"
+                >Вконтакте</a
+              >
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--youtube"
+                href="https://www.youtube.com/user/htmlacademyru"
+                >Ютуб</a
+              >
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--telegram"
+                href="https://t.me/htmlacademy"
+                >Телеграм</a
+              >
+            </li>
+          </ul>
+        </div>
 
-      <!-- авторские права -->
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="#">
-          <span class="copyright__link-html-academy">HTML Academy</span>
-          <img
-            class="copyright__html-academy-icon"
-            src="./img/html-academy-mobile.svg"
-            width="27"
-            height="34"
-            alt="Логотип html academy"
-          />
-        </a>
+        <!-- авторские права -->
+        <div class="main-footer__copyright copyright">
+          <a class="copyright__link" href="#">
+            <span class="copyright__link-html-academy">HTML Academy</span>
+            <img
+              class="copyright__html-academy-icon"
+              src="./img/html-academy-mobile.svg"
+              width="27"
+              height="34"
+              alt="Логотип html academy"
+            />
+          </a>
+        </div>
       </div>
     </footer>
   </body>
