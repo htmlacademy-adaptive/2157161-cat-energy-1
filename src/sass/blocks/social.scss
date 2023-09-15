@@ -1,0 +1,11 @@
+.social__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+
+  width: 100%;
+
+  text-align: center;
+}

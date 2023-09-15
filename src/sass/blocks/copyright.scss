@@ -1,0 +1,11 @@
+.copyright__link {
+  @include link-reset;
+
+  display: flex;
+  justify-content: space-between;
+  width: 281px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+}

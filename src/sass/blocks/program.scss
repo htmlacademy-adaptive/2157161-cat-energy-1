@@ -1,0 +1,119 @@
+.program__wrapper {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+
+    flex-direction: row;
+  }
+}
+
+.program__description-wrapper {
+  padding-top: 27px;
+
+  background: url("../../img/header-background-mobile.jpg") no-repeat;
+  background-size: 320px 302px;
+
+  position: relative;
+
+  width: 320px;
+  min-height: 302px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 302px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+
+    background-color: rgba($background-color-3, 0.85);
+
+    @media (min-width: $tablet-width) {
+      background: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 88px;
+
+    background: none;
+    width: 769px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 410px;
+  }
+}
+
+.program__title {
+  @include indent-reset;
+  margin-bottom: 25px;
+
+  font: $font-title-main-normal-mobile;
+  text-align: center;
+  color: $color-2;
+
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+
+    font: $font-title-main-normal-tablet;
+    color: $color-1;
+    text-align: left;
+  }
+}
+
+.program__slogan {
+  font: $font-slogan-normal-mobile;
+  color: $color-2;
+  text-transform: uppercase;
+  text-align: center;
+
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    font: $font-slogan-normal-tablet;
+    text-align: left;
+    color: $color-1;
+
+    margin-bottom: 49px;
+  }
+}
+
+.program__link {
+  @include link-reset;
+  display: block;
+
+  padding: 8px 44px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-2;
+
+  position: relative;
+  z-index: 1;
+
+  background-color: $background-color-3;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+    width: 244px;
+
+    font: $font-slogan-normal-tablet;
+  }
+}

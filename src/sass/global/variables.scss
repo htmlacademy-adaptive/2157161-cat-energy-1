@@ -1,0 +1,70 @@
+/* здесь используйте глобальные переменные */
+
+/* device-width */
+$mobile-width: 320px;
+$mobile-width-only: 768px;
+$tablet-width: 769px;
+$tablet-width-only: 1439px;
+$desktop-width: 1440px;
+
+/* colors */
+$color-1: #000000;
+$color-2: #ffffff;
+$color-3: #68b738;
+$color-4: #f2f2f2;
+$color-5: #d9d9d9;
+$color-6: #444444;
+
+/* background-color */
+$background-color-1: #000000;
+$background-color-2: #ffffff;
+$background-color-3: #68b738;
+$background-color-4: #f2f2f2;
+$background-color-5: #d9d9d9;
+$background-color-6: #444444;
+
+/* fonts */
+$font-body: 400 1.6rem/1.25 "Lato", "Arial", sans-serif;
+$font-title-normal: 400 6rem/1 "Oswald", "Arial", sans-serif;
+$font-text-normal: 400 1.6rem/0.66 "Lato", "Arial", sans-serif;
+
+/* mobile-fonts*/
+$font-title-main-normal-mobile: 400 3.6rem/1 "Oswald", "Arial", sans-serif;
+$font-title-normal-mobile: 400 3.6rem/1.11 "Oswald", "Arial", sans-serif;
+$font-title-program-type-mobile: 400 2.4rem/1.54 "Oswald", "Arial", sans-serif;
+$font-text-normal-mobile: 400 1.4rem/1.28 "Lato", "Arial", sans-serif;
+$font-slogan-normal-mobile: 400 1.4rem/1 "Oswald", "Arial", sans-serif;
+$font-nav-list-mobile: 500 2rem/1 "Oswald", "Arial", sans-serif;
+$font-module-item-mobile: 400 2.4rem/1 "Oswald", "Arial", sans-serif;
+$font-module-description-mobile: 400 1.2rem/1 "Lato", "Arial", sans-serif;
+$font-example-result-mobile: 400 1.4rem/1.42 "Oswald", "Arial", sans-serif;
+$font-address-description-title-mobile: 400 1.6rem/1.25 "Oswald", "Arial",
+  sans-serif;
+
+/* tablet-fonts */
+$font-title-main-normal-tablet: 400 6rem/1 "Oswald", "Arial", sans-serif;
+$font-title-normal-tablet: 400 6rem/1 "Oswald", "Arial", sans-serif;
+$font-title-program-type-tablet: 400 3.6rem/1 "Oswald", "Arial", sans-serif;
+$font-text-normal-tablet: 400 1.6rem/1.5 "Lato", "Arial", sans-serif;
+$font-slogan-normal-tablet: 400 2rem/1 "Oswald", "Arial", sans-serif;
+$font-nav-list-tablet: 400 1.8rem/1.33 "Oswald", "Arial", sans-serif;
+$font-advantages-number-tablet: 400 28rem/1 "Oswald", "Arial", sans-serif;
+$font-module-item-tablet: 400 3rem/1.23 "Oswald", "Arial", sans-serif;
+$font-module-description-tablet: 400 1.4rem/1 "Lato", "Arial", sans-serif;
+$font-example-result-tablet: 400 2rem/1 "Oswald", "Arial", sans-serif;
+$font-address-description-title-tablet: 400 2rem/1.3 "Oswald", "Arial",
+  sans-serif;
+
+/* desktop-fonts */
+$font-title-main-normal-desktop: 400 6rem/1 "Oswald", "Arial", sans-serif;
+$font-title-normal-desktop: 400 6rem/1 "Oswald", "Arial", sans-serif;
+$font-title-program-type-desktop: 400 3.6rem/1 "Oswald", "Arial", sans-serif;
+$font-text-normal-desktop: 400 1.6rem/1.5 "Lato", "Arial", sans-serif;
+$font-slogan-normal-desktop: 400 2rem/1 "Oswald", "Arial", sans-serif;
+$font-nav-list-desktop: 400 2rem /1 "Oswald", "Arial", sans-serif;
+$font-advantages-number-desktop: 400 28rem/1 "Oswald", "Arial", sans-serif;
+$font-module-item-desktop: 400 3rem/1.23 "Oswald", "Arial", sans-serif;
+$font-module-description-tablet: 400 1.4rem/1 "Lato", "Arial", sans-serif;
+$font-example-result-desktop: 400 2rem/1 "Oswald", "Arial", sans-serif;
+$font-address-description-title-desktop: 400 2rem/1.3 "Oswald", "Arial",
+  sans-serif;
