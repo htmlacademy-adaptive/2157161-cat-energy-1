@@ -4,5 +4,50 @@
     <meta charset="UTF-8" />
     <title>Каталог продукции</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Шапка -->
+    <header class="main-header">
+      <div class="main-header__wrapper container">
+        <a class="main-header__logo" href="#">
+          <img
+            src="./img/logo-cat-energy-icon-mobile.svg"
+            width="33"
+            height="38"
+            alt="иконка кэт энерджи"
+          />
+        </a>
+        <div class="main-header__name-logo logo">
+          <img
+            src="./img/logo-cat-energy-name-mobile.svg"
+            width="101"
+            height="18"
+            alt="Кэт энерджи"
+          />
+        </div>
+
+        <!-- Навигация -->
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden"> Открыть меню </span>
+          </button>
+
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site__item">
+                <a class="site-list__link" href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item--current">
+                <a class="site-list__link" href="catalog.html"
+                  >Каталог продукции</a
+                >
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
 </html>
