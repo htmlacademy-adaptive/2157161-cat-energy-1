@@ -75,6 +75,7 @@
                   class="program-selection__field-input field-input"
                   name="name"
                   placeholder="Барсик"
+                  required
                 />
               </label>
               <label
@@ -84,6 +85,7 @@
                   class="program-selection__field-input field-input"
                   name="weight"
                   placeholder="7"
+                  required
                 />
               </label>
               <label
@@ -93,6 +95,7 @@
                   class="program-selection__field-input field-input"
                   name="age"
                   placeholder="7"
+                  required
                 />
               </label>
             </div>
@@ -103,7 +106,9 @@
                 <input
                   class="program-selection__field-input"
                   type="radio"
-                  name="weight-loss"
+                  name="program"
+                  value="weight-loss"
+                  required
                 />
                 Похудение
               </label>
@@ -111,7 +116,9 @@
                 <input
                   class="program-selection__field-input"
                   type="radio"
+                  name="program"
                   name="weight-gain"
+                  required
                 />
                 Набор массы
               </label>
@@ -119,7 +126,9 @@
                 <input
                   class="program-selection__field-input"
                   type="radio"
-                  name="your-advice"
+                  name="program"
+                  value="your-advice"
+                  required
                 />
                 Не знаю (Нужен ваш совет)
               </label>
@@ -144,6 +153,7 @@
                   type="email"
                   name="email"
                   placeholder="kuklachev@gmail.com"
+                  required
                 />
               </label>
               <label
@@ -154,6 +164,7 @@
                   type="tel"
                   name="phone"
                   placeholder="8 (960) 900-60-90"
+                  required
                 />
               </label>
             </div>
@@ -170,8 +181,65 @@
                 cols="30d"
                 rows="8"
                 placeholder="Расскажите обо всех повадках кота"
+                required
               ></textarea>
             </label>
+          </div>
+        </section>
+
+        <!-- Дополнительно -->
+        <section class="additionally">
+          <div class="additionally__wrapper container">
+            <h2 class="additionally__title title title--medium">
+              Дополнительно
+            </h2>
+            <div class="additionally__fields-container">
+              <label class="additionally__field-label">
+                <input
+                  class="additionally__field-input"
+                  type="checkbox"
+                  name="sweetener"
+                  checked
+                  required
+                />
+                Сахарозаменитель
+              </label>
+              <label class="additionally__field-label">
+                <input
+                  class="additionally__field-input"
+                  type="checkbox"
+                  name="drinking-water"
+                  required
+                />
+                Питьевая вода
+              </label>
+              <label class="additionally__field-label">
+                <input
+                  class="additionally__field-input"
+                  type="checkbox"
+                  name="milk"
+                  required
+                />
+                Молоко
+              </label>
+              <label class="additionally__field-label">
+                <input
+                  class="additionally__field-input"
+                  type="checkbox"
+                  name="vitamins"
+                  required
+                />
+                Витамины
+              </label>
+            </div>
+            <div class="additionally__send-container">
+              <button class="additionally__button-send button" type="submit">
+                Отправить заявку
+              </button>
+              <small class="additionally__required-field"
+                >* — Обязательные поля</small
+              >
+            </div>
           </div>
         </section>
       </form>
