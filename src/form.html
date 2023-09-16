@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <title>Подбор программы</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -50,5 +50,89 @@
         </nav>
       </div>
     </header>
+
+    <!-- Главное содержимое -->
+    <main class="main-container">
+      <h1 class="visually-hidden">Кэт энерджи - подбираем программу</h1>
+      <!-- Форма -->
+      <form class="main-form" action="#" method="post">
+        <!-- Подбор программы -->
+        <section class="main-form__program-selection program-selection">
+          <div class="program-selection__wrapper container">
+            <h2 class="program-selection__title title title--large">
+              Подбор программы
+            </h2>
+            <p class="program-selection__text">
+              Заполните анкету, и мы подберем программу питания для вашего кота
+            </p>
+            <div
+              class="program-selection__information-container information-container"
+            >
+              <label
+                class="program-selection__field-label program-selection__field-label--lignt-grey"
+                >Имя:*
+                <input
+                  class="program-selection__field-input"
+                  name="name"
+                  placeholder="Барсик"
+                />
+              </label>
+              <label
+                class="program-selection__field-label program-selection__field-label--lignt-grey"
+                >Вес (кг):*
+                <input
+                  class="program-selection__field-input"
+                  name="weight"
+                  placeholder="7"
+                />
+              </label>
+              <label
+                class="program-selection__field-label program-selection__field-label--lignt-grey"
+                >Возраст (лет):
+                <input
+                  class="program-selection__field-input"
+                  name="age"
+                  placeholder="7"
+                />
+              </label>
+            </div>
+            <div
+              class="program-selection__program-types-container program-types-container"
+            >
+              <label
+                class="program-selection__field-label program-selection__field-label--lignt-black"
+              >
+                <input
+                  class="program-selection__field-input"
+                  type="radio"
+                  name="weight-loss"
+                />
+                Похудение
+              </label>
+              <label
+                class="program-selection__field-label program-selection__field-label--lignt-black"
+              >
+                <input
+                  class="program-selection__field-input"
+                  type="radio"
+                  name="weight-gain"
+                />
+                Набор массы
+              </label>
+              <label
+                class="program-selection__field-label program-selection__field-label--lignt-black"
+              >
+                <input
+                  class="program-selection__field-input"
+                  type="radio"
+                  name="your-advice"
+                />
+                Не знаю (Нужен ваш совет)
+              </label>
+            </div>
+          </div>
+        </section>
+      </form>
+    </main>
   </body>
 </html>
