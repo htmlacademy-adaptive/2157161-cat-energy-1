@@ -1,0 +1,11 @@
+.main-nav {
+  display: flex;
+}
+
+.main-nav__toggle {
+  order: 3;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
