@@ -1,5 +1,10 @@
 /* Начните писать стили здесь */
 
+/* Global */
+@import "./global/fonts.scss";
+@import "./global/mixins.scss";
+@import "./global/variables.scss";
+
 /* Blocks */
 @import "./blocks/additional-product-list.scss";
 @import "./blocks/additional-product.scss";
@@ -36,8 +41,3 @@
 @import "./blocks/social.scss";
 @import "./blocks/title.scss";
 @import "./blocks/visually-hidden.scss";
-
-/* Global */
-@import "./global/fonts.scss";
-@import "./global/mixins.scss";
-@import "./global/variables.scss";

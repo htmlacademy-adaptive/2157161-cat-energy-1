@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* Начните писать стили здесь */
-/* Blocks */
 /* Global */
 @font-face {
   font-family: "Lato";
@@ -44,4 +43,8 @@
   src: url("../../fonts/oswald/oswaldmedium.woff2") format("woff2");
   font-display: swap;
 }
+/* Здесь используются переменные */
+/* Colors */
+/* background-colors */
+/* Blocks */
 /*# sourceMappingURL=style.css.map */
