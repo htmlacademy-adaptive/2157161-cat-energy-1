@@ -1,8 +1,19 @@
 .site-list {
+  @include list-reset;
+
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    width: 440px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 478px;
+    max-width: 550px;
+  }
+}
+
+.site-list__link {
+  @include link-reset;
 }

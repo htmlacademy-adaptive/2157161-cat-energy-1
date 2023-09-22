@@ -66,6 +66,19 @@ body {
 
 .main-header__container-nav {
   display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 280px;
+}
+@media (min-width: 769px) {
+  .main-header__container-nav {
+    width: 708px;
+  }
+}
+@media (min-width: 1440px) {
+  .main-header__container-nav {
+    width: 1220px;
+  }
 }
 
 .main-nav {
@@ -82,13 +95,27 @@ body {
 }
 
 .site-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 769px) {
   .site-list {
-    flex-direction: row;
+    width: 440px;
   }
+}
+@media (min-width: 1440px) {
+  .site-list {
+    min-width: 478px;
+    max-width: 550px;
+  }
+}
+
+.site-list__link {
+  color: #000000;
+  text-decoration: none;
 }
 
 .visually-hidden {

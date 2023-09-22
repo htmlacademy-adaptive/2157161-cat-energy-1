@@ -16,3 +16,8 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin link-reset {
+  color: $color-1;
+  text-decoration: none;
+}
