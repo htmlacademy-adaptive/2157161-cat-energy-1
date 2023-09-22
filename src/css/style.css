@@ -47,6 +47,17 @@
 /* device-width */
 /* Colors */
 /* background-colors */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Blocks */
 .main-header__wrapper {
   display: flex;
