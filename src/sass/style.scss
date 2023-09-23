@@ -6,6 +6,10 @@
 @import "./global/variables.scss";
 @import "./global/global.scss";
 
+/* Utils */
+@import "./utils/visually-hidden.scss";
+@import "./utils/container.scss";
+
 /* Blocks */
 @import "./blocks/additional-product-list.scss";
 @import "./blocks/additional-product.scss";
