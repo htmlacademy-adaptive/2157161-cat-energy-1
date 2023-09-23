@@ -27,3 +27,7 @@
     flex-direction: row;
   }
 }
+
+.program__link {
+  @include link-reset;
+}
