@@ -73,10 +73,6 @@ body {
   overflow: hidden;
 }
 
-.container {
-  margin: 0 auto;
-}
-
 /* Blocks */
 .main-header__wrapper {
   display: flex;
@@ -113,44 +109,6 @@ body {
 @media (min-width: 769px) {
   .main-nav__toggle {
     display: none;
-  }
-}
-
-.program-type {
-  background-color: #f2f2f2;
-}
-
-.program-types__wrapper {
-  width: 320px;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 769px) {
-  .program-types__wrapper {
-    width: 769px;
-    padding: 0 30px;
-  }
-}
-@media (min-width: 1440px) {
-  .program-types__wrapper {
-    width: 1440px;
-    padding: 0 110px;
-    flex-direction: row;
-  }
-}
-
-.program-types__type {
-  width: 280px;
-}
-@media (min-width: 769px) {
-  .program-types__type {
-    width: 708px;
-  }
-}
-@media (min-width: 1440px) {
-  .program-types__type {
-    width: 570px;
   }
 }
 
