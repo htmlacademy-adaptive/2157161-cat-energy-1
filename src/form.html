@@ -11,7 +11,7 @@
     <header class="main-header">
       <div class="main-header__wrapper container">
         <div class="main-header__container-nav">
-          <a class="main-header__icon-logo" href="#">
+          <a class="main-header__icon-logo" href="index.html">
             <img
               src="./img/cat-energy-icon-mobile.svg"
               width="33"
@@ -70,124 +70,110 @@
             <p class="program-selection__text">
               Заполните анкету, и мы подберем программу питания для вашего кота
             </p>
-            <div
-              class="program-selection__information-container information-container"
-            >
-              <p
-                class="program-selection__field-content field-content field-content--name"
+            <div class="program-selection__fields-container">
+              <fieldset
+                class="program-selection__fields-container fields-container fields-container--information"
               >
+                <legend class="visually-hidden">Информация кота</legend>
                 <label class="field-content__field-label"
                   >Имя:*
                   <input
                     class="field-content__field-input field-input"
-                    name="name"
+                    name="Имя"
                     placeholder="Барсик"
                     required
                   />
                 </label>
-              </p>
-              <p
-                class="program-selection__field-content field-content field-content--weight"
-              >
                 <label class="field-content__field-label"
                   >Вес (кг):*
                   <input
                     class="field-content__field-input field-input"
-                    name="weight"
+                    name="вес"
                     placeholder="7"
                     required
                   />
                 </label>
-              </p>
-              <p
-                class="program-selection__field-content field-content field-content--age"
-              >
                 <label class="field-content__field-label"
                   >Возраст (лет):
                   <input
                     class="field-content__field-input field-input"
-                    name="age"
+                    name="возраст"
                     placeholder="7"
                     required
                   />
                 </label>
-              </p>
-            </div>
-            <div
-              class="program-selection__program-types-container program-types-container"
-            >
-              <label class="program-selection__field-label field-label">
-                <input
-                  class="program-selection__field-input"
-                  type="radio"
-                  name="program"
-                  value="weight-loss"
-                  required
-                />
-                Похудение
-              </label>
-              <label class="program-selection__field-label field-label">
-                <input
-                  class="program-selection__field-input"
-                  type="radio"
-                  name="program"
-                  name="weight-gain"
-                  required
-                />
-                Набор массы
-              </label>
-              <label class="program-selection__field-label field-label">
-                <input
-                  class="program-selection__field-input"
-                  type="radio"
-                  name="program"
-                  value="your-advice"
-                  required
-                />
-                Не знаю (Нужен ваш совет)
-              </label>
+              </fieldset>
+
+              <fieldset
+                class="program-selection__fields-container fields-container fields-container--selection-program"
+              >
+                <legend class="visually-hidden">Выбор программы</legend>
+                <label class="program-selection__field-label field-label">
+                  <input
+                    class="program-selection__field-input"
+                    type="radio"
+                    name="program"
+                    value="weight-loss"
+                    required
+                    checked
+                  />
+                  Похудение
+                </label>
+                <label class="program-selection__field-label field-label">
+                  <input
+                    class="program-selection__field-input"
+                    type="radio"
+                    name="program"
+                    name="weight-gain"
+                    required
+                  />
+                  Набор массы
+                </label>
+                <label class="program-selection__field-label field-label">
+                  <input
+                    class="program-selection__field-input"
+                    type="radio"
+                    name="program"
+                    value="your-advice"
+                    required
+                  />
+                  Не знаю (Нужен ваш совет)
+                </label>
+              </fieldset>
             </div>
           </div>
         </section>
 
         <!-- Контактные данные -->
         <section class="contact-details">
-          <div class="contact-details__wrapper">
+          <div class="contact-details__wrapper container">
             <h2 class="contact-details__title title title--medium">
               Контактные данные (владельца кота)
             </h2>
-            <div
-              class="contanct-details__information-container information-container"
+            <fieldset
+              class="contanct-details__fields-container fields-container fields-container--contacts"
             >
-              <p
-                class="contact-details__field-content field-content field-content--email"
-              >
-                <label class="field-content__field-label"
-                  >E-mail:*
-                  <input
-                    class="field-content__field-input field-input"
-                    type="email"
-                    name="email"
-                    placeholder="kuklachev@gmail.com"
-                    required
-                  />
-                </label>
-              </p>
-              <p
-                class="contact-details__field-content field-content field-content--phone"
-              >
-                <label class="field-content__field-label"
-                  >Телефон:*
-                  <input
-                    class="field-content__field-input field-input"
-                    type="tel"
-                    name="phone"
-                    placeholder="8 (960) 900-60-90"
-                    required
-                  />
-                </label>
-              </p>
-            </div>
+              <label class="field-content__field-label"
+                >E-mail:*
+                <input
+                  class="field-content__field-input field-input"
+                  type="email"
+                  name="почта"
+                  placeholder="kuklachev@gmail.com"
+                  required
+                />
+              </label>
+              <label class="field-content__field-label"
+                >Телефон:*
+                <input
+                  class="field-content__field-input field-input"
+                  type="tel"
+                  name="телефон"
+                  placeholder="8 (960) 900-60-90"
+                  required
+                />
+              </label>
+            </fieldset>
           </div>
         </section>
 
@@ -198,7 +184,7 @@
             <label class="comment__field-label">
               <textarea
                 class="comment__textarea textarea"
-                cols="30d"
+                cols="35"
                 rows="8"
                 placeholder="Расскажите обо всех повадках кота"
                 required
@@ -213,12 +199,15 @@
             <h2 class="additionally__title title title--medium">
               Дополнительно
             </h2>
-            <div class="additionally__fields-container">
+            <fieldset
+              class="additionally__fields-container fields-container fields-container--additionally"
+            >
+              <legend class="visually-hidden">Дополнительные критерии</legend>
               <label class="additionally__field-label">
                 <input
                   class="additionally__field-input"
                   type="checkbox"
-                  name="sweetener"
+                  name="Cахарозаменитель"
                   checked
                   required
                 />
@@ -228,7 +217,7 @@
                 <input
                   class="additionally__field-input"
                   type="checkbox"
-                  name="drinking-water"
+                  name="Питьевая вода"
                   required
                 />
                 Питьевая вода
@@ -237,7 +226,7 @@
                 <input
                   class="additionally__field-input"
                   type="checkbox"
-                  name="milk"
+                  name="Молоко"
                   required
                 />
                 Молоко
@@ -246,12 +235,12 @@
                 <input
                   class="additionally__field-input"
                   type="checkbox"
-                  name="vitamins"
+                  name="Витамины"
                   required
                 />
                 Витамины
               </label>
-            </div>
+            </fieldset>
             <div class="additionally__send-container">
               <button class="additionally__button-send button" type="submit">
                 Отправить заявку
@@ -267,7 +256,9 @@
       <!-- Локация -->
       <section class="location">
         <div class="location__wrapper container">
-          <div class="location__address-wrapper">
+          <div
+            class="location__address-wrapper location__address-wrapper--grey"
+          >
             <h2 class="location__address-wrapper-title">
               приглашаем к сотрудничеству дилеров!
             </h2>
@@ -279,7 +270,15 @@
             </address>
           </div>
           <!-- здесь будет карта -->
-          <div class="location__map map"></div>
+          <div class="location__map map">
+            <img
+              class="map__image"
+              src="./img/map-mobile.png"
+              width="320"
+              height="362"
+              alt="Карта"
+            />
+          </div>
         </div>
       </section>
     </main>
@@ -288,10 +287,10 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper container">
         <!-- логотип кэт энереджи -->
-        <div class="main-footer__logo logo-cat-energy">
-          <a class="logo-cat-energy__image" href="index.html">
+        <div class="main-footer__logo logo">
+          <a class="logo__image" href="index.html">
             <img
-              src="./img/logo-cat-energy-name-mobile.svg"
+              src="./img/cat-energy-text-mobile.svg"
               width="128"
               height="24"
               alt="Кэт энерджи"
@@ -301,7 +300,7 @@
 
         <!-- соц. сети -->
         <div class="main-footer__social social">
-          <ul class="social-list">
+          <ul class="social__list">
             <li class="social__item">
               <a
                 class="social__link social__link--vkontakte"

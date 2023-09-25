@@ -1,0 +1,11 @@
+.work-principle-list__item {
+  width: 279px;
+
+  @media (min-width: $tablet-width) {
+    width: 247px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}

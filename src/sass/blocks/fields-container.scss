@@ -1,0 +1,16 @@
+.fields-container {
+  display: flex;
+  flex-direction: column;
+
+  &--contacts {
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+    }
+  }
+
+  &--additionally {
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+    }
+  }
+}
