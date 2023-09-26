@@ -1,0 +1,21 @@
+.work-principle-list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.work-principle-list__item {
+  @media (min-width: $tablet-width) {
+    width: 240px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+  }
+}
