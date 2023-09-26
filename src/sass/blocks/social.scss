@@ -1,0 +1,9 @@
+.social__list {
+  @include list-reset;
+
+  display: flex;
+}
+
+.social__link {
+  @include link-reset;
+}
