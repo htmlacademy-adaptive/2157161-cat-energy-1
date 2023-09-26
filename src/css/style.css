@@ -280,6 +280,7 @@ body {
 
 .location__address-wrapper {
   width: 320px;
+  min-height: 112px;
   padding: 0 20px;
   margin: 0 auto;
   display: flex;
@@ -287,6 +288,7 @@ body {
 @media (min-width: 769px) {
   .location__address-wrapper {
     width: 769px;
+    min-height: 199px;
     padding: 0 70px;
   }
 }
@@ -495,5 +497,14 @@ body {
 .social__link {
   color: #000000;
   text-decoration: none;
+}
+
+.location-address-wrapper--grey {
+  background-color: #f2f2f2;
+}
+@media (min-width: 1440px) {
+  .location-address-wrapper--grey {
+    background-color: #ffffff;
+  }
 }
 /*# sourceMappingURL=style.css.map */
