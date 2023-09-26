@@ -1,0 +1,18 @@
+.additional-product-list__item {
+  width: 280px;
+  min-height: 98px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: auto auto auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    min-height: 139px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    min-height: 72px;
+  }
+}

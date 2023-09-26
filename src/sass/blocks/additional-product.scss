@@ -1,0 +1,30 @@
+.additional-product__wrapper {
+  width: $mobile-width;
+
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+
+    padding: 0 110px;
+  }
+}
+
+.additional-product__content-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.additional-product__list {
+  @include list-reset;
+}
