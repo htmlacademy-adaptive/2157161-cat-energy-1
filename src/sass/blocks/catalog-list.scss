@@ -1,0 +1,25 @@
+.catalog-list {
+  @include list-reset;
+}
+
+.catalog-list__item {
+  width: 280px;
+  min-height: 190px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: auto auto;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 430px;
+
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    min-height: 431px;
+  }
+}

@@ -175,6 +175,73 @@ body {
   flex-wrap: wrap;
 }
 
+.catalog__wrapper {
+  width: 320px;
+  padding: 0 20px;
+}
+@media (min-width: 769px) {
+  .catalog__wrapper {
+    width: 769px;
+    padding: 0 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog__wrapper {
+    width: 1440px;
+    padding: 0 110px;
+  }
+}
+
+@media (min-width: 769px) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 141px 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog__list {
+    gap: 143px 80px;
+  }
+}
+
+.catalog-card {
+  background-color: #ffffff;
+}
+@media (min-width: 769px) {
+  .catalog-card {
+    background-color: #f2f2f2;
+  }
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-list__item {
+  width: 280px;
+  min-height: 190px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: auto auto;
+}
+@media (min-width: 769px) {
+  .catalog-list__item {
+    width: 324px;
+    min-height: 430px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog-list__item {
+    width: 245px;
+    min-height: 431px;
+  }
+}
+
 .comment__wrapper {
   width: 320px;
   padding: 0 20px;
