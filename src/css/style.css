@@ -131,12 +131,16 @@ body {
 @media (min-width: 769px) {
   .work-principle-list {
     flex-direction: row;
+    gap: 37px 100px;
   }
 }
 
+.work-principle-list__item {
+  width: 280px;
+}
 @media (min-width: 769px) {
   .work-principle-list__item {
-    width: 240px;
+    width: 245px;
   }
 }
 @media (min-width: 1440px) {
@@ -155,7 +159,7 @@ body {
     padding: 0 30px;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1440px) {
   .work-principle__wrapper {
     width: 1440px;
     padding: 0 110px;
@@ -236,16 +240,16 @@ body {
   }
 }
 
-.example__description {
+.example__text {
   width: 280px;
 }
 @media (min-width: 769px) {
-  .example__description {
+  .example__text {
     width: 708px;
   }
 }
 @media (min-width: 1440px) {
-  .example__description {
+  .example__text {
     width: 436px;
   }
 }
