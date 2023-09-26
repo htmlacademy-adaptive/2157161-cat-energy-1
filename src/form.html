@@ -74,28 +74,28 @@
               class="program-selection__fields-container fields-container fields-container--information"
             >
               <legend class="visually-hidden">Инфомация кота</legend>
-              <label class="field-сontainer__label"
+              <label class="program-selection__field-label"
                 >Имя:*
                 <input
-                  class="field-container__field-input field-input"
+                  class="program-selection__field-input field-input"
                   name="Имя"
                   placeholder="Барсик"
                   required
                 />
               </label>
-              <label class="field-сontainer__label"
+              <label class="program-selection__label"
                 >Вес (кг):*
                 <input
-                  class="field-container__field-input field-input"
+                  class="program-selection__field-input field-input"
                   name="Вес"
                   placeholder="7"
                   required
                 />
               </label>
-              <label class="field-сontainer__label"
+              <label class="program-selection__label"
                 >Возраст (лет):
                 <input
-                  class="field-container__field-input field-input"
+                  class="program-selection__field-input field-input"
                   name="Возраст"
                   placeholder="7"
                   required
@@ -107,9 +107,9 @@
               class="program-selection__fields-container fields-container fields-container--program"
             >
               <legend class="visually-hidden">Выберите программу</legend>
-              <label class="field-сontainer__label">
+              <label class="program-selection__field-label">
                 <input
-                  class="field-container__field-input field-input"
+                  class="program-selection__field-input field-input"
                   type="radio"
                   name="Программа"
                   value="weight-loss"
@@ -118,9 +118,9 @@
                 />
                 Похудение
               </label>
-              <label class="field-сontainer__label">
+              <label class="program-selection__field-label">
                 <input
-                  class="field-container__field-input field-input"
+                  class="program-selection__field-input field-input"
                   type="radio"
                   name="Программа"
                   name="weight-gain"
@@ -128,9 +128,9 @@
                 />
                 Набор массы
               </label>
-              <label class="field-сontainer__label">
+              <label class="program-selection__field-label">
                 <input
-                  class="field-container__field-input field-input"
+                  class="program-selection__field-input field-input"
                   type="radio"
                   name="Программа"
                   value="your-advice"
@@ -149,23 +149,23 @@
               Контактные данные (владельца кота)
             </h2>
             <fieldset
-              class="program-selection__fields-container fields-container fields-container--contacts"
+              class="contact-details__fields-container fields-container fields-container--contacts"
             >
               <legend class="visually-hidden">Вводите данные</legend>
-              <label class="field-content__field-label"
+              <label class="contact-details__field-label"
                 >E-mail:*
                 <input
-                  class="field-content__field-input field-input"
+                  class="contact-details__field-input field-input"
                   type="email"
                   name="email"
                   placeholder="kuklachev@gmail.com"
                   required
                 />
               </label>
-              <label class="field-content__field-label"
+              <label class="contact-details__field-label"
                 >Телефон:*
                 <input
-                  class="field-content__field-input field-input"
+                  class="contact-details__field-input field-input"
                   type="tel"
                   name="phone"
                   placeholder="8 (960) 900-60-90"
@@ -198,7 +198,10 @@
             <h2 class="additionally__title title title--medium">
               Дополнительно
             </h2>
-            <div class="additionally__fields-container">
+            <fieldset
+              class="additionally__fields-container fields-container fields-container--additionally"
+            >
+              <legend class="visually-hidden">Выберите дополнительно</legend>
               <label class="additionally__field-label">
                 <input
                   class="additionally__field-input"
@@ -236,7 +239,8 @@
                 />
                 Витамины
               </label>
-            </div>
+            </fieldset>
+
             <div class="additionally__send-container">
               <button class="additionally__button-send button" type="submit">
                 Отправить заявку
