@@ -1,0 +1,17 @@
+.comment__wrapper {
+  width: $mobile-width;
+
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+
+    padding: 0 110px;
+  }
+}

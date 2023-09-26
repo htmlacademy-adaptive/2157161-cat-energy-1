@@ -46,10 +46,6 @@
 /* Здесь используются переменные */
 /* === Viewports === */
 /* === Colors === */
-/* Здесь используются переменные */
-/* === Viewports === */
-/* === Colors === */
-/* === background-colors === */
 /* === background-colors === */
 body {
   margin: 0;
@@ -116,6 +112,51 @@ body {
 }
 @media (min-width: 769px) {
   .additionally__send-container {
+    flex-direction: row;
+  }
+}
+
+.work-principle-list__item {
+  width: 279px;
+}
+@media (min-width: 769px) {
+  .work-principle-list__item {
+    width: 247px;
+  }
+}
+@media (min-width: 1440px) {
+  .work-principle-list__item {
+    width: 245px;
+  }
+}
+
+.work-principle__wrapper {
+  width: 320px;
+  padding: 0 20px;
+}
+@media (min-width: 769px) {
+  .work-principle__wrapper {
+    width: 769px;
+    padding: 0 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .work-principle__wrapper {
+    width: 1440px;
+    padding: 0 110px;
+  }
+}
+
+.work-principle__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media (min-width: 769px) {
+  .work-principle__list {
     flex-direction: row;
   }
 }
@@ -210,6 +251,21 @@ body {
 
 .example__list {
   display: flex;
+}
+
+.fields-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1440px) {
+  .fields-container--contacts {
+    flex-direction: row;
+  }
+}
+@media (min-width: 769px) {
+  .fields-container--additionally {
+    flex-direction: row;
+  }
 }
 
 .location__address-wrapper {
@@ -363,20 +419,6 @@ body {
     width: 1440px;
     padding: 0 110px;
     flex-direction: row;
-  }
-}
-
-.program-types__type {
-  width: 280px;
-}
-@media (min-width: 769px) {
-  .program-types__type {
-    width: 708px;
-  }
-}
-@media (min-width: 1440px) {
-  .program-types__type {
-    width: 570px;
   }
 }
 

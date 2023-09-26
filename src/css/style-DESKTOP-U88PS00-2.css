@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* Начните писать стили здесь */
+/* Global */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/lato/Lato-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/oswald/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/oswald/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/oswald/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+/* Здесь используются переменные */
+/* === Viewports === */
+/* === Colors === */
+/* === background-colors === */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Utils */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+/* Blocks */
+.main-header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header__container-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
+}
+@media (min-width: 769px) {
+  .main-header__container-nav {
+    width: 708px;
+    padding: 0 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .main-header__container-nav {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
+
+.main-nav {
+  display: flex;
+}
+
+.main-nav__toggle {
+  order: 3;
+}
+@media (min-width: 769px) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+.program {
+  width: 320px;
+}
+@media (min-width: 769px) {
+  .program {
+    width: 769px;
+  }
+}
+@media (min-width: 1440px) {
+  .program {
+    width: 1440px;
+  }
+}
+
+.program__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 769px) {
+  .program__wrapper {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .program__wrapper {
+    padding: 0 110px;
+    flex-direction: row;
+  }
+}
+
+.program__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 769px) {
+  .site-list {
+    width: 440px;
+  }
+}
+@media (min-width: 1440px) {
+  .site-list {
+    min-width: 478px;
+    max-width: 550px;
+  }
+}
+
+.site-list__link {
+  color: #000000;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

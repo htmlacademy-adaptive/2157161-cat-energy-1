@@ -1,0 +1,47 @@
+.example {
+  background-color: $background-color-6;
+
+  @media (min-width: $desktop-width) {
+    background-color: $background-color-4;
+  }
+}
+
+.example__wrapper {
+  width: $mobile-width;
+
+  padding: 0 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+
+    padding: 0 110px;
+
+    flex-direction: row;
+  }
+}
+
+.example__description {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.example__list {
+  display: flex;
+}

@@ -1,0 +1,32 @@
+.main-footer {
+  background-color: $background-color-4;
+}
+
+.main-footer__wrapper {
+  width: $mobile-width;
+  min-height: 240px;
+
+  padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    min-height: 147px;
+
+    padding: 55px 30px;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    min-height: 169px;
+
+    padding: 66px 110px;
+  }
+}
