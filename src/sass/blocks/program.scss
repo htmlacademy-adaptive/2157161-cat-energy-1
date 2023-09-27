@@ -1,3 +1,48 @@
+.program {
+  background-image: url("../../img/header-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../../img/header-background-desktop.jpg") no-repeat;
+    background-size: 720px 694px;
+    background-position: right;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+
+    width: 320px;
+    height: 302px;
+
+    background-color: rgba($background-color-3, 85%);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 720px;
+      height: 694px;
+
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
 .program__wrapper {
   width: $mobile-width;
 
@@ -14,6 +59,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    min-height: 696px;
 
     flex-direction: row;
 
@@ -23,4 +69,9 @@
 
 .program__link {
   @include link-reset;
+}
+
+.program__image {
+  position: relative;
+  z-index: 2;
 }
