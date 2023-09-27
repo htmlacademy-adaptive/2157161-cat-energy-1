@@ -21,3 +21,8 @@
   color: $color-1;
   text-decoration: none;
 }
+
+@mixin button-reset {
+  border: none;
+  cursor: pointer;
+}
