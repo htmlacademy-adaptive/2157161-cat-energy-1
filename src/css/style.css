@@ -51,6 +51,13 @@
 /* === Colors === */
 /* === background-colors === */
 /* === background-colors === */
+/* === fonts-mobile === */
+/* === fonts-tablet === */
+/* === fonts-desktop === */
+:root {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   padding: 0;
