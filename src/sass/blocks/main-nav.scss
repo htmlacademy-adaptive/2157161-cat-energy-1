@@ -73,6 +73,36 @@
   }
 }
 
-// .main-nav--opened .main-nav__list {
-//   display: block;
-// }
+.main-nav--opened .main-nav__list {
+  display: block;
+
+  position: absolute;
+  top: 39px;
+  left: -276px;
+  z-index: 3;
+}
+
+.main-nav--opened .site-list__item {
+  &:not(:first-child) {
+    border-bottom: 1px solid $background-color-6;
+  }
+
+  &:first-child {
+    border-top: 1px solid $background-color-6;
+    border-bottom: 1px solid $background-color-6;
+  }
+}
+
+.main-nav--opened .site-list__link {
+  display: block;
+
+  padding: 22px 60px 24px;
+
+  width: 320px;
+  min-height: 66px;
+
+  background-color: $background-color-2;
+
+  font: $font-user-list-mobile;
+  text-align: center;
+}

@@ -46,10 +46,6 @@
 /* Здесь используются переменные */
 /* === Viewports === */
 /* === Colors === */
-/* Здесь используются переменные */
-/* === Viewports === */
-/* === Colors === */
-/* === background-colors === */
 /* === background-colors === */
 /* === fonts-mobile === */
 /* === fonts-tablet === */
@@ -540,6 +536,32 @@ body {
 
 .main-nav--opened .main-nav__toggle:active::before, .main-nav--opened .main-nav__toggle:active::after {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav--opened .main-nav__list {
+  display: block;
+  position: absolute;
+  top: 39px;
+  left: -276px;
+  z-index: 3;
+}
+
+.main-nav--opened .site-list__item:not(:first-child) {
+  border-bottom: 1px solid #eaeaea;
+}
+.main-nav--opened .site-list__item:first-child {
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.main-nav--opened .site-list__link {
+  display: block;
+  padding: 22px 60px 24px;
+  width: 320px;
+  min-height: 66px;
+  background-color: #ffffff;
+  font: 400 2rem/1 "Oswald", Arial, sans-serif;
+  text-align: center;
 }
 
 .map__image {
