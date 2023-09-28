@@ -525,14 +525,9 @@ body {
 }
 .main-nav--opened .main-nav__toggle::before {
   transform: rotate(45deg);
-  box-shadow: none;
 }
 .main-nav--opened .main-nav__toggle::after {
   transform: rotate(-45deg);
-}
-
-.main-nav--opened .main-nav__toggle:active::before, .main-nav--opened .main-nav__toggle:active::after {
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .map__image {
