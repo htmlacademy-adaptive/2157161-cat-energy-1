@@ -546,6 +546,11 @@ body {
   left: -276px;
   z-index: 3;
 }
+@media (min-width: 769px) {
+  .main-nav--opened .main-nav__list {
+    display: none;
+  }
+}
 
 .main-nav--opened .site-list__item:not(:first-child) {
   border-bottom: 1px solid #eaeaea;

@@ -80,6 +80,10 @@
   top: 39px;
   left: -276px;
   z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav--opened .site-list__item {
