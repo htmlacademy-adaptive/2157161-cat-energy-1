@@ -23,6 +23,7 @@
   }
 }
 
+/* Закрытое меню */
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   display: block;
@@ -40,6 +41,7 @@
     0 16px 0 0 rgba($background-color-1, 30%);
 }
 
+/* Открытое меню */
 .main-nav--opened .main-nav__toggle {
   margin-top: -3px;
 
@@ -80,6 +82,10 @@
   top: 39px;
   left: -276px;
   z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav--opened .site-list__item {
@@ -103,6 +109,7 @@
 
   background-color: $background-color-2;
 
-  font: $font-user-list-mobile;
+  font: $font-site-list-mobile;
   text-align: center;
+  text-transform: uppercase;
 }

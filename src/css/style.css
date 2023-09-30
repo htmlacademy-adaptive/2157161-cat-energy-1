@@ -18,14 +18,14 @@
 @font-face {
   font-family: "Oswald";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   src: url("../../fonts/oswald/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
   font-display: swap;
 }
@@ -224,6 +224,14 @@ body {
     width: 1440px;
     padding: 0 110px;
   }
+}
+
+.button {
+  @inlude button-reset;
+  @inlude link-reset;
+}
+.button--primary {
+  background-color: #68b738;
 }
 
 .cat-result {
@@ -455,6 +463,27 @@ body {
 .main-header__wrapper {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+@media (min-width: 1440px) {
+  .main-header__wrapper {
+    width: 1440px;
+  }
+  .main-header__wrapper--picture {
+    background: url("../../img/header-background-desktop.jpg") no-repeat;
+    background-position: top right;
+    background-size: 720px 694px;
+  }
+  .main-header__wrapper--picture::after {
+    content: "";
+    display: block;
+    width: 720px;
+    height: 694px;
+    background-color: rgba(104, 183, 56, 0.85);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 .main-header__container-nav {
@@ -476,7 +505,29 @@ body {
 @media (min-width: 1440px) {
   .main-header__container-nav {
     width: 1440px;
+    margin-top: 53px;
     padding: 0 110px;
+    background: transparent;
+    z-index: 3;
+  }
+}
+
+@media (min-width: 769px) {
+  .main-header__icon-logo {
+    width: 174px;
+    height: 52px;
+  }
+}
+@media (min-width: 1440px) {
+  .main-header__icon-logo {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+@media (min-width: 769px) {
+  .main-header__name-logo {
+    display: none;
   }
 }
 
@@ -502,6 +553,7 @@ body {
   }
 }
 
+/* Закрытое меню */
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   display: block;
@@ -516,6 +568,7 @@ body {
   box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.3), 0 16px 0 0 rgba(0, 0, 0, 0.3);
 }
 
+/* Открытое меню */
 .main-nav--opened .main-nav__toggle {
   margin-top: -3px;
 }
@@ -546,6 +599,11 @@ body {
   left: -276px;
   z-index: 3;
 }
+@media (min-width: 769px) {
+  .main-nav--opened .main-nav__list {
+    display: none;
+  }
+}
 
 .main-nav--opened .site-list__item:not(:first-child) {
   border-bottom: 1px solid #eaeaea;
@@ -561,8 +619,9 @@ body {
   width: 320px;
   min-height: 66px;
   background-color: #ffffff;
-  font: 400 2rem/1 "Oswald", Arial, sans-serif;
+  font: 500 2rem/1 "Oswald", Arial, sans-serif;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .map__image {
@@ -647,13 +706,6 @@ body {
     background-image: none;
   }
 }
-@media (min-width: 1440px) {
-  .program {
-    background: url("../../img/header-background-desktop.jpg") no-repeat;
-    background-size: 720px 694px;
-    background-position: right;
-  }
-}
 .program::before {
   content: "";
   display: block;
@@ -684,11 +736,13 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+  padding-top: 27px;
 }
 @media (min-width: 769px) {
   .program__wrapper {
     width: 769px;
     padding: 0 30px;
+    padding-top: 62px;
   }
 }
 @media (min-width: 1440px) {
@@ -697,17 +751,81 @@ body {
     min-height: 696px;
     flex-direction: row;
     padding: 0 110px;
+    padding-top: 24px;
+  }
+}
+
+.program__title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 25px;
+}
+@media (min-width: 769px) {
+  .program__title {
+    color: #000000;
+    text-align: left;
+    width: 416px;
+    margin-bottom: 41px;
+  }
+}
+
+.program__slogan {
+  margin: 0;
+  padding: 0;
+  font: 200 1.4rem/1 "Oswald", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .program__slogan {
+    margin-bottom: 302px;
+  }
+}
+@media (min-width: 769px) {
+  .program__slogan {
+    color: #000000;
+    text-align: left;
+    font: 200 2rem/1 "Oswald", Arial, sans-serif;
+    margin-bottom: 49px;
   }
 }
 
 .program__link {
   color: #000000;
   text-decoration: none;
+  display: block;
+  padding: 10px 44px;
+  box-sizing: content-box;
+  font: 200 1.4rem/1.28 "Oswald", Arial, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (min-width: 769px) {
+  .program__link {
+    display: inline-block;
+    width: 190px;
+    padding: 14px 26px;
+    font: 200 2rem/1 "Oswald", Arial, sans-serif;
+  }
 }
 
 .program__image {
   position: relative;
   z-index: 2;
+}
+@media (max-width: 768px) {
+  .program__image {
+    position: absolute;
+    top: 167px;
+  }
 }
 
 .site-list {
@@ -720,19 +838,85 @@ body {
   .site-list {
     width: 440px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 @media (min-width: 1440px) {
   .site-list {
-    min-width: 478px;
-    max-width: 550px;
+    width: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .site-list__item:not(:last-child) {
+    margin-right: 24px;
+  }
+  .site-list__item--active {
+    position: relative;
+  }
+  .site-list__item--active:after {
+    content: "";
+    display: block;
+    background-color: #68b738;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    left: 0;
+    height: 2px;
+  }
+}
+@media (min-width: 1440px) {
+  .site-list__item--active:after {
+    content: "";
+    display: block;
+    background-color: #68b738;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    left: 0;
+    height: 2px;
+  }
+  .site-list__item--active-white:after {
+    content: "";
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    left: 0;
+    height: 2px;
   }
 }
 
 .site-list__link {
   color: #000000;
   text-decoration: none;
+}
+@media (min-width: 769px) {
+  .site-list__link {
+    font: 400 1.8rem/1.33 "Oswald", Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .site-list__link:hover {
+    opacity: 0.6;
+  }
+  .site-list__link:active {
+    opacity: 0.3;
+  }
+}
+@media (min-width: 1440px) {
+  .site-list__link {
+    font: 400 2rem/1 "Oswald", Arial, sans-serif;
+  }
+  .site-list__link--white {
+    color: #ffffff;
+  }
+  .site-list__link--white:hover {
+    opacity: 0.6;
+  }
+  .site-list__link--white:active {
+    opacity: 0.3;
+  }
 }
 
 .social__list {
@@ -745,6 +929,15 @@ body {
 .social__link {
   color: #000000;
   text-decoration: none;
+}
+
+.title--large {
+  font: 200 3.6rem/1 "Oswald", Arial, sans-serif;
+}
+@media (min-width: 769px) {
+  .title--large {
+    font: 200 6rem/1 "Oswald", Arial, sans-serif;
+  }
 }
 
 .location-address-wrapper--grey {

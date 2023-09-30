@@ -1,0 +1,8 @@
+.button {
+  @inlude button-reset;
+  @inlude link-reset;
+
+  &--primary {
+    background-color: $background-color-3;
+  }
+}

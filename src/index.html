@@ -9,7 +9,7 @@
   <body>
     <!-- Шапка -->
     <header class="main-header">
-      <div class="main-header__wrapper container">
+      <div class="main-header__wrapper main-header__wrapper--picture container">
         <div class="main-header__container-nav">
           <a class="main-header__icon-logo" href="index.html">
             <img
@@ -29,23 +29,33 @@
           </div>
 
           <!-- Навигация -->
-          <nav class="main-nav main-nav--opened">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden"> Открыть меню </span>
             </button>
 
             <div class="main-nav__wrapper">
               <ul class="main-nav__list site-list">
-                <li class="site-list__item site__item--current">
-                  <a class="site-list__link" href="index.html">Главная</a>
+                <li
+                  class="site-list__item site-list__item--active site-list__item--active-white"
+                >
+                  <a
+                    class="site-list__link site-list__link--white"
+                    href="index.html"
+                    >Главная</a
+                  >
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="catalog.html"
+                  <a
+                    class="site-list__link site-list__link--white"
+                    href="catalog.html"
                     >Каталог продукции</a
                   >
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__link" href="form.html"
+                  <a
+                    class="site-list__link site-list__link--white"
+                    href="form.html"
                     >Подбор программы</a
                   >
                 </li>
@@ -61,7 +71,9 @@
               Функциональное питание для котов
             </h2>
             <p class="program__slogan">Занялся собой? Займись котом!</p>
-            <a class="program__link button" href="#">Подобрать программу</a>
+            <a class="program__link button button--primary" href="#"
+              >Подобрать программу</a
+            >
           </div>
           <img
             class="program__image"
@@ -285,5 +297,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
