@@ -64,6 +64,16 @@
   }
 }
 
+.program__wrapper-description {
+  @media (min-width: $tablet-width) {
+    margin-left: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
+}
+
 .program__title {
   @include indent-reset;
   text-align: center;
