@@ -6,4 +6,12 @@
       font: $font-title-large-tablet;
     }
   }
+
+  &--small {
+    font: $font-title-small-mobile;
+
+    @media (min-width: $tablet-width) {
+      font: $font-title-small-tablet;
+    }
+  }
 }

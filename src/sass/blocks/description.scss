@@ -1,0 +1,9 @@
+.description {
+  &--small {
+    font: $font-text-small-mobile;
+
+    @media (min-width: $tablet-width) {
+      font: $font-text-small-tablet;
+    }
+  }
+}
