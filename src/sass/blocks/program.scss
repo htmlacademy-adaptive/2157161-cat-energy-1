@@ -55,12 +55,12 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    min-height: 696px;
+    min-height: 576px;
 
     flex-direction: row;
 
     padding: 0 110px;
-    padding-top: 24px;
+    padding-top: 32px;
   }
 }
 

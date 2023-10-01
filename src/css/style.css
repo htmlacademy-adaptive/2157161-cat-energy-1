@@ -748,10 +748,10 @@ body {
 @media (min-width: 1440px) {
   .program__wrapper {
     width: 1440px;
-    min-height: 696px;
+    min-height: 576px;
     flex-direction: row;
     padding: 0 110px;
-    padding-top: 24px;
+    padding-top: 32px;
   }
 }
 
@@ -894,7 +894,7 @@ body {
 }
 @media (min-width: 769px) {
   .site-list__link {
-    font: 400 1.8rem/1.33 "Oswald", Arial, sans-serif;
+    font: 200 1.8rem/1.33 "Oswald", Arial, sans-serif;
     text-transform: uppercase;
   }
   .site-list__link:hover {
@@ -906,7 +906,7 @@ body {
 }
 @media (min-width: 1440px) {
   .site-list__link {
-    font: 400 2rem/1 "Oswald", Arial, sans-serif;
+    font: 200 2rem/1 "Oswald", Arial, sans-serif;
   }
   .site-list__link--white {
     color: #ffffff;
