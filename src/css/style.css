@@ -703,6 +703,7 @@ body {
 
 .program-type__icon {
   margin-right: 19px;
+  position: relative;
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -812,6 +813,7 @@ body {
 
 .program-types__wrapper {
   width: 320px;
+  margin-bottom: 20px;
   padding: 0 20px;
   padding-top: 20px;
   display: flex;
@@ -821,6 +823,7 @@ body {
 @media (min-width: 769px) {
   .program-types__wrapper {
     width: 769px;
+    margin-bottom: 45px;
     padding: 0 30px;
     padding-top: 0;
   }
@@ -828,6 +831,7 @@ body {
 @media (min-width: 1440px) {
   .program-types__wrapper {
     width: 1440px;
+    margin-bottom: 71px;
     padding: 0 110px;
     padding-top: 82px;
     flex-direction: row;
