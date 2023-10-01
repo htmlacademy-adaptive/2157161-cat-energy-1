@@ -2,27 +2,44 @@
   width: $mobile-width;
 
   padding: 0 20px;
+  padding-top: 20px;
 
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
 
     padding: 0 30px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
 
     padding: 0 110px;
+    padding-top: 82px;
 
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 .program-types__type {
   width: 280px;
+
+  &--weight-loss {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 708px;

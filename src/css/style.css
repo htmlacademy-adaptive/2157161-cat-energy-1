@@ -50,6 +50,7 @@
 /* === fonts-mobile === */
 /* === fonts-tablet === */
 /* === fonts-desktop === */
+/* force-state elements */
 :root {
   font-size: 62.5%;
 }
@@ -664,25 +665,43 @@ body {
 .program-types__wrapper {
   width: 320px;
   padding: 0 20px;
+  padding-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 @media (min-width: 769px) {
   .program-types__wrapper {
     width: 769px;
     padding: 0 30px;
+    padding-top: 0;
   }
 }
 @media (min-width: 1440px) {
   .program-types__wrapper {
     width: 1440px;
     padding: 0 110px;
+    padding-top: 82px;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 .program-types__type {
   width: 280px;
+}
+.program-types__type--weight-loss {
+  margin-bottom: 20px;
+}
+@media (min-width: 769px) {
+  .program-types__type--weight-loss {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .program-types__type--weight-loss {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 769px) {
   .program-types__type {
@@ -807,6 +826,12 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+}
+.program__link:hover {
+  background-color: #5eaa2f;
+}
+.program__link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 @media (min-width: 769px) {
   .program__link {

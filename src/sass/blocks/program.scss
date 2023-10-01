@@ -121,6 +121,14 @@
   text-transform: uppercase;
   text-align: center;
 
+  &:hover {
+    background-color: $background-color-3-hover;
+  }
+
+  &:active {
+    color: rgba($color-2, 30%);
+  }
+
   @media (min-width: $tablet-width) {
     display: inline-block;
     width: 190px;
