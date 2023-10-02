@@ -7,6 +7,14 @@
     }
   }
 
+  &--medium {
+    font: $font-title-medium-mobile;
+
+    @media (min-width: $tablet-width) {
+      font: $font-title-medium-tablet;
+    }
+  }
+
   &--small {
     font: $font-title-small-mobile;
 

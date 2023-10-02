@@ -1,17 +1,30 @@
 .work-principle__wrapper {
   width: $mobile-width;
 
+  margin-bottom: 49px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
 
+    margin-bottom: 49px;
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
 
+    margin-bottom: 69px;
     padding: 0 110px;
+  }
+}
+
+.work-principle__title {
+  @include indent-reset;
+
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
   }
 }

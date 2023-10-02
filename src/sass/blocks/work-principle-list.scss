@@ -9,16 +9,174 @@
     flex-direction: row;
     gap: 37px 100px;
   }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 82px;
+  }
 }
 
 .work-principle-list__item {
+  display: grid;
+  grid-template-columns: 60px 200px;
+  column-gap: 20px;
+
   width: 280px;
+
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 245px;
+    min-height: 280px;
+
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(1) {
+      width: 230px;
+
+      &::after {
+        content: "1";
+
+        font: 200 28rem/1 "Oswald", Arial, sans-serif;
+        color: $color-4;
+
+        position: absolute;
+        top: -38px;
+        right: 7px;
+        z-index: 1;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 246px;
+
+      &::after {
+        content: "2";
+
+        font: 200 28rem/1 "Oswald", Arial, sans-serif;
+        color: $color-4;
+
+        position: absolute;
+        top: -40px;
+        right: -3px;
+        z-index: 1;
+      }
+    }
+
+    &:nth-child(3) {
+      width: 247px;
+
+      &::after {
+        content: "3";
+
+        font: 200 28rem/1 "Oswald", Arial, sans-serif;
+        color: $color-4;
+
+        position: absolute;
+        top: -39px;
+        right: 0;
+        z-index: 1;
+      }
+    }
+
+    &:nth-child(4) {
+      width: 249px;
+
+      &::after {
+        content: "4";
+
+        font: 200 28rem/1 "Oswald", Arial, sans-serif;
+        color: $color-4;
+
+        position: absolute;
+        top: -38px;
+        right: 0;
+        z-index: -1;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 230px;
+
+    &:nth-child(2) {
+      right: 1px;
+    }
   }
 }
+
+.work-principle-list__icon-container {
+  width: 60px;
+  height: 60px;
+
+  background-color: $background-color-3;
+
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+
+    margin-bottom: 31px;
+  }
+
+  &--leaf .work-principle-list__icon {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+
+    @media (min-width: $tablet-width) {
+      top: 26px;
+      left: 28px;
+    }
+  }
+
+  &--cutlery .work-principle-list__icon {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+
+    @media (min-width: $tablet-width) {
+      top: 25px;
+      left: 28px;
+    }
+  }
+}
+
+.work-principle-list__description {
+  @include indent-reset;
+
+  color: $color-5;
+
+  position: relative;
+  z-index: 2;
+}
+
+// @media (max-width: $mobile-width-only) {
+//   .work-principle-list__item {
+//     &:nth-child(4) {
+//       br {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .work-principle-list__item {
+//     &:nth-child(4) {
+//       br {
+//         display: none;
+//       }
+//     }
+//   }
+// }
