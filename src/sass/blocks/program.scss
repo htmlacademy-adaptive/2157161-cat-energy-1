@@ -66,11 +66,11 @@
 
 .program__wrapper-description {
   @media (min-width: $tablet-width) {
-    margin-left: 88px;
+    padding-left: 88px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
+    padding-left: 80px;
   }
 }
 

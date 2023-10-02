@@ -1059,12 +1059,12 @@ body {
 
 @media (min-width: 769px) {
   .program__wrapper-description {
-    margin-left: 88px;
+    padding-left: 88px;
   }
 }
 @media (min-width: 1440px) {
   .program__wrapper-description {
-    margin-left: 80px;
+    padding-left: 80px;
   }
 }
 
