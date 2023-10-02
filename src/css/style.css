@@ -297,8 +297,8 @@ body {
 }
 .work-principle-list__icon-container--leaf .work-principle-list__icon {
   position: absolute;
-  top: 14px;
-  left: 15px;
+  top: 17px;
+  left: 18px;
 }
 @media (min-width: 769px) {
   .work-principle-list__icon-container--leaf .work-principle-list__icon {
@@ -487,6 +487,14 @@ body {
     font: 400 1.6rem/1.5 "Lato", Arial, sans-serif;
   }
 }
+.description--extra-small {
+  font: 200 1.2rem/1 "Lato", Arial, sans-serif;
+}
+@media (min-width: 769px) {
+  .description--extra-small {
+    font: 200 1.4rem/1 "Lato", Arial, sans-serif;
+  }
+}
 
 .example {
   background-color: #eaeaea;
@@ -500,6 +508,7 @@ body {
 .example__wrapper {
   width: 320px;
   padding: 0 20px;
+  padding-top: 25px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -518,8 +527,16 @@ body {
   }
 }
 
+.example__title {
+  margin: 0;
+  padding: 0;
+}
+
 .example__text {
+  margin: 0;
+  padding: 0;
   width: 280px;
+  color: #444444;
 }
 @media (min-width: 769px) {
   .example__text {
@@ -534,6 +551,33 @@ body {
 
 .example__list {
   display: flex;
+}
+
+.example__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cdcdcd;
+  position: relative;
+  width: 124px;
+  min-height: 56px;
+}
+
+.example__heading {
+  text-transform: uppercase;
+  align-self: center;
+  justify-self: center;
+}
+
+.example__description {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #444444;
+  background-color: #eaeaea;
+  position: absolute;
+  bottom: 0;
 }
 
 .fields-container {
@@ -1272,6 +1316,14 @@ body {
 @media (min-width: 769px) {
   .title--small {
     font: 200 3.6rem/1 "Oswald", Arial, sans-serif;
+  }
+}
+.title--extra-small {
+  font: 200 2.4rem/1 "Oswald", Arial, sans-serif;
+}
+@media (min-width: 769px) {
+  .title--extra-small {
+    font: 200 3rem/1.23 "Oswald", Arial, sans-serif;
   }
 }
 

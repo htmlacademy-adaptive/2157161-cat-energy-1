@@ -22,4 +22,12 @@
       font: $font-title-small-tablet;
     }
   }
+
+  &--extra-small {
+    font: $font-title-extra-small-mobile;
+
+    @media (min-width: $tablet-width) {
+      font: $font-title-extra-small-tablet;
+    }
+  }
 }

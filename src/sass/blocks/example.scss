@@ -10,6 +10,7 @@
   width: $mobile-width;
 
   padding: 0 20px;
+  padding-top: 25px;
 
   display: flex;
   flex-wrap: wrap;
@@ -30,8 +31,15 @@
   }
 }
 
+.example__title {
+  @include indent-reset;
+}
+
 .example__text {
+  @include indent-reset;
+
   width: 280px;
+  color: $color-5;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -44,4 +52,37 @@
 
 .example__list {
   display: flex;
+}
+
+.example__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid $background-color-8;
+
+  position: relative;
+
+  width: 124px;
+  min-height: 56px;
+}
+
+.example__heading {
+  text-transform: uppercase;
+
+  align-self: center;
+  justify-self: center;
+}
+
+.example__description {
+  @include indent-reset;
+
+  text-align: center;
+  color: $color-5;
+
+  background-color: $background-color-6;
+
+  position: absolute;
+  bottom: 0;
 }
