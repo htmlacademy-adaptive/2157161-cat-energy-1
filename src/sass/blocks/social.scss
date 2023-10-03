@@ -2,8 +2,26 @@
   @include list-reset;
 
   display: flex;
+  flex-wrap: wrap;
+  gap: 15px 24px;
+
+  max-width: 140px;
 }
 
 .social__link {
   @include link-reset;
+}
+
+.social__link-icon {
+  &:hover {
+    path {
+      fill: $background-color-3-hover;
+    }
+
+    &:active {
+      path {
+        opacity: 0.3;
+      }
+    }
+  }
 }
