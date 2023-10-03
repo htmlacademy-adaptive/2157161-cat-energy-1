@@ -902,6 +902,14 @@ body {
   flex-direction: column;
   position: relative;
 }
+.main-header__wrapper--border-bottom {
+  border-bottom: 1px solid #d9d9d9;
+}
+@media (min-width: 769px) {
+  .main-header__wrapper--border-bottom {
+    border: none;
+  }
+}
 @media (min-width: 1440px) {
   .main-header__wrapper {
     width: 1440px;
@@ -1032,7 +1040,7 @@ body {
 .main-nav--opened .main-nav__list {
   display: block;
   position: absolute;
-  top: 39px;
+  top: 41px;
   left: -276px;
   z-index: 3;
 }
