@@ -32,3 +32,9 @@
 @mixin input-reset {
   outline: none;
 }
+
+@mixin textarea-reset {
+  padding: 0;
+  border: none;
+  outline: none;
+}

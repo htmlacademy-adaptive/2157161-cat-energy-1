@@ -1,17 +1,20 @@
 .contact-details__wrapper {
   width: $mobile-width;
 
+  margin-bottom: 24px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
 
+    margin-bottom: 65px;
     padding: 0 70px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
 
+    margin-bottom: 67px;
     padding: 0 110px;
   }
 }
