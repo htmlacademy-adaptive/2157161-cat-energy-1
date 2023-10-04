@@ -485,6 +485,82 @@ body {
   }
 }
 
+.contact-details__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  line-height: 26px;
+}
+@media (min-width: 769px) {
+  .contact-details__title {
+    margin-bottom: 76px;
+  }
+}
+
+.contact-details__fields-container:invalid .contact-details__field-input {
+  outline: 2px solid #ff8282;
+}
+
+.contact-details__field-label:nth-of-type(1) .contact-details__field-input {
+  width: 220px;
+  background: url("../../img/email-stroke.svg") no-repeat;
+  background-position: 185px 13px;
+  margin-bottom: 14px;
+}
+@media (min-width: 769px) {
+  .contact-details__field-label:nth-of-type(1) .contact-details__field-input {
+    width: 548px;
+    background-position: 510px 16px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .contact-details__field-label:nth-of-type(1) .contact-details__field-input {
+    width: 486px;
+    background-position: 448px 16px;
+    margin-bottom: 0;
+  }
+}
+.contact-details__field-label:nth-of-type(2) .contact-details__field-input {
+  width: 203px;
+  background: url("../../img/phone-stroke.svg") no-repeat;
+  background-position: 167px 13px;
+}
+@media (min-width: 769px) {
+  .contact-details__field-label:nth-of-type(2) .contact-details__field-input {
+    width: 527px;
+    background-position: 491px 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .contact-details__field-label:nth-of-type(2) .contact-details__field-input {
+    width: 465px;
+    background-position: 429px 16px;
+  }
+}
+
+.contact-details__field-input {
+  outline: none;
+  border: 1px solid #e7e7e7;
+  padding: 14px 15px;
+  padding-right: 52px;
+}
+@media (min-width: 769px) {
+  .contact-details__field-input {
+    padding: 11px 20px;
+  }
+}
+
+.contact-details__input-text {
+  display: block;
+  margin-right: 10px;
+}
+@media (min-width: 769px) {
+  .contact-details__input-text {
+    margin-right: 20px;
+  }
+}
+
 .copyright__link {
   color: #000000;
   text-decoration: none;
@@ -747,6 +823,8 @@ body {
 @media (min-width: 1440px) {
   .fields-container--contacts {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 @media (min-width: 769px) {

@@ -15,3 +15,94 @@
     padding: 0 110px;
   }
 }
+
+.contact-details__title {
+  @include indent-reset;
+
+  margin-bottom: 35px;
+
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.contact-details__fields-container {
+  &:invalid {
+    .contact-details__field-input {
+      outline: 2px solid $background-color-12;
+    }
+  }
+}
+
+.contact-details__field-label {
+  &:nth-of-type(1) {
+    .contact-details__field-input {
+      width: 220px;
+
+      background: url("../../img/email-stroke.svg") no-repeat;
+      background-position: 185px 13px;
+
+      margin-bottom: 14px;
+
+      @media (min-width: $tablet-width) {
+        width: 548px;
+
+        background-position: 510px 16px;
+
+        margin-bottom: 20px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 486px;
+
+        background-position: 448px 16px;
+
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &:nth-of-type(2) {
+    .contact-details__field-input {
+      width: 203px;
+
+      background: url("../../img/phone-stroke.svg") no-repeat;
+      background-position: 167px 13px;
+
+      @media (min-width: $tablet-width) {
+        width: 527px;
+
+        background-position: 491px 16px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 465px;
+
+        background-position: 429px 16px;
+      }
+    }
+  }
+}
+
+.contact-details__field-input {
+  @include input-reset;
+  border: 1px solid $background-color-11;
+  padding: 14px 15px;
+  padding-right: 52px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+  }
+}
+
+.contact-details__input-text {
+  display: block;
+
+  margin-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+}

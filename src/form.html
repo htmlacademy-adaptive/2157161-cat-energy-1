@@ -175,26 +175,28 @@
               Контактные данные (владельца кота)
             </h2>
             <fieldset
-              class="contact-details__fields-container fields-container fields-container--contacts"
+              class="contact-details__fields-container contact-details__fields-container--contacts fields-container fields-container--contacts"
             >
               <legend class="visually-hidden">Вводите данные</legend>
               <label class="contact-details__field-label field-label"
-                >E-mail:*
+                ><span class="contact-details__input-text"> E-mail:*</span>
                 <input
                   class="contact-details__field-input field-input"
                   type="email"
                   name="email"
                   placeholder="kuklachev@gmail.com"
+                  value="kuklachev@gmail.com"
                   required
                 />
               </label>
               <label class="contact-details__field-label field-label"
-                >Телефон:*
+                ><span class="contact-details__input-text"> Телефон:*</span>
                 <input
                   class="contact-details__field-input field-input"
                   type="tel"
                   name="phone"
                   placeholder="8 (960) 900-60-90"
+                  value="8 (960) 900-60-90"
                   required
                 />
               </label>
