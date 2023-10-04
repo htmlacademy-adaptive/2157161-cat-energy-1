@@ -74,89 +74,111 @@
             <p class="program-selection__text">
               Заполните анкету, и мы подберем программу питания для вашего кота
             </p>
-            <fieldset
-              class="program-selection__fields-container fields-container fields-container--information"
-            >
-              <legend class="visually-hidden">Инфомация кота</legend>
-              <label class="program-selection__field-label"
-                >Имя:*
-                <input
-                  class="program-selection__field-input field-input"
-                  name="Имя"
-                  placeholder="Барсик"
-                  required
-                />
-              </label>
-              <label class="program-selection__label"
-                >Вес (кг):*
-                <input
-                  class="program-selection__field-input field-input"
-                  name="Вес"
-                  placeholder="7"
-                  required
-                />
-              </label>
-              <label class="program-selection__label"
-                >Возраст (лет):
-                <input
-                  class="program-selection__field-input field-input"
-                  name="Возраст"
-                  placeholder="7"
-                  required
-                />
-              </label>
-            </fieldset>
+            <div class="program-selection__fields-wrapper">
+              <fieldset
+                class="program-selection__fields-container program-selection__fields-container--information fields-container fields-container--information"
+              >
+                <legend class="visually-hidden">Инфомация кота</legend>
+                <label class="program-selection__field-label field-label"
+                  ><span class="program-selection__field-text">Имя:*</span>
+                  <input
+                    class="program-selection__field-input field-input"
+                    name="Имя"
+                    placeholder="Барсик"
+                    value="Барсик"
+                    required
+                  />
+                </label>
+                <label class="program-selection__field-label field-label"
+                  ><span class="program-selection__field-text">Вес (кг):*</span>
+                  <input
+                    class="program-selection__field-input field-input"
+                    name="Вес"
+                    placeholder="7"
+                    value="7"
+                    required
+                  />
+                </label>
+                <label class="program-selection__field-label field-label"
+                  ><span class="program-selection__field-text"
+                    >Возраст (лет):</span
+                  >
+                  <input
+                    class="program-selection__field-input field-input"
+                    name="Возраст"
+                    placeholder="7"
+                    value="7"
+                    required
+                  />
+                </label>
+              </fieldset>
 
-            <fieldset
-              class="program-selection__fields-container fields-container fields-container--program"
-            >
-              <legend class="visually-hidden">Выберите программу</legend>
-              <label class="program-selection__field-label">
-                <input
-                  class="program-selection__field-input field-input"
-                  type="radio"
-                  name="Программа"
-                  value="weight-loss"
-                  required
-                  checked
-                />
-                Похудение
-              </label>
-              <label class="program-selection__field-label">
-                <input
-                  class="program-selection__field-input field-input"
-                  type="radio"
-                  name="Программа"
-                  name="weight-gain"
-                  required
-                />
-                Набор массы
-              </label>
-              <label class="program-selection__field-label">
-                <input
-                  class="program-selection__field-input field-input"
-                  type="radio"
-                  name="Программа"
-                  value="your-advice"
-                  required
-                />
-                Не знаю (Нужен ваш совет)
-              </label>
-            </fieldset>
+              <fieldset
+                class="program-selection__fields-container program-selection__fields-container--program fields-container fields-container--program"
+              >
+                <legend class="visually-hidden">Выберите программу</legend>
+                <label
+                  class="program-selection__field-label program-selection__field-label--program field-label field-label--black"
+                >
+                  <input
+                    class="program-selection__field-input program-selection__field-input--radio field-input"
+                    type="radio"
+                    name="Программа"
+                    value="weight-loss"
+                    required
+                    checked
+                  />
+                  <span
+                    class="program-selection__field-text program-selection__field-text--radio"
+                    >Похудение</span
+                  >
+                </label>
+                <label
+                  class="program-selection__field-label program-selection__field-label--program field-label field-label--black"
+                >
+                  <input
+                    class="program-selection__field-input program-selection__field-input--radio field-input"
+                    type="radio"
+                    name="Программа"
+                    name="weight-gain"
+                    required
+                  />
+                  <span
+                    class="program-selection__field-text program-selection__field-text--radio"
+                    >Набор массы</span
+                  >
+                </label>
+                <label
+                  class="program-selection__field-label program-selection__field-label--program field-label field-label--black"
+                >
+                  <input
+                    class="program-selection__field-input program-selection__field-input--radio field-input"
+                    type="radio"
+                    name="Программа"
+                    value="your-advice"
+                    required
+                  />
+                  <span
+                    class="program-selection__field-text program-selection__field-text--radio"
+                    >Не знаю (Нужен ваш совет)</span
+                  >
+                </label>
+              </fieldset>
+            </div>
           </div>
         </section>
 
         <!-- Контактные данные -->
         <section class="contact-details">
           <div class="contact-details__wrapper container">
-            <h2 class="contact-details__title title title--medium">
+            <h2 class="contact-details__title title title--small">
               Контактные данные (владельца кота)
             </h2>
             <fieldset
               class="contact-details__fields-container fields-container fields-container--contacts"
             >
               <legend class="visually-hidden">Вводите данные</legend>
-              <label class="contact-details__field-label"
+              <label class="contact-details__field-label field-label"
                 >E-mail:*
                 <input
                   class="contact-details__field-input field-input"
@@ -166,7 +188,7 @@
                   required
                 />
               </label>
-              <label class="contact-details__field-label"
+              <label class="contact-details__field-label field-label"
                 >Телефон:*
                 <input
                   class="contact-details__field-input field-input"
@@ -183,7 +205,7 @@
         <!-- Комментарий -->
         <section class="comment">
           <div class="comment__wrapper container">
-            <h2 class="comment__title title title--medium">Комментарий</h2>
+            <h2 class="comment__title title title--small">Комментарий</h2>
             <label class="comment__field-label">
               <textarea
                 class="comment__textarea textarea"
@@ -199,7 +221,7 @@
         <!-- Дополнительно -->
         <section class="additionally">
           <div class="additionally__wrapper container">
-            <h2 class="additionally__title title title--medium">
+            <h2 class="additionally__title title title--small">
               Дополнительно
             </h2>
             <fieldset
@@ -335,7 +357,7 @@
             <span class="copyright__link-html-academy">HTML Academy</span>
             <img
               class="copyright__html-academy-icon"
-              src="./img/html-academy-icon-mobile.svg"
+              src="./img/html-academy-icon.svg"
               width="27"
               height="34"
               alt="Логотип html academy"

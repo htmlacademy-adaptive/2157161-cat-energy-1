@@ -1,0 +1,31 @@
+.field-input {
+  font-weight: 200;
+  font-size: 1.6rem;
+  line-height: 1.12;
+  font-family: "Oswald", Arial, sans-serif;
+  color: $color-5;
+  text-transform: uppercase;
+
+  &::placeholder {
+    font: 200 1.6rem/1.12 "Oswald", Arial, sans-serif;
+    text-transform: uppercase;
+    color: $color-5;
+
+    @media (min-width: $tablet-width) {
+      font: 200 2rem / normal "Oswald", Arial, sans-serif;
+    }
+  }
+
+  &:hover {
+    border-color: $background-color-8;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $background-color-5;
+    outline-offset: -1px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font: 200 2rem / normal "Oswald", Arial, sans-serif;
+  }
+}

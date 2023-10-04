@@ -28,3 +28,7 @@
 
   padding: 0;
 }
+
+@mixin input-reset {
+  outline: none;
+}

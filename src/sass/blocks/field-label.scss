@@ -1,0 +1,21 @@
+.field-label {
+  display: flex;
+  align-items: center;
+
+  // не принимает переменную
+  font-weight: 200;
+  font-size: 1.6rem;
+  line-height: 1.12;
+  font-family: "Oswald", Arial, sans-serif;
+  color: $color-5;
+  text-transform: uppercase;
+
+  &--black {
+    color: $color-1;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 2rem;
+    line-height: normal;
+  }
+}
