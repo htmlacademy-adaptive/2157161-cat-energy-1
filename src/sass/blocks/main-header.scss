@@ -4,6 +4,14 @@
 
   position: relative;
 
+  &--border-bottom {
+    border-bottom: 1px solid $background-color-7;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     width: $desktop-width;
 

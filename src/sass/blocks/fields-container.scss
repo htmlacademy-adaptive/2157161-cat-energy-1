@@ -1,11 +1,18 @@
 .fields-container {
+  @include indent-reset;
+  border: none;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
+  position: relative;
+
   &--contacts {
     @media (min-width: $desktop-width) {
       flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 

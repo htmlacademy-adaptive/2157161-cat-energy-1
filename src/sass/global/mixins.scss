@@ -25,6 +25,14 @@
 @mixin button-reset {
   border: none;
   cursor: pointer;
+}
 
+@mixin input-reset {
+  outline: none;
+}
+
+@mixin textarea-reset {
   padding: 0;
+  border: none;
+  outline: none;
 }

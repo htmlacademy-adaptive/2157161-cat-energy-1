@@ -1,6 +1,5 @@
 .button {
   @include button-reset;
-  @include link-reset;
 
   &--primary {
     background-color: $background-color-3;

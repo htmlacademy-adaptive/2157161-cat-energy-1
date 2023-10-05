@@ -1,0 +1,16 @@
+.field-label {
+  display: flex;
+  align-items: center;
+
+  font: $font-field-label-mobile;
+  color: $color-5;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font: $font-field-label-tablet;
+  }
+
+  &--black {
+    color: $color-1;
+  }
+}
