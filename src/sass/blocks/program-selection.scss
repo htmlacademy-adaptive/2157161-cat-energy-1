@@ -117,6 +117,10 @@
     &:not(:last-child) {
       margin-bottom: 13px;
     }
+
+    @media (min-width: $tablet-width) {
+      min-height: 40px;
+    }
   }
 
   &:last-child {
@@ -192,18 +196,18 @@
   &--radio {
     margin-right: 0;
 
-    &::before {
-      content: "";
-      display: block;
+    // &::before {
+    //   content: "";
+    //   display: block;
 
-      width: 30px;
-      height: 30px;
+    //   width: 30px;
+    //   height: 30px;
 
-      background-color: rgb(45, 45, 216);
-      border-radius: 50%;
+    //   background-color: rgb(45, 45, 216);
+    //   border-radius: 50%;
 
-      position: absolute;
-    }
+    //   position: absolute;
+    // }
   }
 }
 
