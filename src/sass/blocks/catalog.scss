@@ -1,19 +1,39 @@
 .catalog__wrapper {
   width: $mobile-width;
 
-  padding: 0 20px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
 
     padding: 0 30px;
+    padding-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
 
     padding: 0 110px;
+    padding-top: 74px;
   }
+}
+
+.catalog__title {
+  @include indent-reset;
+
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
+  }
+}
+
+.catalog__title.catalog__title {
+  margin-bottom: 41px;
 }
 
 .catalog__list {

@@ -2,12 +2,21 @@
 
 /* === Viewports === */
 $mobile-width: 320px;
+// $min-mobile-width: (
+//   min-width: $mobile-width,
+// );
 $mobile-width-only: 768px;
 
 $tablet-width: 769px;
+// $min-tablet-width: (
+//   min-width: $tablet-width,
+// );
 $tablet-width-only: 1439px;
 
 $desktop-width: 1440px;
+// $min-desktop-width: (
+//   min-width: $desktop-width,
+// );
 
 /* === Colors === */
 $color-1: #000000;
@@ -48,6 +57,7 @@ $font-title-extra-small-mobile: 200 2.4rem/1 "Oswald", Arial, sans-serif;
 $font-text-small-mobile: 400 1.4rem/1.28 "Lato", Arial, sans-serif;
 $font-text-extra-small-mobile: 200 1.2rem/1 "Lato", Arial, sans-serif;
 
+$font-card-title-mobile: 200 1.6rem/1.25 "Oswald", Arial, sans-serif;
 $font-description-medium-mobile: 200 1.4rem/1.28 "Oswald", Arial, sans-serif;
 
 $font-button-small-mobile: 200 1.4rem/1.28 "Oswald", Arial, sans-serif;
@@ -67,6 +77,7 @@ $font-title-extra-small-tablet: 200 3rem/1.23 "Oswald", Arial, sans-serif;
 $font-text-small-tablet: 400 1.6rem/1.5 "Lato", Arial, sans-serif;
 $font-text-extra-small-tablet: 200 1.4rem/1 "Lato", Arial, sans-serif;
 
+$font-card-title-tablet: 200 2rem/1.2 "Oswald", Arial, sans-serif;
 $font-description-medium-tablet: 200 2rem/1.5 "Oswald", Arial, sans-serif;
 
 $font-button-small-tablet: 200 2rem/1 "Oswald", Arial, sans-serif;

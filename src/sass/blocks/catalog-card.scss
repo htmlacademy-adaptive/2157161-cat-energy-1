@@ -5,3 +5,66 @@
     background-color: $background-color-4;
   }
 }
+
+.catalog-card__image {
+  grid-column: 1 / 2;
+  justify-self: center;
+  align-self: center;
+}
+
+.catalog-card__heading {
+  @include indent-reset;
+
+  margin-bottom: 13px;
+
+  font: $font-catalog-button-mobile;
+  text-transform: uppercase;
+
+  min-width: 76px;
+  max-width: 80px;
+
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.catalog-card__compound-container {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.catalog-card__compound {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-card__compound-item {
+  font: $font-text-extra-small-mobile;
+  color: $color-5;
+  line-height: 1.33;
+}
+
+.catalog-card__button {
+  display: block;
+
+  padding: 10px 0;
+
+  min-height: 40px;
+
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  align-self: center;
+
+  @include link-reset;
+  font: $font-button-small-mobile;
+  color: $color-2;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover {
+    background-color: $background-color-3-hover;
+  }
+
+  &:active {
+    color: rgba($color-2, 30%);
+  }
+}

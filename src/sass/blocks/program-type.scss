@@ -124,6 +124,7 @@
 }
 
 .program-type__link {
+  @include link-reset;
   display: inline-flex;
   align-items: center;
 

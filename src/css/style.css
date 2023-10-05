@@ -488,19 +488,41 @@ body {
 
 .catalog__wrapper {
   width: 320px;
-  padding: 0 20px;
+  padding-top: 27px;
 }
 @media (min-width: 769px) {
   .catalog__wrapper {
     width: 769px;
     padding: 0 30px;
+    padding-top: 65px;
   }
 }
 @media (min-width: 1440px) {
   .catalog__wrapper {
     width: 1440px;
     padding: 0 110px;
+    padding-top: 74px;
   }
+}
+
+.catalog__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 41px;
+}
+@media (min-width: 769px) {
+  .catalog__title {
+    margin-bottom: 82px;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog__title {
+    margin-bottom: 84px;
+  }
+}
+
+.catalog__title.catalog__title {
+  margin-bottom: 41px;
 }
 
 @media (min-width: 769px) {
@@ -525,6 +547,61 @@ body {
   }
 }
 
+.catalog-card__image {
+  grid-column: 1/2;
+  justify-self: center;
+  align-self: center;
+}
+
+.catalog-card__heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 13px;
+  font: 200 1.6rem/1 "Oswald", Arial, sans-serif;
+  text-transform: uppercase;
+  min-width: 76px;
+  max-width: 80px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.catalog-card__compound-container {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.catalog-card__compound {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-card__compound-item {
+  font: 200 1.2rem/1 "Lato", Arial, sans-serif;
+  color: #444444;
+  line-height: 1.33;
+}
+
+.catalog-card__button {
+  display: block;
+  padding: 10px 0;
+  min-height: 40px;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  align-self: center;
+  color: #000000;
+  text-decoration: none;
+  font: 200 1.4rem/1.28 "Oswald", Arial, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.catalog-card__button:hover {
+  background-color: #5eaa2f;
+}
+.catalog-card__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .catalog-list {
   margin: 0;
   padding: 0;
@@ -532,8 +609,9 @@ body {
 }
 
 .catalog-list__item {
-  width: 280px;
-  min-height: 190px;
+  padding: 11px 20px 14px;
+  width: 320px;
+  min-height: 233px;
   display: grid;
   grid-template-columns: repeat(2, 140px);
   grid-template-rows: auto auto;
@@ -1611,6 +1689,8 @@ body {
 }
 
 .program-type__link {
+  color: #000000;
+  text-decoration: none;
   display: inline-flex;
   align-items: center;
   padding-top: 4px;
