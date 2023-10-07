@@ -1,0 +1,21 @@
+.gift__image-icon {
+  position: absolute;
+  top: 59px;
+  left: 101px;
+  z-index: 2;
+}
+
+.gift__text {
+  @include indent-reset;
+  position: absolute;
+  bottom: 43px;
+  left: 58px;
+  z-index: 2;
+
+  width: 161px;
+
+  font: $font-text-small-tablet;
+  color: $color-2;
+  line-height: 1.25;
+  text-align: center;
+}

@@ -1,18 +1,33 @@
 .additional-product__wrapper {
   width: $mobile-width;
 
+  margin-bottom: 35px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
 
+    margin-bottom: 76px;
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
 
+    margin-bottom: 86px;
     padding: 0 110px;
+  }
+}
+
+.additional-product__title {
+  @include indent-reset;
+
+  margin-bottom: 36px;
+
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
   }
 }
 
@@ -27,4 +42,10 @@
 
 .additional-product__list {
   @include list-reset;
+
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
 }
