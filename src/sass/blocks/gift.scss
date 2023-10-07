@@ -1,8 +1,25 @@
-.gift__image-icon {
+.gift__image {
+  width: 100%;
+  min-height: 200px;
+
+  object-fit: cover;
+}
+
+.gift__icon {
   position: absolute;
   top: 59px;
   left: 101px;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+    left: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 56px;
+    left: 84px;
+  }
 }
 
 .gift__text {
@@ -18,4 +35,19 @@
   color: $color-2;
   line-height: 1.25;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 71px;
+    left: 422px;
+
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 185px;
+    left: 41px;
+
+    text-align: center;
+  }
 }

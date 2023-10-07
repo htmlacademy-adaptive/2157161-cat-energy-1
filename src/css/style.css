@@ -125,7 +125,7 @@ body {
     grid-template-columns: 325px 285px auto 244px;
     grid-template-rows: auto;
     align-items: center;
-    padding: 25px 0 27px;
+    padding: 15px 0 17px;
     border-right: none;
     border-left: none;
   }
@@ -152,32 +152,32 @@ body {
   }
 }
 
-.additional-product__amount {
+.additional-product-list__amount {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
 }
 @media (min-width: 769px) {
-  .additional-product__amount {
+  .additional-product-list__amount {
     justify-self: end;
     width: 233px;
   }
 }
 @media (min-width: 1440px) {
-  .additional-product__amount {
+  .additional-product-list__amount {
     width: 285px;
     justify-content: space-between;
     margin-bottom: 0;
   }
 }
 
-.additional-product__amount-package {
+.additional-product-list__amount-package {
   font: 400 1.4rem/1.28 "Lato", Arial, sans-serif;
   line-height: 1;
   color: #444444;
 }
 @media (min-width: 769px) {
-  .additional-product__amount-package {
+  .additional-product-list__amount-package {
     font: 400 1.6rem/1.5 "Lato", Arial, sans-serif;
     line-height: 1.25;
     display: block;
@@ -185,24 +185,24 @@ body {
   }
 }
 @media (min-width: 769px) {
-  .additional-product__amount-package {
+  .additional-product-list__amount-package {
     margin-right: 0;
   }
 }
 
-.additional-product__amount-price {
+.additional-product-list__amount-price {
   font: 400 1.4rem/1.28 "Lato", Arial, sans-serif;
   line-height: 1;
   color: #444444;
 }
 @media (min-width: 769px) {
-  .additional-product__amount-price {
+  .additional-product-list__amount-price {
     font: 400 1.6rem/1.5 "Lato", Arial, sans-serif;
     line-height: 1.25;
   }
 }
 
-.additional-product__button {
+.additional-product-list__button {
   color: #000000;
   text-decoration: none;
   font: 200 1.6rem/1.25 "Oswald", Arial, sans-serif;
@@ -214,39 +214,24 @@ body {
   min-height: 40px;
   padding: 10px 0;
 }
-.additional-product__button:hover {
+.additional-product-list__button:hover {
   background-color: #5eaa2f;
 }
-.additional-product__button:active {
+.additional-product-list__button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 @media (min-width: 769px) {
-  .additional-product__button {
+  .additional-product-list__button {
     grid-column: 1/-1;
     grid-row: 2/3;
   }
 }
 @media (min-width: 1440px) {
-  .additional-product__button {
+  .additional-product-list__button {
     min-height: 40px;
     grid-column: 4/5;
     grid-row: 1/-1;
   }
-}
-
-.additional-product__gift {
-  position: relative;
-}
-.additional-product__gift::after {
-  content: "";
-  display: block;
-  width: 280px;
-  height: 290px;
-  background-color: rgba(104, 183, 56, 0.85);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 .additional-product__wrapper {
@@ -300,6 +285,52 @@ body {
 @media (min-width: 769px) {
   .additional-product__list {
     margin-bottom: 65px;
+  }
+}
+@media (min-width: 1440px) {
+  .additional-product__list {
+    margin-right: 79px;
+  }
+}
+
+.additional-product__gift {
+  position: relative;
+  width: 280px;
+  min-height: 290px;
+}
+@media (min-width: 769px) {
+  .additional-product__gift {
+    width: 707px;
+    min-height: 200px;
+  }
+}
+@media (min-width: 1440px) {
+  .additional-product__gift {
+    width: 245px;
+    min-height: 289px;
+  }
+}
+.additional-product__gift::after {
+  content: "";
+  display: block;
+  width: 280px;
+  min-height: 290px;
+  background-color: rgba(104, 183, 56, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+@media (min-width: 769px) {
+  .additional-product__gift::after {
+    width: 707px;
+    min-height: 200px;
+  }
+}
+@media (min-width: 1440px) {
+  .additional-product__gift::after {
+    width: 245px;
+    min-height: 289px;
   }
 }
 
@@ -1377,11 +1408,29 @@ body {
   }
 }
 
-.gift__image-icon {
+.gift__image {
+  width: 100%;
+  min-height: 200px;
+  object-fit: cover;
+}
+
+.gift__icon {
   position: absolute;
   top: 59px;
   left: 101px;
   z-index: 2;
+}
+@media (min-width: 769px) {
+  .gift__icon {
+    top: 57px;
+    left: 77px;
+  }
+}
+@media (min-width: 1440px) {
+  .gift__icon {
+    top: 56px;
+    left: 84px;
+  }
 }
 
 .gift__text {
@@ -1396,6 +1445,21 @@ body {
   color: #ffffff;
   line-height: 1.25;
   text-align: center;
+}
+@media (min-width: 769px) {
+  .gift__text {
+    position: absolute;
+    top: 71px;
+    left: 422px;
+    text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  .gift__text {
+    top: 185px;
+    left: 41px;
+    text-align: center;
+  }
 }
 
 .location__wrapper {

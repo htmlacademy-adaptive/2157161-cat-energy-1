@@ -42,10 +42,55 @@
 
 .additional-product__list {
   @include list-reset;
-
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 79px;
+  }
+}
+
+.additional-product__gift {
+  position: relative;
+
+  width: 280px;
+  min-height: 290px;
+
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    min-height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    min-height: 289px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+
+    width: 280px;
+    min-height: 290px;
+
+    background-color: rgba($background-color-3, 85%);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      width: 707px;
+      min-height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 245px;
+      min-height: 289px;
+    }
   }
 }
