@@ -18,17 +18,18 @@
 
     padding: 0 110px;
     padding-top: 73px;
-
-    // display: flex;
   }
 }
 
 .program-selection__title {
   @include indent-reset;
+  font: $font-title-large-mobile;
 
   margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
+    font: $font-title-large-tablet;
+
     margin-bottom: 54px;
   }
 
@@ -40,17 +41,18 @@
 .program-selection__text {
   @include indent-reset;
 
-  font: $font-description-medium-mobile;
+  font: $font-slogan-title-mobile;
+  line-height: 1.28;
   color: $color-1;
   text-transform: uppercase;
-  color: $color-1;
 
   width: 226px;
 
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    font: $font-description-medium-tablet;
+    font: $font-slogan-title-tablet;
+    line-height: 1.5;
 
     width: 323px;
 

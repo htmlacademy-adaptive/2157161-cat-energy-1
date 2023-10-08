@@ -24,10 +24,14 @@
 .catalog__title {
   @include indent-reset;
 
+  font: $font-title-large-mobile;
+
   margin-bottom: 41px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
+    font: $font-title-large-tablet;
+
     margin-bottom: 163px;
   }
 

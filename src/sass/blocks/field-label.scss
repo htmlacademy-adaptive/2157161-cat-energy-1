@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
 
-  font: $font-field-label-mobile;
+  font: $font-label-text-mobile;
   color: $color-5;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font: $font-field-label-tablet;
+    font: $font-label-text-tablet;
   }
 
   &--black {

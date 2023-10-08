@@ -50,141 +50,85 @@ $background-color-13: #222222;
 
 /* === fonts-mobile === */
 $font-title-large-mobile: 200 3.6rem/1 "Oswald", Arial, sans-serif;
-$font-title-medium-mobile: 200 3.6rem/1.11 "Oswald", Arial, sans-serif;
-$font-title-small-mobile: 200 2.4rem/1.54 "Oswald", Arial, sans-serif;
+$font-title-medium-mobile: 200 2.4rem/1.54 "Oswald", Arial, sans-serif;
 
 $font-text-medium-mobile: 200 1.4rem/1.28 "Lato", Arial, sans-serif;
+$font-text-small-mobile: 200 1.2rem/1 "Lato", Arial, sans-serif;
 
 $font-site-list-mobile: 500 2rem/1 "Oswald", Arial, sans-serif;
 
-$font-button-program-mobile: 200 1.4rem/1.28 "Oswald", Arial, sans-serif;
-$font-button-additionally-mobile: 200 1.6rem/1.25 "Oswald", Arial, sans-serif;
-$font-button-catalog-card-mobile: 200 1.6rem/1.25 "Oswald", Arial, sans-serif;
-$font-button-show-more-mobile: 200 1.6rem/1.25 "Oswald", Arial, sans-serif;
-$font-button-additional-product-mobile: 200 1.6rem/1.25 "Oswald", Arial,
-  sans-serif;
-
-$font-title-location-mobile: 1.6rem/1.25 "Oswald", Arial, sans-serif;
-$font-text-location-mobile: 200 1.4rem/1.42 "Lato", Arial, sans-serif;
+$font-slogan-title-mobile: 200 1.4rem/1 "Oswald", Arial, sans-serif;
 
 $font-title-example-mobile: 200 2.4rem/1 "Oswald", Arial, sans-serif;
-$font-text-example-mobile: 200 1.2rem/1 "Lato", Arial, sans-serif;
 $font-result-example-mobile: 200 1.4rem/1.42 "Oswald", Arial, sans-serif;
 
-$font-phrase-additionally-mobile: 200 1.4rem/1.14 "Lato", Arial, sans-serif;
+$font-title-location-mobile: 200 1.6rem/1.25 "Oswald", Arial, sans-serif;
 
-$font-title-catalog-card-mobile: 200 1.6rem/1.25 "Oswald", Arial, sans-serif;
-$font-text-catalog-card-mobile: 200 1.2rem/1.33 "Lato", Arial, sans-serif;
+$font-label-text-mobile: 200 1.6rem/1.12 "Oswald", Arial, sans-serif;
 
-$font-title-show-more-mobile: 200 1.6rem/1.25 "Oswald", Arial, sans-serif;
-$font-text-show-more-mobile: 200 1.2rem/1.33 "Lato", Arial, sans-serif;
-
-$font-title-additional-product-mobile: 200 1.6rem/1 "Oswald", Arial, sans-serif;
-$font-text-additional-product-mobile: 200 1.4rem/1 "Lato", Arial, sans-serif;
+$font-title-catalog-mobile: 200 1.6rem/1.25 "Oswald", Arial, sans-serif;
 
 $font-text-gift-mobile: 200 1.6rem/1.25 "Lato", Arial, sans-serif;
 
-$font-slogan-index-small-mobile: 200 1.4rem/1 "Oswald", Arial, sans-serif;
-$font-slogan-form-small-mobile: 200 1.4rem/1.28 "Oswald", Arial, sans-serif;
+$font-html-academy-mobile: 200 1.6rem / normal "Lato", Arial, sans-serif;
 
-$font-title-form-medium-mobile: 200 2.4rem/1.08 "Oswald", Arial, sans-serif;
-
-$font-icon-html-academy-mobile: 200 1.6rem / normal "Lato", Arial, sans-serif;
-
-$font-label-form-mobile: 200 1.6rem/1.12 "Oswald", Arial, sans-serif;
-$font-textarea-form-mobile: 200 1.6rem/1.12 "Oswald", Arial, sans-serif;
+$font-button-index-primary-mobile: 200 1.4rem/1.28 "Oswald", Arial, sans-serif;
+$font-button-primary-mobile: 200 1.6rem/1.25 "Oswald", Arial, sans-serif;
+$font-button-secondary-mobile: 200 1.6rem/1 "Oswald", Arial, sans-serif;
 
 /* === fonts-tablet === */
 $font-title-large-tablet: 200 6rem/1 "Oswald", Arial, sans-serif;
-$font-title-medium-tablet: 200 6rem/1 "Oswald", Arial, sans-serif;
-$font-title-small-tablet: 200 3.6rem/1 "Oswald", Arial, sans-serif;
+$font-title-medium-tablet: 200 3.6rem/1 "Oswald", Arial, sans-serif;
 
 $font-text-medium-tablet: 200 1.6rem/1.5 "Lato", Arial, sans-serif;
+$font-text-small-tablet: 200 1.4rem/1 "Lato", Arial, sans-serif;
 
 $font-site-list-tablet: 200 1.8rem/1.33 "Oswald", Arial, sans-serif;
 
-$font-button-program-tablet: 200 2rem/1 "Oswald", Arial, sans-serif;
-$font-button-additionally-tablet: 200 2rem/0 "Oswald", Arial, sans-serif;
-$font-button-catalog-card-mobile: 200 1.6rem/1.25 "Oswald" Arial, sans-serif;
-$font-button-show-more-tablet: 200 1.6rem/0 "Oswald", Arial, sans-serif;
-$font-button-additional-product-tablet: 200 1.6rem/1.25 "Oswald", Arial,
-  sans-serif;
-
-$font-title-location-tablet: 2rem/1.3 "Oswald", Arial, sans-serif;
-$font-text-location-tablet: 200 1.6rem/1.5 "Lato", Arial, sans-serif;
+$font-slogan-title-tablet: 200 2rem/1 "Oswald", Arial, sans-serif;
 
 $font-title-example-tablet: 200 3rem/1.23 "Oswald", Arial, sans-serif;
-$font-text-example-tablet: 200 1.4rem/1 "Lato", Arial, sans-serif;
-$font-result-example-mobile: 200 2rem/1 "Oswald", Arial, sans-serif;
+$font-result-example-tablet: 200 2rem/1 "Oswald", Arial, sans-serif;
 
-$font-phrase-additionally-tablet: 200 1.6rem/1 "Lato", Arial, sans-serif;
+$font-title-location-tablet: 200 2rem/1.3 "Oswald", Arial, sans-serif;
 
-$font-title-catalog-card-tablet: 200 2rem/1.2 "Oswald", Arial, sans-serif;
-$font-text-catalog-card-tablet: 200 1.6rem/1 "Lato", Arial, sans-serif;
+$font-label-text-tablet: 200 2rem / normal "Oswald", Arial, sans-serif;
 
-$font-title-show-more-tablet: 200 2rem/1.1 "Oswald", Arial, sans-serif;
-$font-text-show-more-tablet: 200 1.6rem/1.12 "Lato", Arial, sans-serif;
-
-$font-title-additional-product-tablet: 200 2rem/1 "Oswald", Arial, sans-serif;
-$font-text-additional-product-tablet: 200 1.6rem/1.25 "Lato", Arial, sans-serif;
+$font-title-catalog-tablet: 200 2rem/1.25 "Oswald", Arial, sans-serif;
 
 $font-text-gift-tablet: 200 1.6rem/1.25 "Lato", Arial, sans-serif;
 
-$font-slogan-index-small-tablet: 200 2rem/1 "Oswald", Arial, sans-serif;
-$font-slogan-form-small-tablet: 200 2rem/1.5 "Oswald", Arial, sans-serif;
+$font-html-academy-tablet: 200 1.6rem / normal "Lato", Arial, sans-serif;
 
-$font-title-form-medium-tablet: 200 3.6rem/1 "Oswald", Arial, sans-serif;
-
-$font-icon-html-academy-tablet: 200 1.6rem / normal "Lato", Arial, sans-serif;
-
-$font-label-form-tablet: 200 2rem / normal "Oswald", Arial, sans-serif;
-$font-textarea-form-tablet: 200 2rem/1.5 "Oswald", Arial, sans-serif;
+$font-button-index-primary-tablet: 200 2rem/1 "Oswald", Arial, sans-serif;
+$font-button-primary-tablet: 200 2rem/0 "Oswald", Arial, sans-serif;
+$font-button-secondary-tablet: 200 2rem / normal "Oswald", Arial, sans-serif;
 
 /* === fonts-desktop === */
 $font-title-large-desktop: 200 6rem/1 "Oswald", Arial, sans-serif;
-$font-title-medium-desktop: 200 6rem/1 "Oswald", Arial, sans-serif;
-$font-title-small-desktop: 200 3.6rem/1 "Oswald", Arial, sans-serif;
+$font-title-medium-desktop: 200 3.6rem/1 "Oswald", Arial, sans-serif;
 
 $font-text-medium-desktop: 200 1.6rem/1.5 "Lato", Arial, sans-serif;
+$font-text-small-desktop: 200 1.4rem/1 "Lato", Arial, sans-serif;
 
 $font-site-list-desktop: 200 2rem / normal "Oswald", Arial, sans-serif;
 
-$font-button-program-desktop: 200 2rem/1 "Oswald", Arial, sans-serif;
-$font-button-additionally-desktop: 200 2rem/0 "Oswald", Arial, sans-serif;
-$font-button-catalog-card-desktop: 200 1.6rem/1.25 "Oswald" Arial, sans-serif;
-$font-button-show-more-desktop: 200 1.6rem/0 "Oswald", Arial, sans-serif;
-$font-button-additional-product-desktop: 200 1.6rem/1.25 "Oswald", Arial,
-  sans-serif;
-
-$font-title-location-desktop: 2rem/1.3 "Oswald", Arial, sans-serif;
-$font-text-location-desktop: 200 1.6rem/1.25 "Lato", Arial, sans-serif;
+$font-slogan-title-desktop: 200 2rem/1 "Oswald", Arial, sans-serif;
 
 $font-title-example-desktop: 200 3rem/1.23 "Oswald", Arial, sans-serif;
-$font-text-example-desktop: 200 1.4rem/1 "Lato", Arial, sans-serif;
 $font-result-example-desktop: 200 2rem/1 "Oswald", Arial, sans-serif;
 
-$font-phrase-additionally-desktop: 200 1.6rem/1 "Lato", Arial, sans-serif;
+$font-title-location-desktop: 200 2rem/1.3 "Oswald", Arial, sans-serif;
 
-$font-title-catalog-card-desktop: 200 2rem/1.05 "Oswald", Arial, sans-serif;
-$font-text-catalog-card-desktop: 200 1.6rem/1 "Lato", Arial, sans-serif;
-
-$font-title-show-more-desktop: 200 2rem/1.1 "Oswald", Arial, sans-serif;
-$font-text-show-more-desktop: 200 1.6rem/1.12 "Lato", Arial, sans-serif;
-
-$font-title-additional-product-desktop: 200 2rem/1 "Oswald", Arial, sans-serif;
-$font-text-additional-product-desktop: 200 1.6rem/1.25 "Lato", Arial, sans-serif;
+$font-label-text-desktop: 200 2rem / normal "Oswald", Arial, sans-serif;
 
 $font-text-gift-desktop: 200 1.6rem/1.25 "Lato", Arial, sans-serif;
 
-$font-slogan-index-small-desktop: 200 2rem/1 "Oswald", Arial, sans-serif;
-$font-slogan-form-small-desktop: 200 2rem/1.5 "Oswald", Arial, sans-serif;
+$font-html-academy-desktop: 200 1.6rem / normal "Lato", Arial, sans-serif;
 
-$font-title-form-medium-desktop: 200 3.6rem/1 "Oswald", Arial, sans-serif;
-
-$font-icon-html-academy-desktop: 200 1.6rem / normal "Lato", Arial, sans-serif;
-
-$font-label-form-desktop: 200 2rem / normal "Oswald", Arial, sans-serif;
-$font-textarea-form-desktop: 200 2rem/1.5 "Oswald", Arial, sans-serif;
+$font-button-index-primary-desktop: 200 2rem/1 "Oswald", Arial, sans-serif;
+$font-button-primary-desktop: 200 2rem/0 "Oswald", Arial, sans-serif;
+$font-button-secondary-desktop: 200 2rem / normal "Oswald", Arial, sans-serif;
 
 /* force-state elements */
 $background-color-3-hover: #5eaa2f;

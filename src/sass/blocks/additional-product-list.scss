@@ -54,7 +54,7 @@
 .additional-product-list__title {
   @include indent-reset;
 
-  font: $font-card-title-mobile;
+  font: $font-title-catalog-mobile;
   line-height: 1;
   text-transform: uppercase;
   color: $color-13;
@@ -62,8 +62,7 @@
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    font: $font-card-title-tablet;
-    line-height: 1;
+    font: $font-title-catalog-tablet;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,12 +91,12 @@
 }
 
 .additional-product-list__amount-package {
-  font: $font-text-small-mobile;
+  font: $font-text-medium-mobile;
   line-height: 1;
   color: $color-5;
 
   @media (min-width: $tablet-width) {
-    font: $font-text-small-tablet;
+    font: $font-text-medium-tablet;
     line-height: 1.25;
 
     display: block;
@@ -111,19 +110,19 @@
 }
 
 .additional-product-list__amount-price {
-  font: $font-text-small-mobile;
+  font: $font-text-medium-mobile;
   line-height: 1;
   color: $color-5;
 
   @media (min-width: $tablet-width) {
-    font: $font-text-small-tablet;
+    font: $font-text-medium-tablet;
     line-height: 1.25;
   }
 }
 
 .additional-product-list__button {
   @include link-reset;
-  font: $font-catalog-button-mobile;
+  font: $font-button-primary-mobile;
   color: $color-2;
   text-transform: uppercase;
   text-align: center;
@@ -146,6 +145,8 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
+
+    font: $font-button-primary-tablet;
   }
 
   @media (min-width: $desktop-width) {

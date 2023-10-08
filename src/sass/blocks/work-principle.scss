@@ -38,9 +38,15 @@
 .work-principle__title {
   @include indent-reset;
 
+  font: $font-title-large-mobile;
+  line-height: 1.11;
+
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
+    font: $font-title-large-tablet;
+    line-height: 1;
+
     margin-bottom: 72px;
   }
 }

@@ -37,7 +37,7 @@
 .location__address-wrapper-title {
   @include indent-reset;
 
-  font: 200 1.6rem/1.25 "Oswald", Arial, sans-serif;
+  font: $font-title-location-mobile;
   color: $color-10;
   text-transform: uppercase;
 
@@ -46,8 +46,7 @@
   margin-right: 15px;
 
   @media (min-width: $tablet-width) {
-    font-size: 2rem;
-    line-height: 1.3;
+    font: $font-title-location-tablet;
   }
 }
 

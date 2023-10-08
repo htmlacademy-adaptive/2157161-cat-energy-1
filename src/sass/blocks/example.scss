@@ -38,9 +38,15 @@
 .example__title {
   @include indent-reset;
 
+  font: $font-title-large-mobile;
+  line-height: 1.11;
+
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
+    font: $font-title-large-tablet;
+    line-height: 1;
+
     margin-bottom: 63px;
   }
 }
@@ -49,12 +55,16 @@
   @include indent-reset;
 
   width: 280px;
+
+  font: $font-text-medium-mobile;
   color: $color-5;
 
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
+
+    font: $font-text-medium-tablet;
 
     margin-bottom: 54px;
   }
@@ -120,15 +130,21 @@
 }
 
 .example__heading {
+  font: $font-title-example-mobile;
   text-transform: uppercase;
 
   align-self: center;
   justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    font: $font-title-example-tablet;
+  }
 }
 
 .example__description {
   @include indent-reset;
 
+  font: $font-text-small-mobile;
   text-align: center;
   color: $color-5;
 
@@ -140,6 +156,8 @@
   width: 84px;
 
   @media (min-width: $tablet-width) {
+    font: $font-text-small-tablet;
+
     br {
       display: none;
     }
@@ -187,7 +205,7 @@
 .example__expenses {
   @include indent-reset;
 
-  font: 200 1.4rem/1.42 "Oswald", Arial, sans-serif;
+  font: $font-result-example-mobile;
   text-transform: uppercase;
 
   margin-right: 3px;
@@ -196,7 +214,7 @@
     margin-right: 0;
     margin-bottom: 9px;
 
-    font: 200 2rem/1 "Oswald", Arial, sans-serif;
+    font: $font-result-example-tablet;
   }
 
   @media (min-width: $desktop-width) {
@@ -206,10 +224,10 @@
 }
 
 .example__price {
-  font: 200 1.4rem/1.42 "Oswald", Arial, sans-serif;
+  font: $font-result-example-mobile;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font: 200 2rem/1 "Oswald", Arial, sans-serif;
+    font: $font-result-example-tablet;
   }
 }

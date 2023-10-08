@@ -1,17 +1,2 @@
 .description {
-  &--small {
-    font: $font-text-small-mobile;
-
-    @media (min-width: $tablet-width) {
-      font: $font-text-small-tablet;
-    }
-  }
-
-  &--extra-small {
-    font: $font-text-extra-small-mobile;
-
-    @media (min-width: $tablet-width) {
-      font: $font-text-extra-small-tablet;
-    }
-  }
 }

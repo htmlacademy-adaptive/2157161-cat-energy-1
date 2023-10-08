@@ -76,6 +76,7 @@
 
 .program__title {
   @include indent-reset;
+  font: $font-title-large-mobile;
   text-align: center;
   color: $color-2;
 
@@ -85,6 +86,7 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
+    font: $font-title-large-tablet;
     color: $color-1;
     text-align: left;
 
@@ -97,7 +99,7 @@
 .program__slogan {
   @include indent-reset;
 
-  font: 200 1.4rem/1 "Oswald", Arial, sans-serif;
+  font: $font-slogan-title-mobile;
   text-transform: uppercase;
   color: $color-2;
   text-align: center;
@@ -112,7 +114,7 @@
   @media (min-width: $tablet-width) {
     color: $color-1;
     text-align: left;
-    font: 200 2rem/1 "Oswald", Arial, sans-serif;
+    font: $font-slogan-title-tablet;
 
     margin-bottom: 49px;
   }
@@ -126,7 +128,7 @@
 
   box-sizing: content-box;
 
-  font: $font-button-small-mobile;
+  font: $font-button-index-primary-mobile;
   color: $color-2;
   text-transform: uppercase;
   text-align: center;
@@ -145,7 +147,7 @@
 
     padding: 14px 26px;
 
-    font: $font-button-small-tablet;
+    font: $font-button-index-primary-tablet;
   }
 }
 

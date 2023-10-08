@@ -7,17 +7,18 @@
   border: 1px solid $background-color-11;
   padding: 9px 15px;
 
-  font: $font-textarea-mobile;
+  font: $font-label-text-mobile;
   text-transform: uppercase;
   color: $color-5;
 
   &::placeholder {
-    font: $font-textarea-mobile;
+    font: $font-label-text-mobile;
     text-transform: uppercase;
     color: $color-5;
 
     @media (min-width: $tablet-width) {
-      font: $font-textarea-tablet;
+      font: $font-label-text-tablet;
+      line-height: 1.5;
     }
   }
 
@@ -36,7 +37,8 @@
 
     padding: 10px 19px;
 
-    font: $font-textarea-tablet;
+    font: $font-label-text-tablet;
+    line-height: 1.5;
   }
 
   @media (min-width: $desktop-width) {

@@ -76,10 +76,13 @@
   @include indent-reset;
   display: inline-block;
 
+  font: $font-title-medium-mobile;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 22px;
+
+    font: $font-title-medium-tablet;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,7 +92,9 @@
 
 .program-type__description {
   @include indent-reset;
+
   color: $color-5;
+  font: $font-text-medium-mobile;
 
   &::after {
     content: "";
@@ -110,6 +115,7 @@
 
   @media (min-width: $tablet-width) {
     color: $color-1;
+    font: $font-text-medium-tablet;
 
     width: 340px;
 
@@ -149,12 +155,12 @@
 
   margin-right: 15px;
 
-  font: $font-catalog-button-mobile;
+  font: $font-button-secondary-mobile;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     margin-right: 25px;
 
-    font: $font-catalog-button-tablet;
+    font: $font-button-secondary-tablet;
   }
 }
