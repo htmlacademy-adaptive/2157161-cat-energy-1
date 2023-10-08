@@ -1,3 +1,10 @@
+// .contact-details {
+//   &::before {
+//     content: "";
+//     display: block;
+//   }
+// }
+
 .contact-details__wrapper {
   width: $mobile-width;
 
@@ -24,10 +31,12 @@
 
   margin-bottom: 35px;
 
-  line-height: 1.08;
+  font: $font-title-form-small-mobile;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
+
+    font: $font-title-form-small-tablet;
   }
 }
 

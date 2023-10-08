@@ -22,12 +22,14 @@
 .additionally__title {
   @include indent-reset;
 
-  line-height: 1.08;
+  font: $font-title-form-small-mobile;
 
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
+
+    font: $font-title-form-small-tablet;
   }
 }
 
