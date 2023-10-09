@@ -1,3 +1,25 @@
+.additionally {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $background-color-3;
+
+    position: absolute;
+    top: 14px;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      top: 23px;
+    }
+  }
+}
+
 .additionally__wrapper {
   width: $mobile-width;
 
@@ -26,9 +48,25 @@
   line-height: 1.08;
 
   margin-bottom: 34px;
+  padding-left: 20px;
+  padding-right: 23px;
+
+  width: 184px;
+
+  background-color: $background-color-2;
+
+  position: relative;
+  left: -20px;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    width: 291px;
+
+    left: -40px;
 
     font: $font-title-medium-tablet;
     line-height: 1;

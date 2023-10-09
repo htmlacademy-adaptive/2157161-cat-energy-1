@@ -3,6 +3,8 @@
   color: $color-5;
   text-transform: uppercase;
 
+  align-self: center;
+
   &::placeholder {
     font: $font-label-text-mobile;
     text-transform: uppercase;
