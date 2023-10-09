@@ -223,7 +223,6 @@ body {
   .additional-product-list__button {
     grid-column: 1/-1;
     grid-row: 2/3;
-    font: 200 2rem/1 "Oswald", Arial, sans-serif;
   }
 }
 @media (min-width: 1440px) {
@@ -2088,20 +2087,75 @@ body {
   align-self: center;
 }
 
+.program-selection__control-mark--program {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 769px) {
+  .program-selection__control-mark--program {
+    width: 40px;
+    height: 40px;
+  }
+}
+.program-selection__control-mark--program::after {
+  content: "";
+  display: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #68b738;
+  position: absolute;
+  top: 7px;
+  left: 6px;
+}
+@media (min-width: 769px) {
+  .program-selection__control-mark--program::after {
+    width: 20px;
+    height: 20px;
+    top: 9px;
+    left: 9px;
+  }
+}
+
 .program-selection__field-text {
   display: block;
   margin-right: 13px;
 }
 .program-selection__field-text--program {
+  margin-left: 45px;
   margin-right: 0;
+}
+@media (min-width: 769px) {
+  .program-selection__field-text--program {
+    margin-left: 60px;
+  }
 }
 
 .program-selection__field-input {
   padding: 14px 20px;
   border: 1px solid #e7e7e7;
 }
-.program-selection__field-input--radio {
+.program-selection__field-input--program {
+  margin: 0;
+  padding: 0;
   width: auto !important;
+  position: absolute;
+  top: 7px;
+  left: 6.5px;
+  z-index: 1;
+  visibility: hidden;
+}
+
+/* Радио-кнопки */
+.program-selection__field-input[type=radio]:checked + .program-selection__control-mark::after {
+  display: block;
 }
 
 .program-type {
