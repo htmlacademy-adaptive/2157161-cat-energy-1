@@ -98,10 +98,17 @@
 }
 
 .additionally__field-label {
-  // width: 220px;
   min-height: 30px;
 
   position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .additionally__control-mark {
+    border-color: $background-color-14;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 40px;
@@ -136,6 +143,12 @@
       margin-right: 197px;
     }
   }
+}
+
+.additionally__field-label[disabled] {
+  pointer-events: none;
+
+  opacity: 0.3;
 }
 
 .additionally__field-input {
