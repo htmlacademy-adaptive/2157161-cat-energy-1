@@ -78,12 +78,14 @@
 }
 
 .contact-details__field-label {
+  position: relative;
+
   &:nth-of-type(1) {
     .contact-details__field-input {
       width: 220px;
 
-      background: url("../../img/email-stroke.svg") no-repeat;
-      background-position: 185px 13px;
+      // background: url("../../img/email-stroke.svg") no-repeat;
+      // background-position: 185px 13px;
 
       margin-bottom: 14px;
 
@@ -109,8 +111,8 @@
     .contact-details__field-input {
       width: 203px;
 
-      background: url("../../img/phone-stroke.svg") no-repeat;
-      background-position: 167px 13px;
+      // background: url("../../img/phone-stroke.svg") no-repeat;
+      // background-position: 167px 13px;
 
       @media (min-width: $tablet-width) {
         width: 527px;
@@ -131,7 +133,7 @@
   @include input-reset;
   border: 1px solid $background-color-11;
   padding: 14px 15px;
-  padding-right: 52px;
+  padding-right: 45px;
 
   @media (min-width: $tablet-width) {
     padding: 11px 20px;
@@ -145,5 +147,16 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 20px;
+  }
+}
+
+.contact-details__field-icon {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+
+  @media (min-width: $tablet-width) {
+    top: 16px;
+    right: 18px;
   }
 }

@@ -1232,10 +1232,11 @@ body {
   outline: 2px solid #ff8282;
 }
 
+.contact-details__field-label {
+  position: relative;
+}
 .contact-details__field-label:nth-of-type(1) .contact-details__field-input {
   width: 220px;
-  background: url("../../img/email-stroke.svg") no-repeat;
-  background-position: 185px 13px;
   margin-bottom: 14px;
 }
 @media (min-width: 769px) {
@@ -1254,8 +1255,6 @@ body {
 }
 .contact-details__field-label:nth-of-type(2) .contact-details__field-input {
   width: 203px;
-  background: url("../../img/phone-stroke.svg") no-repeat;
-  background-position: 167px 13px;
 }
 @media (min-width: 769px) {
   .contact-details__field-label:nth-of-type(2) .contact-details__field-input {
@@ -1274,7 +1273,7 @@ body {
   outline: none;
   border: 1px solid #e7e7e7;
   padding: 14px 15px;
-  padding-right: 52px;
+  padding-right: 45px;
 }
 @media (min-width: 769px) {
   .contact-details__field-input {
@@ -1289,6 +1288,18 @@ body {
 @media (min-width: 769px) {
   .contact-details__input-text {
     margin-right: 20px;
+  }
+}
+
+.contact-details__field-icon {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+}
+@media (min-width: 769px) {
+  .contact-details__field-icon {
+    top: 16px;
+    right: 18px;
   }
 }
 
