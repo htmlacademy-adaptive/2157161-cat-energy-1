@@ -1,7 +1,14 @@
 {
   "icons": [
-    { "src": "", "type": "", "sizes": "" },
-    { "src": "", "type": "", "sizes": "" },
-    { "src": "", "type": "", "sizes": "" }
+    {
+      "src": "./img/favicons/apple-icon-180x180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "./img/favicons/androind-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
   ]
 }
