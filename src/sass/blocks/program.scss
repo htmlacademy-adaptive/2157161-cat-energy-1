@@ -1,7 +1,11 @@
 .program {
-  background-image: url("../../img/header-background-mobile.jpg");
+  background-image: url("../../img/bg-header-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 320px 302px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/bg-header-mobile-2x.jpg");
+  }
 
   position: relative;
 

@@ -16,9 +16,13 @@
     width: $desktop-width;
 
     &--picture {
-      background: url("../../img/header-background-desktop.jpg") no-repeat;
+      background: url("../../img/bg-header-desktop.jpg") no-repeat;
       background-position: top right;
       background-size: 720px 694px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/bg-header-desktop-2x.jpg");
+      }
 
       &::after {
         content: "";

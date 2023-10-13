@@ -1817,10 +1817,17 @@ body {
     width: 1440px;
   }
   .main-header__wrapper--picture {
-    background: url("../../img/header-background-desktop.jpg") no-repeat;
+    background: url("../../img/bg-header-desktop.jpg") no-repeat;
     background-position: top right;
     background-size: 720px 694px;
   }
+}
+@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
+  .main-header__wrapper--picture {
+    background-image: url("../../img/bg-header-desktop-2x.jpg");
+  }
+}
+@media (min-width: 1440px) {
   .main-header__wrapper--picture::after {
     content: "";
     display: block;
@@ -2453,10 +2460,15 @@ body {
 }
 
 .program {
-  background-image: url("../../img/header-background-mobile.jpg");
+  background-image: url("../../img/bg-header-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 320px 302px;
   position: relative;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .program {
+    background-image: url("../../img/bg-header-mobile-2x.jpg");
+  }
 }
 @media (min-width: 769px) {
   .program {
