@@ -72,6 +72,40 @@
   }
 }
 
+.program-type__icon-image {
+  position: absolute;
+
+  &--weight-loss {
+    top: -3px;
+    left: 9px;
+
+    @media (min-width: $tablet-width) {
+      top: -15px;
+      left: 29px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 41px;
+      left: 66px;
+    }
+  }
+
+  &--weight-gain {
+    top: 11px;
+    left: -9px;
+
+    @media (min-width: $tablet-width) {
+      top: 43px;
+      left: -35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 69px;
+      left: 33px;
+    }
+  }
+}
+
 .program-type__title {
   @include indent-reset;
   display: inline-block;
