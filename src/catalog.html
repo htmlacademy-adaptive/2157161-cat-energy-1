@@ -536,13 +536,29 @@
               </li>
             </ul>
             <div class="additional-product__gift gift">
-              <img
-                class="gift__image"
-                src="./img/gift-image.jpg"
-                alt="Получите чехол для кота в подарок"
-                width="279"
-                height="289"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./img/gift-image-mobile.jpg"
+                  width="245"
+                  height="289"
+                  alt="Получите чехол для кота в подарок"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="./img/gift-image-tablet.jpg"
+                  width="707"
+                  height="200"
+                  alt="Получите чехол для кота в подарок"
+                />
+                <img
+                  class="gift__image"
+                  src="./img/gift-image-mobile.jpg"
+                  alt="Получите чехол для кота в подарок"
+                  width="279"
+                  height="289"
+                />
+              </picture>
               <img
                 class="gift__icon"
                 src="./img/gift-icon-mobile.svg"
