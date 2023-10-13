@@ -140,6 +140,17 @@
     }
   }
 
+  &--powder .work-principle-list__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      top: 9px;
+      left: 10px;
+    }
+  }
+
   &--cutlery .work-principle-list__icon {
     position: absolute;
     top: 15px;
@@ -148,6 +159,17 @@
     @media (min-width: $tablet-width) {
       top: 25px;
       left: 28px;
+    }
+  }
+
+  &--watch .work-principle-list__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      top: 9px;
+      left: 10px;
     }
   }
 }
