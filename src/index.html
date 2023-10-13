@@ -16,12 +16,28 @@
       <div class="main-header__wrapper main-header__wrapper--picture container">
         <div class="main-header__container-nav">
           <a class="main-header__icon-logo" href="index.html">
-            <img
-              src="./img/cat-energy-icon-mobile.svg"
-              width="33"
-              height="38"
-              alt="иконка кэт энерджи"
-            />
+            <picture>
+              <source
+                media="(min-width: 1439px)"
+                srcset="img/cat-energy-icon-desktop.svg"
+                width="202"
+                height="59"
+                alt="Кэт энерджи"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/cat-energy-icon-tablet.svg"
+                width="174"
+                height="52"
+                alt="Кэт энерджи"
+              />
+              <img
+                src="./img/cat-energy-icon-mobile.svg"
+                width="33"
+                height="38"
+                alt="иконка кэт энерджи"
+              />
+            </picture>
           </a>
           <div class="main-header__name-logo logo">
             <img
