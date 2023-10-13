@@ -71,9 +71,13 @@
 .program__wrapper-description {
   @media (min-width: $tablet-width) {
     padding-left: 88px;
+
+    position: relative;
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 79px;
     padding-left: 80px;
   }
 }
@@ -162,5 +166,16 @@
   @media (max-width: $mobile-width-only) {
     position: absolute;
     top: 167px;
+  }
+
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+    top: -80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 2;
+    top: 0;
+    left: -47px;
   }
 }

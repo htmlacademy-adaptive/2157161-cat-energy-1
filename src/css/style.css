@@ -2527,10 +2527,13 @@ body {
 @media (min-width: 769px) {
   .program__wrapper-description {
     padding-left: 88px;
+    position: relative;
+    z-index: 2;
   }
 }
 @media (min-width: 1440px) {
   .program__wrapper-description {
+    padding-top: 79px;
     padding-left: 80px;
   }
 }
@@ -2613,6 +2616,19 @@ body {
   .program__image {
     position: absolute;
     top: 167px;
+  }
+}
+@media (min-width: 769px) {
+  .program__image {
+    z-index: 1;
+    top: -80px;
+  }
+}
+@media (min-width: 1440px) {
+  .program__image {
+    z-index: 2;
+    top: 0;
+    left: -47px;
   }
 }
 

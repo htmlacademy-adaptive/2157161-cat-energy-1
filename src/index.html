@@ -18,14 +18,14 @@
           <a class="main-header__icon-logo" href="index.html">
             <picture>
               <source
-                media="(min-width: 1439px)"
+                media="(min-width: 1440px)"
                 srcset="img/cat-energy-icon-desktop.svg"
                 width="202"
                 height="59"
                 alt="Кэт энерджи"
               />
               <source
-                media="(min-width: 768px)"
+                media="(min-width: 769px)"
                 srcset="img/cat-energy-icon-tablet.svg"
                 width="174"
                 height="52"
@@ -95,13 +95,44 @@
               >Подобрать программу</a
             >
           </div>
-          <img
-            class="program__image"
-            src="./img/program-package-mobile.png"
-            width="280"
-            height="270"
-            alt="Функциональное питание со вкусом курицы"
-          />
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/program-package-desktop-2x.png 2x"
+              width="552"
+              height="499"
+              alt="Функциональное питание со вкусом курицы"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/program-package-desktop.png"
+              width="552"
+              height="499"
+              alt="Функциональное питание со вкусом курицы"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="img/program-package-tablet-2x.png 2x"
+              width="709"
+              height="609"
+              alt="Функциональное питание со вкусом курицы"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="img/program-package-tablet.png"
+              width="709"
+              height="609"
+              alt="Функциональное питание со вкусом курицы"
+            />
+            <img
+              class="program__image"
+              src="./img/program-package-mobile.png"
+              srcset="./img/program-package-mobile-2x.png 2x"
+              width="280"
+              height="270"
+              alt="Функциональное питание со вкусом курицы"
+            />
+          </picture>
         </section>
       </div>
     </header>
