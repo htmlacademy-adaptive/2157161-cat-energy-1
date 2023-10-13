@@ -954,12 +954,19 @@ body {
   }
 }
 .catalog-card:nth-of-type(even) .catalog-card__image--show-more {
-  transform: none;
+  transform: translate(124px, 5px);
 }
 @media (min-width: 769px) {
   .catalog-card:nth-of-type(even) .catalog-card__image--show-more {
-    top: 0;
-    left: 0;
+    transform: none;
+    top: 52px;
+    left: 94px;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog-card:nth-of-type(even) .catalog-card__image--show-more {
+    top: 51px;
+    left: 54px;
   }
 }
 

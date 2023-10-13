@@ -70,11 +70,18 @@
       }
 
       &--show-more {
-        transform: none;
+        transform: translate(124px, 5px);
 
         @media (min-width: $tablet-width) {
-          top: 0;
-          left: 0;
+          transform: none;
+
+          top: 52px;
+          left: 94px;
+        }
+
+        @media (min-width: $desktop-width) {
+          top: 51px;
+          left: 54px;
         }
       }
     }
