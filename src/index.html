@@ -434,59 +434,146 @@
       <section class="example">
         <div class="example__wrapper container">
           <div class="example__description-container">
-            <h2 class="example__title title title--medium">Живой пример</h2>
-            <p class="example__text description description--small">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
-              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-              При этом он не менял своих привычек и по-прежнему спит по 16 часов
-              в день.
-            </p>
+            <div class="example__description-containers">
+              <h2 class="example__title title title--medium">Живой пример</h2>
+              <p class="example__text description description--small">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+                на Cat Energy Slim. Отличный результат без изнуряющих
+                тренировок! При этом он не менял своих привычек и по-прежнему
+                спит по 16 часов в день.
+              </p>
 
-            <div class="example__description-content">
-              <dl class="example__list">
-                <div class="example__item">
-                  <dt class="example__heading title title--extra-small">
-                    5 кг
-                  </dt>
-                  <dd
-                    class="example__description description description--extra-small"
-                  >
-                    снижение<br />
-                    веса
-                  </dd>
+              <div class="example__description-content">
+                <dl class="example__list">
+                  <div class="example__item">
+                    <dt class="example__heading title title--extra-small">
+                      5 кг
+                    </dt>
+                    <dd
+                      class="example__description description description--extra-small"
+                    >
+                      снижение<br />
+                      веса
+                    </dd>
+                  </div>
+                  <div class="example__item">
+                    <dt class="example__heading title title--extra-small">
+                      60 дней
+                    </dt>
+                    <dd
+                      class="example__description description description--extra-small"
+                    >
+                      затрачено <br />
+                      времени
+                    </dd>
+                  </div>
+                </dl>
+                <div class="example__result">
+                  <p class="example__expenses">Затраты на питание:</p>
+                  <div class="example__price">15 000 руб.</div>
                 </div>
-                <div class="example__item">
-                  <dt class="example__heading title title--extra-small">
-                    60 дней
-                  </dt>
-                  <dd
-                    class="example__description description description--extra-small"
-                  >
-                    затрачено <br />
-                    времени
-                  </dd>
-                </div>
-              </dl>
-              <div class="example__result">
-                <p class="example__expenses">Затраты на питание:</p>
-                <div class="example__price">15 000 руб.</div>
               </div>
             </div>
             <div class="example__cat cat-result">
-              <img
-                class="cat-result__image"
-                src="./img/before-mobile.png"
-                width="280"
-                height="256"
-                alt="Кот до похудения"
-              />
-              <img
-                class="cat-result__image"
-                src="./img/after-mobile.png"
-                width="280"
-                height="256"
-                alt="Кот после похудения"
-              />
+              <picture>
+                <source
+                  media="(min-width: 769px)"
+                  srcset="
+                    ./img/cat-before-tablet.png    1x,
+                    ./img/cat-before-tablet-2x.png 2x
+                  "
+                  width="280"
+                  height="512"
+                />
+                <img
+                  class="cat-result__image"
+                  src="./img/cat-before-mobile.png"
+                  srcset="./img/cat-before-mobile-2x.png 2x"
+                  width="140"
+                  height="256"
+                  alt="Кот до похудения"
+                />
+              </picture>
+              <button class="cat-result__arrow" type="button">
+                <svg
+                  class="cat-result__arrow-icon"
+                  width="40"
+                  height="256"
+                  viewBox="0 0 40 256"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="18" width="4" height="256" rx="2" fill="#666666" />
+                  <rect
+                    x="1"
+                    y="109"
+                    width="38"
+                    height="38"
+                    rx="19"
+                    fill="white"
+                  />
+                  <path d="M16 119L8 128L16 137V119Z" fill="#666666" />
+                  <path d="M32 128L24 119V137L32 128Z" fill="#666666" />
+                  <rect
+                    x="1"
+                    y="109"
+                    width="38"
+                    height="38"
+                    rx="19"
+                    stroke="#666666"
+                    stroke-width="2"
+                  />
+                </svg>
+
+                <svg
+                  class="cat-result__arrow-icon"
+                  width="40"
+                  height="512"
+                  viewBox="0 0 40 512"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="18" width="4" height="512" rx="2" fill="#666666" />
+                  <rect
+                    x="1"
+                    y="237"
+                    width="38"
+                    height="38"
+                    rx="19"
+                    fill="white"
+                  />
+                  <path d="M16 247L8 256L16 265V247Z" fill="#666666" />
+                  <path d="M32 256L24 247V265L32 256Z" fill="#666666" />
+                  <rect
+                    x="1"
+                    y="237"
+                    width="38"
+                    height="38"
+                    rx="19"
+                    stroke="#666666"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+              <picture>
+                <source
+                  media="(min-width: 769px)"
+                  srcset="
+                    ./img/cat-after-tablet.png    1x,
+                    ./img/cat-after-tablet-2x.png 2x
+                  "
+                  width="280"
+                  height="512"
+                />
+                <img
+                  class="cat-result__image"
+                  src="./img/cat-after-mobile.png"
+                  srcset="./img/cat-after-mobile-2x.png 2x"
+                  width="140"
+                  height="256"
+                  alt="Кот после похудения"
+                />
+              </picture>
             </div>
           </div>
         </div>
