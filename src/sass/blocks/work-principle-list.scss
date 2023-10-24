@@ -45,7 +45,7 @@
       &::after {
         content: "1";
 
-        font: 200 28rem/1 "Oswald", Arial, sans-serif;
+        font: $work-principle-number;
         color: $color-4;
 
         position: absolute;
@@ -61,7 +61,7 @@
       &::after {
         content: "2";
 
-        font: 200 28rem/1 "Oswald", Arial, sans-serif;
+        font: $work-principle-number;
         color: $color-4;
 
         position: absolute;
@@ -77,7 +77,7 @@
       &::after {
         content: "3";
 
-        font: 200 28rem/1 "Oswald", Arial, sans-serif;
+        font: $work-principle-number;
         color: $color-4;
 
         position: absolute;
@@ -93,7 +93,7 @@
       &::after {
         content: "4";
 
-        font: 200 28rem/1 "Oswald", Arial, sans-serif;
+        font: $work-principle-number;
         color: $color-4;
 
         position: absolute;
