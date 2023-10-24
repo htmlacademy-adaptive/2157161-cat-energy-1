@@ -1876,6 +1876,11 @@ body {
   }
 }
 
+.location__address-city {
+  margin: 0;
+  padding: 0;
+}
+
 .logo__image {
   display: block;
 }

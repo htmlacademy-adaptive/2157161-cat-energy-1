@@ -76,3 +76,7 @@
     margin-bottom: 26px;
   }
 }
+
+.location__address-city {
+  @include indent-reset;
+}
