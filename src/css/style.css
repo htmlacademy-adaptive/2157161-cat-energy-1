@@ -935,14 +935,33 @@ body {
 }
 
 .catalog-card {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 112px auto;
   background-color: #ffffff;
+  padding: 19px 20px 15px;
+  width: 320px;
+  min-height: 233px;
+  position: relative;
 }
 @media (min-width: 769px) {
   .catalog-card {
+    grid-template-columns: auto;
+    grid-template-rows: 161px auto auto;
     background-color: #f2f2f2;
+    width: 324px;
+    min-height: 430px;
+    padding: 0 36px 39px;
+    border: 2px solid #f2f2f2;
   }
   .catalog-card--show-more {
     background-color: #ffffff;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog-card {
+    width: 245px;
+    min-height: 431px;
   }
 }
 
@@ -1169,65 +1188,34 @@ body {
 }
 
 .catalog-list__item {
-  padding: 19px 20px 15px;
-  width: 320px;
-  min-height: 233px;
-  display: grid;
-  grid-template-columns: repeat(2, 140px);
-  grid-template-rows: 112px auto;
   position: relative;
 }
 .catalog-list__item:first-child::before, .catalog-list__item:first-child::after {
   content: "";
   display: block;
-  width: 320px;
+  width: 100%;
   height: 1px;
   background-color: #e6e6e6;
   position: absolute;
+  z-index: 3;
 }
 @media (min-width: 769px) {
   .catalog-list__item:first-child::before, .catalog-list__item:first-child::after {
     display: none;
   }
 }
-.catalog-list__item:first-child::before {
-  top: 0;
-}
-.catalog-list__item:first-child::after {
-  bottom: 0;
-}
 .catalog-list__item--line::after {
   content: "";
   display: block;
-  width: 320px;
+  width: 100%;
   height: 1px;
   background-color: #e6e6e6;
   position: absolute;
-  bottom: 0;
+  z-index: 3;
 }
 @media (min-width: 769px) {
   .catalog-list__item--line::after {
     display: none;
-  }
-}
-.catalog-list__item--show-more {
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;
-}
-@media (min-width: 769px) {
-  .catalog-list__item {
-    width: 324px;
-    min-height: 430px;
-    padding: 0 36px 39px;
-    border: 2px solid #f2f2f2;
-    grid-template-columns: auto;
-    grid-template-rows: 161px auto auto;
-  }
-}
-@media (min-width: 1440px) {
-  .catalog-list__item {
-    width: 245px;
-    min-height: 431px;
   }
 }
 
