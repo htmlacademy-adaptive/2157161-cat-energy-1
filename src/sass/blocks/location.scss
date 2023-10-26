@@ -51,14 +51,11 @@
 }
 
 .location__address {
-  font: $font-text-small-mobile;
-  line-height: 1.42;
+  font: $font-address-location-mobile;
   color: $color-5;
 
   @media (min-width: $tablet-width) {
-    font: $font-text-small-tablet;
-    font-size: 1.6rem;
-    line-height: 1.25;
+    font: $font-address-location-tablet;
     text-align: right;
 
     width: 160px;
