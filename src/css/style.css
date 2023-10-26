@@ -1089,6 +1089,8 @@ body {
 }
 
 .catalog-card__compound {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -1109,6 +1111,8 @@ body {
 }
 
 .catalog-card__compound-item {
+  margin: 0;
+  padding: 0;
   font: 200 1.2rem/1 "Lato", Arial, sans-serif;
   color: #444444;
   line-height: 1.33;

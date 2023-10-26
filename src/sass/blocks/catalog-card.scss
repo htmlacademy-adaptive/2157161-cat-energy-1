@@ -171,6 +171,8 @@
 }
 
 .catalog-card__compound {
+  @include indent-reset;
+
   display: flex;
   justify-content: space-between;
 
@@ -197,6 +199,8 @@
 }
 
 .catalog-card__compound-item {
+  @include indent-reset;
+
   font: $font-text-small-mobile;
   color: $color-5;
   line-height: 1.33;
