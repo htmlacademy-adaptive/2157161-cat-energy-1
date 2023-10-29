@@ -9,18 +9,9 @@
 
   &:first-child {
     border-top: 1px solid $background-color-8;
-    border-bottom: 1px solid $background-color-8;
   }
 
-  &:nth-child(2) {
-    border-bottom: 1px solid $background-color-8;
-  }
-
-  &:nth-child(3) {
-    border-bottom: 1px solid $background-color-8;
-  }
-
-  &:last-child {
+  &--line {
     border-bottom: 1px solid $background-color-8;
   }
 

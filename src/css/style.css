@@ -96,15 +96,8 @@ body {
 }
 .additional-product-list__item:first-child {
   border-top: 1px solid #cdcdcd;
-  border-bottom: 1px solid #cdcdcd;
 }
-.additional-product-list__item:nth-child(2) {
-  border-bottom: 1px solid #cdcdcd;
-}
-.additional-product-list__item:nth-child(3) {
-  border-bottom: 1px solid #cdcdcd;
-}
-.additional-product-list__item:last-child {
+.additional-product-list__item--line {
   border-bottom: 1px solid #cdcdcd;
 }
 @media (min-width: 769px) {
