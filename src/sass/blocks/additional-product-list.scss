@@ -1,5 +1,5 @@
 .additional-product-list__item {
-  width: 280px;
+  width: 100%;
   min-height: 130px;
 
   padding: 13px 0 19px;
@@ -26,7 +26,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 708px;
     min-height: 139px;
 
     grid-template-columns: 1fr 1fr;
@@ -38,7 +37,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 896px;
     min-height: 72px;
 
     grid-template-columns: 325px 285px auto 244px;
@@ -87,6 +85,7 @@
     justify-content: space-between;
 
     margin-bottom: 0;
+    margin-right: 40px;
   }
 }
 

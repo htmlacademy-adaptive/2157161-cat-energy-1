@@ -88,7 +88,7 @@ body {
 
 /* Blocks */
 .additional-product-list__item {
-  width: 280px;
+  width: 100%;
   min-height: 130px;
   padding: 13px 0 19px;
   display: grid;
@@ -110,7 +110,6 @@ body {
 }
 @media (min-width: 769px) {
   .additional-product-list__item {
-    width: 708px;
     min-height: 139px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -121,7 +120,6 @@ body {
 }
 @media (min-width: 1440px) {
   .additional-product-list__item {
-    width: 896px;
     min-height: 72px;
     grid-template-columns: 325px 285px auto 244px;
     grid-template-rows: auto;
@@ -168,6 +166,7 @@ body {
     width: 285px;
     justify-content: space-between;
     margin-bottom: 0;
+    margin-right: 40px;
   }
 }
 
