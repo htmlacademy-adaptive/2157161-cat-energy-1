@@ -92,7 +92,6 @@ body {
   min-height: 130px;
   padding: 13px 0 19px;
   display: grid;
-  grid-template-columns: auto;
   grid-template-rows: auto auto auto;
 }
 .additional-product-list__item:first-child {
