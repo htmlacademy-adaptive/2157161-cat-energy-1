@@ -2092,7 +2092,7 @@ body {
   position: absolute;
   top: 41px;
   left: -276px;
-  z-index: 3;
+  z-index: 4;
 }
 @media (min-width: 769px) {
   .main-nav--opened .main-nav__list {
