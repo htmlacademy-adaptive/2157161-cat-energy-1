@@ -830,7 +830,7 @@ body {
   }
 }
 
-.cat-result__image:first-of-type {
+.cat-result__image--thin {
   display: block;
   margin-right: 4px;
 }
