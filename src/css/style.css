@@ -125,7 +125,7 @@ body {
 .additional-product-list__title {
   margin: 0;
   padding: 0;
-  font: 200 1.6rem/1.25 "Oswald", Arial, sans-serif;
+  font: 200 1.6rem/1.2 "Oswald", Arial, sans-serif;
   line-height: 1;
   text-transform: uppercase;
   color: #222222;
@@ -1063,7 +1063,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 13px;
-  font: 200 1.6rem/1.25 "Oswald", Arial, sans-serif;
+  font: 200 1.6rem/1.2 "Oswald", Arial, sans-serif;
   text-transform: uppercase;
   min-width: 76px;
   max-width: 80px;
@@ -1713,13 +1713,13 @@ body {
 }
 
 .field-input {
-  font: 200 1.6rem/1.12 "Oswald", Arial, sans-serif;
+  font: 200 1.6rem/1.2 "Oswald", Arial, sans-serif;
   color: #444444;
   text-transform: uppercase;
   align-self: center;
 }
 .field-input::placeholder {
-  font: 200 1.6rem/1.12 "Oswald", Arial, sans-serif;
+  font: 200 1.6rem/1.2 "Oswald", Arial, sans-serif;
   text-transform: uppercase;
   color: #444444;
 }
@@ -2935,7 +2935,7 @@ body {
 .field-label {
   display: flex;
   align-items: center;
-  font: 200 1.6rem/1.12 "Oswald", Arial, sans-serif;
+  font: 200 1.6rem/1.2 "Oswald", Arial, sans-serif;
   color: #444444;
   text-transform: uppercase;
 }
@@ -2956,12 +2956,12 @@ body {
   height: 151px;
   border: 1px solid #e7e7e7;
   padding: 9px 15px;
-  font: 200 1.6rem/1.12 "Oswald", Arial, sans-serif;
+  font: 200 1.6rem/1.2 "Oswald", Arial, sans-serif;
   text-transform: uppercase;
   color: #444444;
 }
 .textarea::placeholder {
-  font: 200 1.6rem/1.12 "Oswald", Arial, sans-serif;
+  font: 200 1.6rem/1.2 "Oswald", Arial, sans-serif;
   text-transform: uppercase;
   color: #444444;
 }
