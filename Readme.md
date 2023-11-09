@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 - Студент: [Karim Farkhutdinov](https://up.htmlacademy.ru/adaptive-individual/1/user/2157161).
-- Наставник: `Андрей Устименко`.
+- Наставник: `Виктория Никитина`.
 
 ---
 
