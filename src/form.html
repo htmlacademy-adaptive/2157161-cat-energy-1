@@ -37,5 +37,51 @@
         </nav>
       </div>
     </header>
+
+    <main class="main-container">
+      <h1 class="main-container__title">Подбор программы</h1>
+
+      <form class="main-form" action="#" method="post">
+        <section class="main-form__cat-information cat-information">
+          <h2 class="visually-hidden">Информация про кота</h2>
+          <p class="cat-information__text">
+            Заполните анкету, и мы подберем программу питания для вашего кота
+          </p>
+
+          <div class="cat-inforamtion__container-input-text">
+            <label for="name" class="cat-information__content-label"
+              >Имя:*
+              <input
+                class="cat-information__input-text"
+                id="name"
+                name="Имя"
+                placeholder="Барсик"
+                value="Барсик"
+                required
+            /></label>
+            <label for="weight" class="cat-information__content-label"
+              >Вес (кг):*
+              <input
+                class="cat-information__input-text"
+                id="weight"
+                name="Вес"
+                placeholder="7"
+                value="7"
+                required
+            /></label>
+            <label for="age" class="cat-information__content-label"
+              >Возраст (лет):
+              <input
+                class="cat-information__input-text"
+                id="age"
+                name="Возраст"
+                placeholder="7"
+                value="7"
+                required
+            /></label>
+          </div>
+        </section>
+      </form>
+    </main>
   </body>
 </html>
