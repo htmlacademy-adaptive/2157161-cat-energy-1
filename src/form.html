@@ -43,42 +43,78 @@
 
       <form class="main-form" action="#" method="post">
         <section class="main-form__cat-information cat-information">
-          <h2 class="visually-hidden">Информация про кота</h2>
-          <p class="cat-information__text">
-            Заполните анкету, и мы подберем программу питания для вашего кота
-          </p>
+          <div class="cat-information__wrapper">
+            <h2 class="visually-hidden">Информация про кота</h2>
+            <p class="cat-information__text">
+              Заполните анкету, и мы подберем программу питания для вашего кота
+            </p>
 
-          <div class="cat-inforamtion__container-input-text">
-            <label for="name" class="cat-information__content-label"
-              >Имя:*
-              <input
-                class="cat-information__input-text"
-                id="name"
-                name="Имя"
-                placeholder="Барсик"
-                value="Барсик"
-                required
-            /></label>
-            <label for="weight" class="cat-information__content-label"
-              >Вес (кг):*
-              <input
-                class="cat-information__input-text"
-                id="weight"
-                name="Вес"
-                placeholder="7"
-                value="7"
-                required
-            /></label>
-            <label for="age" class="cat-information__content-label"
-              >Возраст (лет):
-              <input
-                class="cat-information__input-text"
-                id="age"
-                name="Возраст"
-                placeholder="7"
-                value="7"
-                required
-            /></label>
+            <div class="cat-inforamtion__container-text">
+              <label for="name" class="cat-information__label-text label-text"
+                >Имя:*
+                <input
+                  class="label-text__input-text"
+                  id="name"
+                  name="Имя"
+                  placeholder="Барсик"
+                  value="Барсик"
+                  required
+              /></label>
+              <label for="weight" class="cat-information__label-text label-text"
+                >Вес (кг):*
+                <input
+                  class="label-text__input-text"
+                  id="weight"
+                  name="Вес"
+                  placeholder="7"
+                  value="7"
+                  required
+              /></label>
+              <label for="age" class="cat-information__label-text label-text"
+                >Возраст (лет):
+                <input
+                  class="label-text__input-text"
+                  id="age"
+                  name="Возраст"
+                  placeholder="7"
+                  value="7"
+                  required
+              /></label>
+            </div>
+
+            <div class="cat-information__container-radio">
+              <label
+                for="weight-loss"
+                class="cat-information__label-radio label-radio"
+                ><input
+                  class="label-radio__input-radio"
+                  id="weight-loss"
+                  type="radio"
+                  name="program"
+                  checked
+                />Похудение</label
+              >
+              <label
+                for="weight-gain"
+                class="cat-information__label-radio label-radio"
+                ><input
+                  class="label-radio__input-radio"
+                  id="weight-gain"
+                  type="radio"
+                  name="program"
+                />Набор массы</label
+              >
+              <label
+                for="your-advice"
+                class="cat-information__label-radio label-radio"
+                ><input
+                  class="label-radio__input-radio"
+                  id="your-advice"
+                  type="radio"
+                  name="program"
+                />Не знаю (Нужен ваш совет)</label
+              >
+            </div>
           </div>
         </section>
       </form>
