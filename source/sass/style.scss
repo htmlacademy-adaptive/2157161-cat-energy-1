@@ -7,6 +7,8 @@
 @import "./global/mixins.scss";
 
 /* utils */
+@import "./utils/container.scss";
+@import "./utils/visually-hidden.scss";
 
 /* components */
 @import "./components/main-header.scss";
