@@ -4,3 +4,8 @@
   line-height: 1;
   color: $color-1;
 }
+
+.additional-products__gift-text {
+  @include margin-reset;
+  font: $font-text-gift-mobile;
+}
