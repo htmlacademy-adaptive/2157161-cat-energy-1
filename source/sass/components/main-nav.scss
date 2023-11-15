@@ -1,0 +1,9 @@
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__link {
+  @include link-reset;
+  font: $font-text-nav-list-mobile;
+  text-transform: uppercase;
+}
