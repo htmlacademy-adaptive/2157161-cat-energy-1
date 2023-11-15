@@ -1,0 +1,21 @@
+.program-type {
+  background-color: $background-color-4;
+}
+
+.program-type__title {
+  @include margin-reset;
+  font: $font-title-medium-mobile;
+  text-transform: uppercase;
+}
+
+.program-type__text {
+  @include margin-reset;
+  font: $font-text-medium-mobile;
+  color: $color-5;
+}
+
+.program-type__link {
+  @include link-reset;
+  font: $font-button-program-type-mobile;
+  text-transform: uppercase;
+}
