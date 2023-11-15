@@ -1,3 +1,9 @@
+.location__invation {
+  &--grey {
+    background-color: $background-color-4;
+  }
+}
+
 .location__invation-title {
   @include margin-reset;
   font: $font-title-location-mobile;
