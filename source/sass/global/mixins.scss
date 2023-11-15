@@ -23,6 +23,7 @@
 }
 
 @mixin button-reset {
+  border: none;
   padding: 0;
   cursor: pointer;
 }

@@ -1,0 +1,15 @@
+.additional__title {
+  @include margin-reset;
+  font: $font-title-medium-mobile;
+  line-height: 1.08;
+}
+
+.additional__button-submit {
+  font: $font-button-catalog-mobile;
+}
+
+.additional__required-text {
+  @include margin-reset;
+  font: $font-text-medium-mobile;
+  line-height: 1.14;
+}
