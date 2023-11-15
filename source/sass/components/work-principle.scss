@@ -4,6 +4,7 @@
 }
 
 .work-principle__text {
+  @include margin-reset;
   font: $font-text-medium-mobile;
   color: $color-5;
 }
