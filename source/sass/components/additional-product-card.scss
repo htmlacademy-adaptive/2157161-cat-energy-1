@@ -1,0 +1,16 @@
+.additional-product-card__heading {
+  @include margin-reset;
+  font: $font-heading-additional-products-mobile;
+  color: $color-8;
+  text-transform: uppercase;
+}
+
+.additional-product-card__quantity-item {
+  @include margin-reset;
+  font: $font-text-additional-products-mobile;
+  color: $color-5;
+}
+
+.additional-product-card__button {
+  font: $font-button-catalog-mobile;
+}
