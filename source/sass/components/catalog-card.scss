@@ -1,0 +1,29 @@
+.catalog-card__heading {
+  @include margin-reset;
+  font: $font-heading-catalog-card-mobile;
+  text-transform: uppercase;
+  color: $color-8;
+}
+
+.catalog-card__quantity {
+  @include margin-reset;
+}
+
+.catalog-card__quantity-item {
+  font: $font-text-catalog-card-mobile;
+  color: $color-5;
+}
+
+.catalog-card__text {
+  @include margin-reset;
+  font: $font-text-catalog-card-mobile;
+}
+
+.catalog-card__link {
+  font: $font-button-catalog-mobile;
+
+  &--show-more {
+    background-color: $background-color-4;
+    color: $color-5;
+  }
+}

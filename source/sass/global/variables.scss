@@ -8,6 +8,7 @@ $color-4: #f2f2f2;
 $color-5: #444444;
 $color-6: #111111;
 $color-7: #eaeaea;
+$color-8: #222222;
 
 /* background-color */
 $background-color-1: #000000;
@@ -17,6 +18,16 @@ $background-color-4: #f2f2f2;
 $background-color-5: #444444;
 $background-color-6: #111111;
 $background-color-7: #eaeaea;
+$background-color-8: #222222;
+
+/* button-fonts */
+$font-button-nutrition-mobile: 400 1.4rem/1.28 "Oswald", "Arial", sans-serif;
+$font-button-nutrition-tablet: 400 2rem/1 "Oswald", "Arial", sans-serif;
+$font-button-nutrition-desktop: 400 2rem/1 "Oswald", "Arial", sans-serif;
+
+$font-button-catalog-mobile: 400 1.6rem/1.25 "Oswald", "Arial", sans-serif;
+$font-button-catalog-tablet: 400 1.6rem/1.25 "Oswald", "Arial", sans-serif;
+$font-button-catalog-desktop: 400 1.6rem/1.25 "Oswald", "Arial", sans-serif;
 
 /* main-nav fonts */
 $font-text-nav-list-mobile: 500 2rem/1 "Oswald", "Arial", sans-serif;
@@ -61,6 +72,15 @@ $font-title-living-example-result-desktop: 400 2rem/1 "Oswald", "Arial",
 
 /* html-academy-logo fonts */
 $font-html-academy-logo: 400 1.6rem / normal "Lato", "Arial", sans-serif;
+
+/* catalog-card fonts */
+$font-heading-catalog-card-mobile: 400 1.6rem/1.25 "Oswald", "Arial", sans-serif;
+$font-heading-catalog-card-tablet: 400 2rem/1.2 "Oswald", "Arial", sans-serif;
+$font-heading-catalog-card-desktop: 400 2rem/1.05 "Oswald", "Arial", sans-serif;
+
+$font-text-catalog-card-mobile: 400 1.2rem/1.33 "Lato", "Arial", sans-serif;
+$font-text-catalog-card-tablet: 400 1.6rem/1 "Lato", "Arial", sans-serif;
+$font-text-catalog-card-desktop: 400 1.6rem/1 "Lato", "Arial", sans-serif;
 
 /* title-fonts */
 $font-title-x-large-mobile: 400 3.6rem/1 "Oswald", "Arial", sans-serif;
