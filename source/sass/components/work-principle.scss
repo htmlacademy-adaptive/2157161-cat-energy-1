@@ -1,3 +1,8 @@
+.work-principle__title {
+  @include margin-reset;
+  font: $font-title-large-mobile;
+}
+
 .work-principle__text {
   font: $font-text-medium-mobile;
   color: $color-5;
