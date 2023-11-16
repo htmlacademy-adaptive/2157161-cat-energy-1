@@ -1,13 +1,15 @@
 .main-nav {
   position: relative;
+
+  padding: 65px 0 0;
 }
 
 .main-nav__toggle {
   @include button-reset;
 
   position: absolute;
-  top: -18px;
-  right: 0;
+  top: 23px;
+  right: -1px;
 
   width: 24px;
   height: 19px;
