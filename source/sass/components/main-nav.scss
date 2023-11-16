@@ -1,9 +1,16 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__toggle {
   @include button-reset;
-  position: relative;
+
+  position: absolute;
+  top: -18px;
+  right: 0;
 
   width: 24px;
-  height: 17px;
+  height: 19px;
 
   &:hover {
     opacity: 0.6;
@@ -14,6 +21,11 @@
   }
 }
 
+.main-nav__list {
+  @include list-reset;
+}
+
+/* закрытое меню */
 .main-nav--closed .main-nav__toggle {
   &::after {
     content: "";
@@ -27,12 +39,18 @@
     height: 2px;
 
     background-color: $background-color-1;
-    box-shadow: 0px 7px 0 0 $background-color-1,
-      0px 14px 0 0 $background-color-1;
+    box-shadow: 0px 8px 0 0 $background-color-1,
+      0px 16px 0 0 $background-color-1;
   }
 }
 
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
 .main-nav--opened .main-nav__toggle {
+  height: 24px;
+
   &::before,
   &::after {
     content: "";
@@ -53,10 +71,6 @@
   &::after {
     transform: rotate(45deg);
   }
-}
-
-.main-nav__list {
-  @include list-reset;
 }
 
 .main-nav__link {
