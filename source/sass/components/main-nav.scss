@@ -32,6 +32,29 @@
   }
 }
 
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: $background-color-1;
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+}
+
 .main-nav__list {
   @include list-reset;
 }
