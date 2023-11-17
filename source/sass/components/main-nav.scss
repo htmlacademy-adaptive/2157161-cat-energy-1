@@ -98,6 +98,10 @@
 
   width: 100%;
 
+  &--first-line {
+    border-top: 1px solid $background-color-9;
+  }
+
   &--line {
     border-bottom: 1px solid $background-color-9;
   }
