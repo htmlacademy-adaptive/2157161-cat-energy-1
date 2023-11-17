@@ -83,6 +83,17 @@
   position: absolute;
   left: 0;
   right: 0;
+
+  width: 100%;
+}
+
+/* меню без js */
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  display: block;
 }
 
 .main-nav__link {
