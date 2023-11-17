@@ -23,6 +23,8 @@
 
 .main-nav__list {
   @include list-reset;
+
+  background-color: $background-color-2;
 }
 
 /* закрытое меню */
@@ -77,6 +79,12 @@
   }
 }
 
+.main-nav--opened .main-nav__list {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
 .main-nav__link {
   @include link-reset;
   font: $font-text-nav-list-mobile;
@@ -85,6 +93,8 @@
 
   display: block;
   padding: 22px 0 24px;
+
+  background-color: $background-color-2;
 
   width: 100%;
 
