@@ -1,0 +1,8 @@
+.button {
+  @include link-reset;
+  @include button-reset;
+  background-color: $background-color-3;
+  color: $color-2;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}

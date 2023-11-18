@@ -1,0 +1,4 @@
+.main-container__title {
+  @include margin-reset;
+  font: $font-title-x-large-mobile;
+}

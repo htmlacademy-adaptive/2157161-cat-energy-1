@@ -1,0 +1,23 @@
+.location__invation {
+  &--grey {
+    background-color: $background-color-4;
+  }
+}
+
+.location__invation-title {
+  @include margin-reset;
+  font: $font-title-location-mobile;
+  text-transform: uppercase;
+}
+
+.location__address-text {
+  @include margin-reset;
+  font: $font-text-location-mobile;
+  color: $color-5;
+}
+
+.location__address-city {
+  @include margin-reset;
+  font: $font-text-location-mobile;
+  color: $color-5;
+}
