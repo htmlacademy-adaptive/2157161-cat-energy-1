@@ -25,6 +25,8 @@
     content: "";
     display: block;
 
+    position: relative;
+
     margin-right: 20px;
     padding-right: 60px;
 
@@ -32,6 +34,70 @@
     height: 60px;
 
     background-color: $background-color-3;
+  }
+
+  &--leaf {
+    &::after {
+      content: "";
+
+      width: 25px;
+      height: 28px;
+
+      background: url("../img/leaf.svg") no-repeat;
+      background-position: 0 0;
+
+      position: absolute;
+      left: 19px;
+      top: 16px;
+    }
+  }
+
+  &--powder {
+    &::after {
+      content: "";
+
+      width: 26px;
+      height: 29px;
+
+      background: url("../img/powder.svg") no-repeat;
+      background-position: 0 0;
+
+      position: absolute;
+      left: 19px;
+      top: 16px;
+    }
+  }
+
+  &--cutlery {
+    &::after {
+      content: "";
+
+      width: 25px;
+      height: 30px;
+
+      background: url("../img/cutlery.svg") no-repeat;
+      background-position: 0 0;
+
+      position: absolute;
+      left: 19px;
+      top: 15px;
+    }
+  }
+
+  &--watch {
+    &::after {
+      content: "";
+
+      width: 26px;
+      height: 31px;
+
+      background: url("../img/watch.svg") no-repeat;
+      background-position: 0 0;
+
+      position: absolute;
+      left: 19px;
+      top: 15px;
+    }
   }
 
   &:not(:last-child) {
