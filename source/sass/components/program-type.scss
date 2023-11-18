@@ -1,5 +1,22 @@
-.program-type {
+.program-type__list {
+  @include list-reset;
+}
+
+.program-type__item {
   background-color: $background-color-4;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: $background-color-3;
+    border-radius: 50%;
+  }
 }
 
 .program-type__title {
