@@ -98,4 +98,36 @@
   @include link-reset;
   font: $font-button-program-type-mobile;
   text-transform: uppercase;
+
+  display: block;
+
+  position: relative;
+
+  width: 139px;
+
+  &::after {
+    content: "";
+
+    width: 32px;
+    height: 11px;
+
+    background: url("../img/program-type-arrow.svg") no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.program-type__link--loss {
+  &::after {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+  }
+}
+
+.program-type__link--gain {
+  &::after {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+  }
 }
