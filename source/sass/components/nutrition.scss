@@ -18,8 +18,7 @@
 
     transform: translateX(-50%);
 
-    background: url("../../img/nutrition-package-mobile.png") no-repeat top
-      center;
+    background: url("../img/nutrition-package-mobile.png") no-repeat top center;
   }
 }
 
@@ -33,7 +32,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background: $background-color-10 url("../../img/bg-nutrition-mobile.png")
+    background: $background-color-10 url("../img/bg-nutrition-mobile.png")
       no-repeat top center;
     position: absolute;
     top: 0;
