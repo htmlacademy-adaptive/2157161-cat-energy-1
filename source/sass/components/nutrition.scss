@@ -3,7 +3,6 @@
 
   position: relative;
   z-index: 2;
-  min-height: 302px;
 
   &::after {
     content: "";
@@ -21,8 +20,6 @@
 .nutrition__title {
   @include margin-reset;
   margin: 0 auto 25px;
-
-  // width: 250px;
 
   font: $font-title-x-large-mobile;
   color: $color-2;
