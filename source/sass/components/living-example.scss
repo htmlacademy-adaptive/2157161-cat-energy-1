@@ -1,10 +1,23 @@
+.living-example {
+  background-color: $background-color-12;
+}
+
+.living-example__wrapper {
+  padding-top: 25px;
+}
+
 .living-example__title {
   @include margin-reset;
+  margin-bottom: 40px;
+  padding-left: 21px;
+
   font: $font-title-large-mobile;
 }
 
 .living-example__text {
   @include margin-reset;
+  padding-left: 20px;
+
   font: $font-text-medium-mobile;
   color: $color-5;
 }
