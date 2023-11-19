@@ -24,8 +24,7 @@
 }
 
 .living-example__list {
-  @include indent-reset;
-  margin: 0 20px;
+  margin: 0 20px 35px;
 
   display: flex;
   justify-content: space-between;
@@ -77,6 +76,12 @@
       left: 17px;
     }
   }
+}
+
+.living-example__result {
+  margin-bottom: 21px;
+
+  text-align: center;
 }
 
 .living-example__result-expenses {

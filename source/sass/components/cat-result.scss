@@ -1,0 +1,21 @@
+.cat-result {
+  display: flex;
+
+  margin: 0 20px;
+
+  position: relative;
+}
+
+.cat-result__image {
+  &:first-child {
+    margin-right: 3px;
+  }
+}
+
+.cat-result__button-range {
+  @include button-reset;
+
+  position: absolute;
+  top: 0;
+  left: 121px;
+}
