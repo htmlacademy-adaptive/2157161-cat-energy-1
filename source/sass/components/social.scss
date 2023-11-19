@@ -1,0 +1,9 @@
+.social {
+  @include list-reset;
+  margin: 0 auto 36px;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 41%;
+}
