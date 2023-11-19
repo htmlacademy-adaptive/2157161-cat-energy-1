@@ -1,3 +1,15 @@
+.main-footer__wrapper {
+  padding: 37px 0 0 0;
+}
+
+.main-footer__logo {
+  display: block;
+
+  margin: 0 auto;
+
+  width: 128px;
+}
+
 .main-footer__html-academy-logo {
   @include link-reset;
   font: $font-html-academy-logo;
