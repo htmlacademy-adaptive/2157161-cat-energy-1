@@ -1,4 +1,11 @@
 .location__invation {
+  padding: 26px 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  min-height: 112px;
+
   &--grey {
     background-color: $background-color-4;
   }
@@ -6,8 +13,11 @@
 
 .location__invation-title {
   @include margin-reset;
+
   font: $font-title-location-mobile;
   text-transform: uppercase;
+
+  min-width: 142px;
 }
 
 .location__address-text {
