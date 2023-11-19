@@ -16,10 +16,32 @@
 
 .living-example__text {
   @include margin-reset;
+  margin-bottom: 19px;
   padding-left: 20px;
 
   font: $font-text-medium-mobile;
   color: $color-5;
+}
+
+.living-example__list {
+  @include indent-reset;
+  margin: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.living-example__item {
+  padding: 15px 0 0;
+  border: 1px solid $background-color-13;
+  border-radius: 5px;
+
+  width: 124px;
+  min-height: 56px;
+
+  text-align: center;
+
+  position: relative;
 }
 
 .living-example__item-heading {
@@ -29,8 +51,32 @@
 
 .living-example__item-text {
   @include indent-reset;
+
   font: $font-text-small-mobile;
   color: $color-5;
+
+  width: 87px;
+  background-color: $background-color-12;
+}
+
+.living-example__item {
+  &:first-child {
+    .living-example__item-text {
+      width: 81px;
+
+      position: absolute;
+      bottom: -17px;
+      left: 20px;
+    }
+  }
+
+  &:nth-child(2) {
+    .living-example__item-text {
+      position: absolute;
+      bottom: -17px;
+      left: 17px;
+    }
+  }
 }
 
 .living-example__result-expenses {
