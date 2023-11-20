@@ -1,6 +1,9 @@
+.program-type {
+  padding-bottom: 20px;
+}
+
 .program-type__list {
   @include list-reset;
-  margin-bottom: 20px;
 }
 
 .program-type__item {
@@ -100,35 +103,25 @@
   font: $font-button-program-type-mobile;
   text-transform: uppercase;
 
-  display: block;
+  display: inline-block;
 
   position: relative;
 
-  width: 139px;
+  min-width: 130px;
+  max-width: 160px;
 
   &::after {
     content: "";
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 100%;
 
     width: 32px;
     height: 11px;
 
     background: url("../img/program-type-arrow.svg") no-repeat;
     background-position: 0 0;
-  }
-}
-
-.program-type__link--loss {
-  &::after {
-    position: absolute;
-    top: 2px;
-    right: 6px;
-  }
-}
-
-.program-type__link--gain {
-  &::after {
-    position: absolute;
-    top: 2px;
-    right: 10px;
   }
 }
