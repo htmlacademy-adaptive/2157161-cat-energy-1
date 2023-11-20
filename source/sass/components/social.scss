@@ -7,3 +7,17 @@
 
   width: 41%;
 }
+
+.social__link {
+  &:hover {
+    path {
+      fill: $background-color-3;
+    }
+  }
+
+  &:active {
+    path {
+      opacity: 0.3;
+    }
+  }
+}

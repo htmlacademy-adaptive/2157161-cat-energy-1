@@ -13,6 +13,14 @@
   margin-bottom: 37px;
 
   width: 128px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-footer__html-academy-logo {
@@ -56,5 +64,17 @@
     position: absolute;
     top: -83px;
     left: 0;
+  }
+
+  &:hover {
+    path {
+      fill: $background-color-3;
+    }
+  }
+}
+
+.main-footer__html-academy-logo {
+  &:active {
+    opacity: 0.3;
   }
 }

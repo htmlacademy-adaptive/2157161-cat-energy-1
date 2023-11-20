@@ -10,4 +10,12 @@
   position: absolute;
   top: 10px;
   left: 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
