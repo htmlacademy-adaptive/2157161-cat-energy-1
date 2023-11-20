@@ -1,9 +1,36 @@
-.main-footer__wrapper {
-  padding: 37px 0 0 0;
+.main-footer {
+  padding: 37px 20px 0;
 
+  position: relative;
+}
+
+.main-footer__wrapper {
   min-height: 240px;
 
   position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $background-color-11;
+
+    position: absolute;
+  }
+
+  &::before {
+    top: 43px;
+    left: 0;
+  }
+
+  &::after {
+    bottom: 133px;
+    left: 0;
+  }
 }
 
 .main-footer__logo {
@@ -25,46 +52,43 @@
 
 .main-footer__html-academy-logo {
   @include link-reset;
-  margin: 0 auto;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  width: 87%;
 
   font: $font-html-academy-logo;
   color: $color-5;
 
   position: relative;
 
-  &::before {
-    content: "";
-    display: block;
+  // &::before {
+  //   content: "";
+  //   display: block;
 
-    width: 100%;
-    height: 1px;
+  //   width: 100%;
+  //   height: 1px;
 
-    background-color: $background-color-11;
+  //   background-color: $background-color-11;
 
-    position: absolute;
-    top: -21px;
-    left: 0;
-  }
+  //   position: absolute;
+  //   top: -21px;
+  //   left: 0;
+  // }
 
-  &::after {
-    content: "";
-    display: block;
+  // &::after {
+  //   content: "";
+  //   display: block;
 
-    width: 100%;
-    height: 1px;
+  //   width: 100%;
+  //   height: 1px;
 
-    background-color: $background-color-11;
+  //   background-color: $background-color-11;
 
-    position: absolute;
-    top: -83px;
-    left: 0;
-  }
+  //   position: absolute;
+  //   top: -83px;
+  //   left: 0;
+  // }
 
   &:hover {
     path {
