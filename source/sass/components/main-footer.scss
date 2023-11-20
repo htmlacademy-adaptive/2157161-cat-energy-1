@@ -1,11 +1,12 @@
 .main-footer {
-  padding: 38px 20px 0;
-
   position: relative;
 }
 
 .main-footer__wrapper {
   min-height: 240px;
+
+  margin: 0 20px;
+  padding: 38px 0 0 0;
 
   position: relative;
 
@@ -23,12 +24,12 @@
   }
 
   &::before {
-    top: 43px;
+    top: 81px;
     left: 0;
   }
 
   &::after {
-    bottom: 133px;
+    bottom: 96px;
     left: 0;
   }
 }
