@@ -1,6 +1,8 @@
-.nutrition__wrapper {
-  margin-bottom: 156px;
+.nutrition {
+  padding: -0 0 156px;
+}
 
+.nutrition__wrapper {
   position: relative;
   z-index: 2;
 
@@ -71,6 +73,6 @@
 
   font: $font-button-nutrition-mobile;
 
-  position: relative;
-  top: 137px;
+  // position: relative;
+  // top: 137px;
 }
