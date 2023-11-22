@@ -2,6 +2,12 @@
   padding: 65px 0 0;
 
   background: url("../img/logo-text-mobile.svg") no-repeat center 23px;
+
+  @media (min-width: $tablet-width) {
+    padding: 52px 0 0;
+
+    background: none;
+  }
 }
 
 .main-header__link {
