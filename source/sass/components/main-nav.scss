@@ -153,18 +153,29 @@
     padding: 10px 0;
     border-bottom: none;
 
-    &--active {
-      &::after {
-        content: "";
-        display: block;
+    // &--active {
+    //   border-bottom: 1px solid $background-color-3;
 
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
+    // }
+  }
+}
 
-        background-color: $background-color-3;
-      }
+.main-nav__link--active {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+
+      height: 2px;
+
+      position: absolute;
+      bottom: 1px;
+      left: 0;
+      right: 0;
+
+      background-color: $background-color-3;
     }
   }
 }
