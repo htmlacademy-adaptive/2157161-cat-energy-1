@@ -1,5 +1,5 @@
 .nutrition {
-  padding: -0 0 156px;
+  padding: 0 0 19px;
 }
 
 .nutrition__wrapper {
@@ -14,7 +14,7 @@
     height: 270px;
 
     position: absolute;
-    bottom: -93px;
+    bottom: -135px;
     left: 50%;
     z-index: 3;
 
@@ -25,6 +25,7 @@
 }
 
 .nutrition__container-description {
+  margin: 0 0 137px;
   padding: 27px 0 164px;
 
   position: relative;
