@@ -107,21 +107,33 @@
 
   position: relative;
 
-  min-width: 130px;
-  max-width: 160px;
+  min-width: 148px;
+  max-width: 300px;
 
   &::after {
     content: "";
     display: block;
 
+    margin-left: -49px;
+
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 100%;
 
-    width: 32px;
+    width: 24px;
     height: 11px;
 
     background: url("../img/program-type-arrow.svg") no-repeat;
-    background-position: 0 0;
+    background-position: right 0 top 0;
+
+    transition: width 0.4s ease;
   }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.program-type__link:hover::after {
+  width: 32px;
 }
