@@ -1,5 +1,11 @@
 .nutrition {
   padding: 0 0 19px;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 463px;
+  }
 }
 
 .nutrition__wrapper {
@@ -21,6 +27,16 @@
     transform: translateX(-50%);
 
     background: url("../img/nutrition-package-mobile.png") no-repeat top center;
+
+    @media (min-width: $tablet-width) {
+      width: 709px;
+      height: 609px;
+
+      bottom: -464px;
+      z-index: 1;
+
+      background: url("../img/nutrition-package-tablet.png");
+    }
   }
 }
 
@@ -45,6 +61,10 @@
     @media (min-width: $tablet-width) {
       background: none;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 
@@ -96,8 +116,24 @@
 
 .nutrition__link {
   display: block;
+
   margin: 0 20px;
   padding: 12px 20px 12px;
 
   font: $font-button-nutrition-mobile;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    min-height: 54px;
+
+    margin: 0;
+    padding: 17px 0 14px;
+
+    position: absolute;
+    top: 257px;
+    left: 121px;
+    z-index: 3;
+
+    font: $font-button-nutrition-tablet;
+  }
 }
