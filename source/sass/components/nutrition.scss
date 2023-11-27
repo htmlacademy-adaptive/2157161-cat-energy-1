@@ -41,6 +41,10 @@
     top: 0;
     left: 0;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      background: none;
+    }
   }
 }
 
@@ -53,6 +57,18 @@
   font: $font-title-x-large-mobile;
   color: $color-2;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include margin-reset;
+    margin-bottom: 42px;
+    padding: 0 0 0 117px;
+
+    font: $font-title-x-large-tablet;
+    color: $color-1;
+    text-align: left;
+
+    width: 534px;
+  }
 }
 
 .nutrition__text {
@@ -65,6 +81,17 @@
   text-transform: uppercase;
   color: $color-2;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include margin-reset;
+    padding: 0 0 0 120px;
+
+    width: auto;
+
+    color: $color-1;
+    font: $font-text-nutrition-tablet;
+    text-align: left;
+  }
 }
 
 .nutrition__link {
@@ -73,7 +100,4 @@
   padding: 12px 20px 12px;
 
   font: $font-button-nutrition-mobile;
-
-  // position: relative;
-  // top: 137px;
 }
