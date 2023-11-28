@@ -169,11 +169,69 @@
   font: $font-text-medium-mobile;
   color: $color-5;
 
-  // &--leaf {
-  //   &::after {
-  //     content: "1";
-  //   }
-  // }
+  &--leaf {
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "1";
+
+        position: absolute;
+        top: -150px;
+        right: 24px;
+        z-index: -1;
+
+        font: $font-number-work-principle-tablet;
+        color: $color-4;
+      }
+    }
+  }
+
+  &--powder {
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "2";
+
+        position: absolute;
+        top: -150px;
+        right: 3px;
+        z-index: -1;
+
+        font: $font-number-work-principle-tablet;
+        color: $color-4;
+      }
+    }
+  }
+
+  &--cutlery {
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "3";
+
+        position: absolute;
+        top: -150px;
+        right: 1px;
+        z-index: -1;
+
+        font: $font-number-work-principle-tablet;
+        color: $color-4;
+      }
+    }
+  }
+
+  &--watch {
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "4";
+
+        position: absolute;
+        top: -150px;
+        right: 0;
+        z-index: -1;
+
+        font: $font-number-work-principle-tablet;
+        color: $color-4;
+      }
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
