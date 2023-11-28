@@ -8,6 +8,12 @@
   padding-left: 2px;
 
   font: $font-title-large-mobile;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 11px;
+
+    font: $font-title-x-large-tablet;
+  }
 }
 
 .work-principle__list {
@@ -34,6 +40,11 @@
     height: 60px;
 
     background-color: $background-color-3;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--leaf {
