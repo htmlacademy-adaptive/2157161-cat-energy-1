@@ -14,7 +14,7 @@
         center;
 
       position: absolute;
-      top: 230px;
+      top: 201px;
       left: 50%;
 
       transform: translateX(-50%);
@@ -22,7 +22,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 464px;
+    padding: 0 0 526px 120px;
   }
 }
 
@@ -69,12 +69,13 @@
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      background: none;
+      display: none;
     }
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 0 49px;
+    padding: 0;
   }
 }
 
@@ -90,8 +91,7 @@
 
   @media (min-width: $tablet-width) {
     @include margin-reset;
-    margin-bottom: 42px;
-    padding: 0 0 0 117px;
+    margin-bottom: 41px;
 
     font: $font-title-x-large-tablet;
     color: $color-1;
@@ -114,7 +114,6 @@
 
   @media (min-width: $tablet-width) {
     @include margin-reset;
-    padding: 0 0 0 120px;
 
     width: auto;
 
@@ -139,10 +138,8 @@
     margin: 0;
     padding: 17px 0 14px;
 
-    position: absolute;
-    top: 257px;
-    left: 121px;
-    z-index: 3;
+    position: relative;
+    z-index: 4;
 
     font: $font-button-nutrition-tablet;
   }
