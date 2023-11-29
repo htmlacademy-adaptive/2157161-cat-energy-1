@@ -40,7 +40,7 @@
 
       top: 92px;
       left: auto;
-      right: 61px;
+      right: 64px;
     }
   }
 
@@ -53,7 +53,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 29px;
+    margin: 0 28px;
     padding: 76px 54px 50px;
 
     min-height: 372px;
@@ -82,7 +82,7 @@
 
     top: 81px;
     left: auto;
-    right: 91px;
+    right: 94px;
   }
 }
 
@@ -108,7 +108,7 @@
 
     top: 135px;
     left: auto;
-    right: 27px;
+    right: 30px;
   }
 }
 
@@ -122,8 +122,8 @@
   padding-left: 71px;
 
   @media (min-width: $tablet-width) {
-    @include padding-reset;
-    margin-bottom: 25px;
+    padding: 1px 1px 0;
+    margin-bottom: 24px;
 
     font: $font-title-medium-tablet;
 
