@@ -2,6 +2,13 @@
   background-color: $background-color-12;
 
   padding: 25px 0 39px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 0;
+    border-top: 1px solid $background-color-9;
+
+    background-color: $background-color-2;
+  }
 }
 
 .living-example__title {
@@ -10,6 +17,13 @@
   padding-left: 21px;
 
   font: $font-title-large-mobile;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 60px;
+    padding: 0;
+
+    font: $font-title-large-tablet;
+  }
 }
 
 .living-example__text {
@@ -19,6 +33,16 @@
 
   font: $font-text-medium-mobile;
   color: $color-5;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    font: $font-text-medium-tablet;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .living-example__list {
