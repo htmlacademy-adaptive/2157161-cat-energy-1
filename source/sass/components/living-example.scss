@@ -50,6 +50,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+
+    margin: 0 0 104px;
   }
 }
 
@@ -133,7 +135,9 @@
   &:nth-child(2) {
     .living-example__item-text {
       @media (min-width: $tablet-width) {
-        width: 132px;
+        width: 141px;
+
+        margin-left: -3px;
       }
     }
   }

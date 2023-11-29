@@ -152,13 +152,21 @@
             </div>
           </div>
           <div class="living-example__cat-result cat-result">
-            <img
-              class="cat-result__image"
-              src="./img/cat-before-mobile.png"
-              width="140"
-              height="256"
-              alt="кот до того"
-            />
+            <picture>
+              <source
+                media="(min-width: 769px)"
+                srcset="../img/cat-before-tablet.png"
+                width="280"
+                height="512"
+              />
+              <img
+                class="cat-result__image"
+                src="./img/cat-before-mobile.png"
+                width="140"
+                height="256"
+                alt="кот до того"
+              />
+            </picture>
             <button class="cat-result__button-range" type="button">
               <svg
                 width="40"
@@ -189,13 +197,21 @@
                 />
               </svg>
             </button>
-            <img
-              class="cat-result__image"
-              src="./img/cat-after-mobile.png"
-              width="140"
-              height="256"
-              alt="кот до того"
-            />
+            <picture>
+              <source
+                media="(min-width: 769px)"
+                srcset="../img/cat-after-tablet.png"
+                width="280"
+                height="512"
+              />
+              <img
+                class="cat-result__image"
+                src="./img/cat-after-mobile.png"
+                width="140"
+                height="256"
+                alt="кот до того"
+              />
+            </picture>
           </div>
         </div>
       </section>
