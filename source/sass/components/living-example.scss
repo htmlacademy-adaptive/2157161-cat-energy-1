@@ -29,7 +29,7 @@
 }
 
 .living-example__item {
-  padding: 15px 0 0;
+  padding: 14px 0 0;
   border: 1px solid $background-color-13;
   border-radius: 5px;
 
@@ -42,12 +42,15 @@
 }
 
 .living-example__item-heading {
+  margin: 0 0 9px;
+
   font: $font-title-living-example-heading-mobile;
   text-transform: uppercase;
 }
 
 .living-example__item-text {
   @include indent-reset;
+  margin: 0 auto -16px;
 
   font: $font-text-small-mobile;
   color: $color-5;
@@ -60,18 +63,6 @@
   &:first-child {
     .living-example__item-text {
       width: 81px;
-
-      position: absolute;
-      bottom: -17px;
-      left: 20px;
-    }
-  }
-
-  &:nth-child(2) {
-    .living-example__item-text {
-      position: absolute;
-      bottom: -17px;
-      left: 17px;
     }
   }
 }
