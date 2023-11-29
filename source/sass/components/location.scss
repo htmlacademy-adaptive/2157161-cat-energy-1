@@ -9,6 +9,12 @@
   &--grey {
     background-color: $background-color-4;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 70px 60px;
+
+    min-height: 200px;
+  }
 }
 
 .location__invation-title {
@@ -18,21 +24,48 @@
   text-transform: uppercase;
 
   min-width: 142px;
+
+  @media (min-width: $tablet-width) {
+    width: 210px;
+
+    font: $font-title-location-tablet;
+  }
+}
+
+.location__address {
+  width: 160px;
 }
 
 .location__address-text {
   @include margin-reset;
+
   font: $font-text-location-mobile;
   color: $color-5;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 19px;
+
+    font: $font-text-location-tablet;
+    text-align: right;
+  }
 }
 
 .location__address-city {
   @include margin-reset;
   font: $font-text-location-mobile;
   color: $color-5;
+
+  @media (min-width: $tablet-width) {
+    font: $font-text-location-tablet;
+    text-align: right;
+  }
 }
 
 .location__map-iframe {
   width: 100%;
   height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
