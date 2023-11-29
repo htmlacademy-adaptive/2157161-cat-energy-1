@@ -3,6 +3,24 @@
 
   position: relative;
 
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      display: block;
+      width: 709px;
+      height: 609px;
+
+      background: url("../img/nutrition-package-tablet.png") no-repeat top
+        center;
+
+      position: absolute;
+      top: 230px;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0 0 464px;
   }
@@ -11,8 +29,6 @@
 .nutrition__wrapper {
   position: relative;
   z-index: 2;
-
-  background-color: $background-color-2;
 
   &::before {
     content: "";
@@ -29,13 +45,7 @@
     background: url("../img/nutrition-package-mobile.png") no-repeat top center;
 
     @media (min-width: $tablet-width) {
-      width: 709px;
-      height: 609px;
-
-      bottom: -464px;
-      z-index: 1;
-
-      background: url("../img/nutrition-package-tablet.png");
+      display: none;
     }
   }
 }
