@@ -6,6 +6,17 @@
   justify-content: space-between;
 
   width: 48%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    width: 132px;
+
+    gap: 10px 22px;
+  }
 }
 
 .social__link {
