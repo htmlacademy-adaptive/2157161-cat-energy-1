@@ -101,3 +101,9 @@
     align-self: flex-start;
   }
 }
+
+.main-footer__html-academy-text {
+  @media (min-width: $tablet-width) {
+    max-width: 120px;
+  }
+}
