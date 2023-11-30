@@ -80,6 +80,8 @@
     width: auto;
     max-width: 700px;
 
+    background-color: transparent;
+
     gap: 0 34px;
   }
 }
@@ -173,6 +175,9 @@
     padding: 8px 0 8px;
 
     font: $font-text-nav-list-desktop;
+    color: $color-2;
+
+    background-color: transparent;
   }
 }
 
@@ -192,6 +197,12 @@
       right: 0;
 
       background-color: $background-color-3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-color: $background-color-2;
     }
   }
 }

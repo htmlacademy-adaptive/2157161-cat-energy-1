@@ -19,6 +19,16 @@
 
       transform: translateX(-50%);
     }
+
+    @media (min-width: $desktop-width) {
+      width: 552px;
+      height: 499px;
+
+      background-image: url("../img/nutrition-package-desktop.png");
+
+      top: 0;
+      left: 724px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -26,6 +36,13 @@
     padding: 0 0 526px 91px;
 
     width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 82px 0px 267px 80px;
+
+    width: 1220px;
   }
 }
 
@@ -62,10 +79,13 @@
 
   &::after {
     content: "";
+
     width: 100%;
     height: 100%;
+
     background: $background-color-10 url("../img/bg-nutrition-mobile.png")
       no-repeat top center;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -79,6 +99,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 49px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 51px;
   }
 }
 
@@ -123,6 +147,10 @@
     color: $color-1;
     font: $font-text-nutrition-tablet;
     text-align: left;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 440px;
   }
 }
 

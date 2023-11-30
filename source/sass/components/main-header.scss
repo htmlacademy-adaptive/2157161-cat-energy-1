@@ -6,7 +6,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 53px 112px 0px 109px;
+    padding: 53px 112px 33px 109px;
+
+    position: relative;
+
+    &::after {
+      content: "";
+
+      width: 720px;
+      height: 694px;
+
+      background: url("../img/bg-nutrition-desktop.png") no-repeat center;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   }
 }
 
