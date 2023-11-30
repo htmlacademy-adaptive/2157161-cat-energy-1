@@ -4,6 +4,10 @@
 
     min-height: 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 112px 0px 109px;
+  }
 }
 
 .main-header__wrapper {

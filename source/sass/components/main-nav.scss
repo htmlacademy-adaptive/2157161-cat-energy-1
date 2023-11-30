@@ -75,6 +75,13 @@
 
     width: 450px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    max-width: 700px;
+
+    gap: 0 34px;
+  }
 }
 
 /* открытое меню */
@@ -160,6 +167,12 @@
 
     padding: 10px 0;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 0 8px;
+
+    font: $font-text-nav-list-desktop;
   }
 }
 
