@@ -4,10 +4,22 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+
+    width: 1220px;
+  }
 }
 
 .program-type__list {
   @include list-reset;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .program-type__item {
@@ -46,6 +58,10 @@
     @media (min-width: $tablet-width) {
       width: 100px;
       height: 100px;
+
+      top: 47px;
+      right: auto;
+      left: 52px;
     }
   }
 
@@ -55,6 +71,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 30px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -62,6 +82,14 @@
     padding: 76px 54px 50px;
 
     min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 76px 54px 50px;
+
+    width: 570px;
+    min-height: 374px;
   }
 }
 
@@ -95,6 +123,10 @@
     height: 97px;
 
     background-image: url("../img/cat-weight-loss-desktop.svg");
+
+    top: 41px;
+    right: auto;
+    left: 67px;
   }
 }
 
@@ -128,6 +160,10 @@
     height: 56px;
 
     background-image: url("../img/cat-weight-gain-desktop.svg");
+
+    top: 67px;
+    right: auto;
+    left: 33px;
   }
 }
 
@@ -187,11 +223,19 @@
   @media (min-width: $tablet-width) {
     width: 315px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 .program-type__item:nth-child(2) .program-type__text {
   @media (min-width: $tablet-width) {
     width: 344px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
   }
 }
 
