@@ -55,7 +55,7 @@
       right: 64px;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       width: 100px;
       height: 100px;
 
@@ -86,7 +86,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 76px 54px 50px;
+    padding: 77px 53px 50px;
 
     width: 570px;
     min-height: 374px;
@@ -184,6 +184,11 @@
 
     width: 418px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px;
+    padding: 0 0 0 161px;
+  }
 }
 
 .program-type__text {
@@ -216,6 +221,10 @@
 
     font: $font-text-medium-tablet;
     color: $color-1;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 27px;
   }
 }
 
@@ -281,6 +290,10 @@
 
   @media (min-width: $tablet-width) {
     font: $font-button-program-type-tablet;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 150px;
   }
 }
 
