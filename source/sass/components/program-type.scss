@@ -42,6 +42,11 @@
       left: auto;
       right: 64px;
     }
+
+    @media (min-width: $tablet-width) {
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &:first-child {
@@ -84,6 +89,13 @@
     left: auto;
     right: 94px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+
+    background-image: url("../img/cat-weight-loss-desktop.svg");
+  }
 }
 
 .program-type__item--gain::after {
@@ -109,6 +121,13 @@
     top: 135px;
     left: auto;
     right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+
+    background-image: url("../img/cat-weight-gain-desktop.svg");
   }
 }
 
