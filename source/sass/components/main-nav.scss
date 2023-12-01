@@ -204,7 +204,9 @@
       background-color: $background-color-3;
     }
   }
+}
 
+.main-nav__link--index-active {
   @media (min-width: $desktop-width) {
     &::after {
       background-color: $background-color-2;
