@@ -183,6 +183,14 @@
 .main-nav__link--index {
   @media (min-width: $desktop-width) {
     color: $color-2;
+
+    &:hover {
+      color: rgba($color-2, 60%);
+    }
+
+    &:active {
+      color: rgba($color-2, 30%);
+    }
   }
 }
 
