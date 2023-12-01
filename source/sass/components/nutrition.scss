@@ -27,7 +27,7 @@
       background-image: url("../img/nutrition-package-desktop.png");
 
       top: 0;
-      left: 724px;
+      left: 58%;
     }
   }
 
@@ -38,6 +38,29 @@
     width: 709px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+
+    width: auto;
+
+    &::before {
+      content: "";
+
+      width: 50%;
+      height: calc(100% + 59px);
+
+      background: url("../img/bg-nutrition-desktop.png") no-repeat top right;
+      background-size: cover;
+
+      position: absolute;
+      top: -141px;
+      right: 0;
+    }
+  }
+}
+
+.nutrition__block {
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     padding: 82px 0px 267px 80px;
