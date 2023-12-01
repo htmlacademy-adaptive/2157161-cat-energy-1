@@ -175,9 +175,14 @@
     padding: 8px 0 8px;
 
     font: $font-text-nav-list-desktop;
-    color: $color-2;
 
     background-color: transparent;
+  }
+}
+
+.main-nav__link--index {
+  @media (min-width: $desktop-width) {
+    color: $color-2;
   }
 }
 
