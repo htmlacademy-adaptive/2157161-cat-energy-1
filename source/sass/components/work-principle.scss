@@ -7,6 +7,12 @@
 
     width: 709px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0;
+
+    width: 1220px;
+  }
 }
 
 .work-principle__title {
@@ -30,6 +36,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 37px 135px;
+  }
+
+  @media (min-width: $tablet-width) {
+    column-gap: 74px;
   }
 }
 
