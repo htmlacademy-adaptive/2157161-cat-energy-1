@@ -23,7 +23,8 @@
   font: $font-title-location-mobile;
   text-transform: uppercase;
 
-  min-width: 142px;
+  min-width: 125px;
+  max-width: 143px;
 
   @media (min-width: $tablet-width) {
     width: 210px;
