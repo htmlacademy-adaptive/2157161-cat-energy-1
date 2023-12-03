@@ -11,8 +11,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
     padding: 29px 0 0;
     border-top: none;
+
+    width: 1220px;
   }
 }
 
@@ -23,13 +26,28 @@
 
     min-height: 461px;
 
-    background-color: $background-color-4;
+    position: relative;
+
+    // &::before {
+    //   content: "";
+
+    //   width: 100vw;
+    //   min-height: 462px;
+
+    //   position: absolute;
+    //   left: -360px;
+    //   z-index: 1;
+
+    //   background-color: $background-color-4;
+    // }
   }
 }
 
 .living-example__wrapper {
   @media (min-width: $desktop-width) {
-    padding: 70px 0 0 110px;
+    padding: 70px 0 0 0;
+
+    z-index: 3;
   }
 }
 
@@ -49,9 +67,9 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 76px;
-    padding: 0 0 0 110px;
+    padding: 0 0 0 0;
 
-    max-width: 500px;
+    max-width: 470px;
   }
 }
 
@@ -228,6 +246,8 @@
   @media (min-width: $desktop-width) {
     margin: 0 64px 0 0;
     padding: 0 0 0 2px;
+
+    max-width: 173px;
   }
 }
 
@@ -239,5 +259,7 @@
     display: block;
 
     font: $font-title-living-example-result-tablet;
+
+    max-width: 200px;
   }
 }
