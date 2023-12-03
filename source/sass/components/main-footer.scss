@@ -49,9 +49,11 @@
     min-height: 147px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 72px 109px 0;
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 72px 0 0;
 
+    width: 1220px;
     min-height: 169px;
   }
 }
