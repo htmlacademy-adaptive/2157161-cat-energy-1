@@ -218,14 +218,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
+    margin: 0 0 52px;
 
     font: $font-text-medium-tablet;
     color: $color-1;
   }
 
-  @media (min-width: $tablet-width) {
-    margin: 0 0 52px;
+  @media (min-width: $desktop-width) {
+    margin: 0 0 27px;
   }
 }
 
