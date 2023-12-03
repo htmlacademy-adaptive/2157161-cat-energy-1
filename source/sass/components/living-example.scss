@@ -9,6 +9,10 @@
 
     background-color: $background-color-2;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 30px 99px;
+  }
 }
 
 .living-example__title {
