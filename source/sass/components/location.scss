@@ -1,3 +1,7 @@
+.location {
+  position: relative;
+}
+
 .location__invation {
   padding: 26px 20px;
 
@@ -14,6 +18,19 @@
     padding: 61px 70px 60px;
 
     min-height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 75px 0 80px;
+
+    width: 565px;
+    min-height: 198px;
+
+    position: absolute;
+    top: 94px;
+    left: 110px;
+
+    background-color: $background-color-2;
   }
 }
 
@@ -49,6 +66,10 @@
     font: $font-text-location-tablet;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .location__address-city {
@@ -59,6 +80,10 @@
   @media (min-width: $tablet-width) {
     font: $font-text-location-tablet;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
