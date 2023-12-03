@@ -104,7 +104,7 @@
     display: flex;
     justify-content: space-between;
 
-    margin: 0 0 104px;
+    margin: 0 0 44px;
   }
 
   @media (min-width: $desktop-width) {
@@ -132,11 +132,10 @@
 }
 
 .living-example__item {
-  padding: 14px 10px 0;
   border: 1px solid $background-color-13;
   border-radius: 5px;
 
-  width: 124px;
+  width: 125px;
   min-height: 56px;
 
   text-align: center;
@@ -144,11 +143,31 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 16px 13px 0;
+    // padding: 16px 13px 0;
     border-radius: 3px;
 
     width: 162px;
     min-height: 72px;
+  }
+}
+
+.living-example__item:nth-child(1) .living-example__item-heading {
+  margin: 0;
+  padding: 14px 42px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 15px 55px 20px;
+  }
+}
+
+.living-example__item:nth-child(2) .living-example__item-heading {
+  margin: 0;
+  padding: 15px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 15px 29px 20px;
   }
 }
 
@@ -164,13 +183,13 @@
 }
 
 .living-example__item-text {
-  @include indent-reset;
-  margin: 0 auto -16px;
+  margin: 8px auto -16px;
+
+  width: 81px;
 
   font: $font-text-small-mobile;
   color: $color-5;
 
-  width: 87px;
   background-color: $background-color-12;
 
   @media (min-width: $tablet-width) {
@@ -186,27 +205,21 @@
   }
 }
 
-.living-example__item {
-  &:first-child {
-    .living-example__item-text {
-      width: 81px;
+.living-example__item:nth-child(1) .living-example__item-text {
+  @media (min-width: $tablet-width) {
+    margin: -10px auto -7px;
+    padding: 0;
 
-      @media (min-width: $tablet-width) {
-        width: 114px;
-      }
-    }
+    width: 114px;
   }
 }
 
-.living-example__item {
-  &:nth-child(2) {
-    .living-example__item-text {
-      @media (min-width: $tablet-width) {
-        width: 141px;
+.living-example__item:nth-child(2) .living-example__item-text {
+  @media (min-width: $tablet-width) {
+    margin: -10px auto -6px;
+    padding: 0;
 
-        margin-left: -3px;
-      }
-    }
+    width: 142px;
   }
 }
 
