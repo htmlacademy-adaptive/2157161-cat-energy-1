@@ -27,6 +27,13 @@
 
     font: $font-title-x-large-tablet;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+    padding: 0;
+
+    font: $font-title-x-large-tablet;
+  }
 }
 
 .work-principle__list {
