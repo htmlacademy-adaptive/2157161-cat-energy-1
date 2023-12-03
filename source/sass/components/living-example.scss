@@ -11,35 +11,27 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
+    margin: 0;
     padding: 29px 0 0;
     border-top: none;
 
-    width: 1220px;
+    width: 100%;
   }
 }
 
 .living-example__block {
   @media (min-width: $desktop-width) {
+    padding: 0 342px;
+
     display: flex;
     justify-content: space-between;
 
+    width: 100%;
     min-height: 461px;
 
     position: relative;
 
-    // &::before {
-    //   content: "";
-
-    //   width: 100vw;
-    //   min-height: 462px;
-
-    //   position: absolute;
-    //   left: -360px;
-    //   z-index: 1;
-
-    //   background-color: $background-color-4;
-    // }
+    background-color: $background-color-4;
   }
 }
 
@@ -67,9 +59,9 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 76px;
-    padding: 0 0 0 0;
+    padding: 0 0 0 342px;
 
-    max-width: 470px;
+    max-width: 700px;
   }
 }
 

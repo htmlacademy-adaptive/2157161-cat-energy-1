@@ -17,6 +17,10 @@
 
     gap: 10px 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 21px;
+  }
 }
 
 .social__link {
