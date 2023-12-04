@@ -1,5 +1,5 @@
 .work-principle {
-  padding: 0 20px 50px;
+  padding: 0 20px 49px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 0;
+    padding: 0 0 29px;
 
     width: 1220px;
   }
@@ -17,8 +17,7 @@
 
 .work-principle__title {
   @include margin-reset;
-  margin-bottom: 40px;
-  padding-left: 2px;
+  margin-bottom: 39px;
 
   font: $font-title-large-mobile;
 
@@ -64,7 +63,7 @@
     position: relative;
 
     margin-right: 20px;
-    padding-right: 60px;
+    padding-right: 58px;
 
     width: 60px;
     height: 60px;
@@ -92,7 +91,7 @@
 
       position: absolute;
       top: 16px;
-      left: 19px;
+      left: 18px;
 
       @media (min-width: $tablet-width) {
         top: 27px;
@@ -113,7 +112,7 @@
 
       position: absolute;
       top: 16px;
-      left: 19px;
+      left: 18px;
 
       @media (min-width: $tablet-width) {
         top: 26px;
@@ -134,7 +133,7 @@
 
       position: absolute;
       top: 15px;
-      left: 19px;
+      left: 18px;
 
       @media (min-width: $tablet-width) {
         top: 25px;
@@ -155,7 +154,7 @@
 
       position: absolute;
       top: 15px;
-      left: 19px;
+      left: 18px;
 
       @media (min-width: $tablet-width) {
         top: 25px;

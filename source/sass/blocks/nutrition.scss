@@ -1,5 +1,5 @@
 .nutrition {
-  padding: 0 0 19px;
+  padding: 0 0 20px;
 
   position: relative;
 
@@ -14,7 +14,7 @@
         center;
 
       position: absolute;
-      bottom: 0px;
+      bottom: 0;
       left: 50%;
 
       transform: translateX(-50%);
@@ -33,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    padding: 0 0 526px 91px;
+    padding: 0 0 525px 91px;
 
     width: 709px;
   }
@@ -63,7 +63,7 @@
 .nutrition__block {
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    padding: 82px 0px 267px 80px;
+    padding: 82px 0px 266px 80px;
 
     width: 1220px;
   }
@@ -94,8 +94,8 @@
 }
 
 .nutrition__container-description {
-  margin: 0 0 137px;
-  padding: 28px 0 164px;
+  margin: 0 0 138px;
+  padding: 28px 0 163px;
 
   position: relative;
   z-index: 2;
@@ -181,7 +181,7 @@
   display: block;
 
   margin: 0 20px;
-  padding: 12px 20px 10px;
+  padding: 10px 20px 10px;
 
   font: $font-button-nutrition-mobile;
 

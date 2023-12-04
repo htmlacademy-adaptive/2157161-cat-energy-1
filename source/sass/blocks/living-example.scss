@@ -11,17 +11,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    padding: 29px 0 0;
+    margin: 0 auto;
+    padding: 0;
     border-top: none;
-
-    width: 100%;
   }
 }
 
 .living-example__block {
   @media (min-width: $desktop-width) {
-    padding: 0 342px;
+    padding: 0 110px 0;
 
     display: flex;
     justify-content: space-between;
@@ -59,7 +57,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 76px;
-    padding: 0 0 0 342px;
+    padding: 0 0 0 110px;
 
     max-width: 700px;
   }

@@ -8,7 +8,7 @@
 
   position: absolute;
   top: -43px;
-  right: 20px;
+  right: 21px;
 
   width: 24px;
   height: 19px;
@@ -37,7 +37,7 @@
   gap: 0 36px;
 
   margin-left: auto;
-  padding: 9px 0 0;
+  padding: 0;
 }
 
 /* закрытое меню */
@@ -69,9 +69,9 @@
     gap: 0 36px;
 
     margin-left: auto;
-    padding: 9px 0 0;
+    padding: 0;
 
-    width: 450px;
+    width: 441px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,7 +89,7 @@
   height: 24px;
 
   top: -46px;
-  right: 19px;
+  right: 17px;
 
   &::before,
   &::after {

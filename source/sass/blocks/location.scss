@@ -23,13 +23,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 75px 0 80px;
+    padding: 60px 75px 40px 80px;
 
     width: 565px;
-    min-height: 198px;
+    min-height: 199px;
 
     position: absolute;
-    top: 94px;
+    top: 96px;
     left: 110px;
   }
 }
@@ -41,7 +41,7 @@
   text-transform: uppercase;
 
   min-width: 125px;
-  max-width: 143px;
+  max-width: 140px;
 
   @media (min-width: $tablet-width) {
     max-width: 170px;

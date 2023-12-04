@@ -1,12 +1,12 @@
 .main-header {
   @media (min-width: $tablet-width) {
-    padding: 22px 30px 65px;
+    padding: 30px 32px 66px 30px;
 
     min-height: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 53px 0 33px;
+    padding: 63px 0 33px;
     margin: 0 auto;
 
     width: 1220px;
@@ -33,7 +33,7 @@
   display: inline-block;
 
   position: absolute;
-  top: 10px;
+  top: 13px;
   left: 20px;
 
   &:hover {
@@ -45,9 +45,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 0;
+    top: -7px;
     left: 0;
 
     z-index: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -10px;
   }
 }
