@@ -38,8 +38,6 @@
 
   margin-left: auto;
   padding: 9px 0 0;
-
-  width: 450px;
 }
 
 /* закрытое меню */
@@ -78,7 +76,7 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
-    max-width: 608px;
+    max-width: 610px;
 
     background-color: transparent;
 

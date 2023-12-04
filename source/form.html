@@ -6,33 +6,55 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Подбор программы</title>
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__link" href="index.html">
-          <img
-            class="main-header__image"
-            src="./img/logo-icon-mobile.svg"
-            width="33"
-            height="38"
-            alt="Кэт энерджи"
-          />
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="./img/logo-icon-desktop.svg"
+              width="202"
+              heigh="59"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="./img/logo-icon-tablet.svg"
+              width="174"
+              height="52"
+            />
+            <img
+              class="main-header__image"
+              src="./img/logo-icon-mobile.svg"
+              width="33"
+              height="38"
+              alt="Кэт энерджи"
+            />
+          </picture>
         </a>
-        <nav class="main-header__nav main-nav">
+        <nav class="main-header__nav main-nav main-nav--nojs main-nav--closed">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="index.html" class="main-nav__link">Главная</a>
+              <a
+                href="index.html"
+                class="main-nav__link main-nav__link--active main-nav__link--index main-nav__link--index-active"
+                >Главная</a
+              >
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html" class="main-nav__link"
+              <a
+                href="catalog.html"
+                class="main-nav__link main-nav__link--index"
                 >Каталог продукции</a
               >
             </li>
             <li class="main-nav__item">
-              <a href="form.html" class="main-nav__link">Подбор программы</a>
+              <a href="form.html" class="main-nav__link main-nav__link--index"
+                >Подбор программы</a
+              >
             </li>
           </ul>
         </nav>
