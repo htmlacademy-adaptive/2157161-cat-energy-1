@@ -10,14 +10,17 @@
 // @import "./utils/container.scss";
 @import "./utils/visually-hidden.scss";
 
+/* components */
+// @import "./components/title.scss";
+@import "./components/button.scss";
+@import "./components/description.scss";
+
 /* blocks */
 @import "./blocks/page-body.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/nutrition.scss";
-@import "./blocks/button.scss";
-// @import "./blocks/title.scss";
 @import "./blocks/program-type.scss";
 @import "./blocks/work-principle.scss";
 @import "./blocks/living-example.scss";
