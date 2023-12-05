@@ -7,7 +7,7 @@
     <title>Подбор программы</title>
   </head>
   <body class="page-body">
-    <header class="main-header">
+    <header class="main-header main-header--line">
       <div class="main-header__wrapper">
         <a class="main-header__link" href="index.html">
           <picture>
@@ -63,198 +63,16 @@
 
     <main class="main-container form-page">
       <h1 class="form-page__title title">Подбор программы</h1>
+      <p class="form-page__description description">
+        Заполните анкету, и мы подберем программу питания для вашего кота
+      </p>
 
-      <form class="main-form" action="#" method="post">
-        <section class="main-form__cat-information cat-information">
-          <div class="cat-information__wrapper">
-            <h2 class="visually-hidden">Информация про кота</h2>
-            <p class="cat-information__text">
-              Заполните анкету, и мы подберем программу питания для вашего кота
-            </p>
-
-            <div class="cat-inforamtion__container-text">
-              <label
-                class="cat-information__label-text label-text label-text--name"
-                for="name"
-                >Имя:*
-                <input
-                  class="label-text__input-text label-text__input-text--name"
-                  id="name"
-                  name="Имя"
-                  placeholder="Барсик"
-                  value="Барсик"
-                  required
-              /></label>
-              <label
-                class="cat-information__label-text label-text label-text--weight"
-                for="weight"
-                >Вес (кг):*
-                <input
-                  class="label-text__input-text label-text__input-text--weight"
-                  id="weight"
-                  name="Вес"
-                  placeholder="7"
-                  value="7"
-                  required
-              /></label>
-              <label
-                class="cat-information__label-text label-text label-text--age"
-                for="age"
-                >Возраст (лет):
-                <input
-                  class="label-text__input-text label-text__input-text--age"
-                  id="age"
-                  name="Возраст"
-                  placeholder="7"
-                  value="7"
-                  required
-              /></label>
-            </div>
-
-            <div class="cat-information__container-radio">
-              <label
-                class="cat-information__label-radio label-radio label-radio--weight-loss"
-                for="weight-loss"
-                ><input
-                  class="label-radio__input-radio label-radio__input-radio--weight-loss"
-                  id="weight-loss"
-                  type="radio"
-                  name="program"
-                  checked
-                />Похудение</label
-              >
-              <label
-                class="cat-information__label-radio label-radio label-radio--weight-gain"
-                for="weight-gain"
-                ><input
-                  class="label-radio__input-radio"
-                  id="weight-gain"
-                  type="radio"
-                  name="program"
-                />Набор массы</label
-              >
-              <label
-                class="cat-information__label-radio label-radio label-radio--your-advice"
-                for="your-advice"
-                ><input
-                  class="label-radio__input-radio label-radio__input-radio--your-advice"
-                  id="your-advice"
-                  type="radio"
-                  name="program"
-                />Не знаю (Нужен ваш совет)</label
-              >
-            </div>
-          </div>
-        </section>
-
-        <section class="main-form__contact-details contact-details">
-          <div class="contact-details__wrapper">
-            <h2 class="contact-details__title">
-              Контактные данные (владельца кота)
-            </h2>
-
-            <div class="contact-details__container-text">
-              <label
-                class="contact-details__label-text label-text label-text--email"
-                for="email"
-                >E-mail:*<input
-                  class="label-text__input-text label-text__input-text--email"
-                  id="email"
-                  name="Почта"
-                  placeholder="kuklachev@gmail.com"
-                  value="kuklachev@gmail.com"
-                  required
-                />
-              </label>
-              <label
-                class="contact-details__label-text label-text label-text--phone"
-                for="phone"
-                >Телефон:*<input
-                  class="label-text__input-text label-text__input-text--phone"
-                  id="phone"
-                  name="Телефон"
-                  placeholder="8 (960) 900-60-90"
-                  value="8 (960) 900-60-90"
-                  required
-              /></label>
-            </div>
-          </div>
-        </section>
-
-        <section class="main-form__comment comment">
-          <div class="comment__wrapper">
-            <h2 class="comment__title">Комментарий</h2>
-            <textarea
-              class="comment__textarea"
-              name="Коммментарий"
-              id=""
-              cols="30"
-              rows="10"
-              required
-            >
-Расскажите обо всех повадках кота</textarea
-            >
-          </div>
-        </section>
-
-        <section class="main-form__additional additional">
-          <div class="additional__wrapper">
-            <h2 class="additional__title">Дополнительно</h2>
-            <div class="additional__container-checkbox">
-              <label
-                class="additional__label-checkbox label-checkbox label-checkbox--sweetener"
-                for="sweetener"
-                ><input
-                  class="label-checkbox__input-checkbox"
-                  type="checkbox"
-                  id="sweetener"
-                  name="Сахарозаменитель"
-                  required
-                  checked
-                />Сахарозаменитель</label
-              >
-              <label
-                class="additional__label-checkbox label-checkbox label-checkbox--drinking-water"
-                for="drinking-water"
-                ><input
-                  class="label-checkbox__input-checkbox"
-                  type="checkbox"
-                  id="drinking-water"
-                  name="Питьевая вода"
-                  required
-                />Питьевая вода</label
-              >
-              <label
-                class="additional__label-checkbox label-checkbox label-checkbox--milk"
-                for="milk"
-                ><input
-                  class="label-checkbox__input-checkbox"
-                  type="checkbox"
-                  id="milk"
-                  name="Молоко"
-                  required
-                />Молоко</label
-              >
-              <label
-                class="additional__label-checkbox label-checkbox label-checkbox--vitamins"
-                for="vitamins"
-                ><input
-                  class="label-checkbox__input-checkbox"
-                  type="checkbox"
-                  id="vitamins"
-                  name="Витамины"
-                  required
-                />Витамины</label
-              >
-            </div>
-            <div class="additional__container-submit">
-              <button class="additional__button-submit button" type="submit">
-                Отправить заявку
-              </button>
-              <p class="additional__required-text">* — Обязательные поля</p>
-            </div>
-          </div>
-        </section>
+      <form class="form" action="#">
+        <section class="form__section info"></section>
+        <section class="form__section"></section>
+        <section class="form__section"></section>
+        <section class="form__section"></section>
+        <section class="form__section"></section>
       </form>
     </main>
 

@@ -1,0 +1,19 @@
+.description {
+  margin: 0;
+  padding: 0;
+
+  width: 230px;
+
+  font: $font-description-large-mobile;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 325px;
+
+    font: $font-description-large-mobile;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $font-description-large-desktop;
+  }
+}
