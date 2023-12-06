@@ -1,0 +1,30 @@
+.text-input {
+  margin: 0;
+  padding: 0 20px;
+
+  display: flex;
+  column-gap: 15px;
+}
+
+.text-input__label {
+  font: $font-label-mobile;
+  text-transform: uppercase;
+  color: $color-5;
+
+  @media (min-width: $tablet-width) {
+    font: $font-label-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $font-label-desktop;
+  }
+}
+
+.text-input__input {
+  margin: 0;
+  padding: 0;
+  border: 1px solid $background-color-16;
+
+  width: 100%;
+  height: 45px;
+}
