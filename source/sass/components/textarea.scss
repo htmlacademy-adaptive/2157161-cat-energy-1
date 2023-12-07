@@ -1,0 +1,33 @@
+.textarea {
+  padding: 14px 13px;
+  border: 1px solid $background-color-16;
+
+  width: 87%;
+  height: 150px;
+
+  font: $font-label-mobile;
+  text-transform: uppercase;
+  color: $color-5;
+
+  &::placeholder {
+    color: inherit;
+  }
+
+  &:hover {
+    border-color: $background-color-13;
+  }
+
+  &:focus {
+    outline: 2px solid $background-color-5;
+    outline-offset: -2px;
+
+    border: 1px solid transparent;
+  }
+
+  &:invalid {
+    outline: 2px solid $background-color-17;
+    outline-offset: -2px;
+
+    border: 1px solid transparent;
+  }
+}
