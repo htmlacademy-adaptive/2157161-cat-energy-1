@@ -71,6 +71,7 @@
                 class="text-input__input"
                 type="text"
                 id="name"
+                name="name"
                 placeholder="Барсик"
               />
             </li>
@@ -80,6 +81,7 @@
                 class="text-input__input"
                 type="text"
                 id="weight"
+                name="weight"
                 placeholder="7"
               />
             </li>
@@ -89,12 +91,52 @@
                 class="text-input__input"
                 type="text"
                 id="age"
+                name="age"
                 placeholder="7"
               />
             </li>
           </ul>
         </section>
-        <section class="form__section"></section>
+
+        <section class="form__section type-program">
+          <h2 class="visually-hidden">Выбор программы</h2>
+          <ul class="type-program__list">
+            <li class="type-program__item radio-input">
+              <input
+                class="radio-input__input visually-hidden"
+                type="radio"
+                id="weight-loss"
+                name="type-program"
+                checked
+              />
+              <label class="radio-input__label" for="weight-loss"
+                >Похудение</label
+              >
+            </li>
+            <li class="type-program__item radio-input">
+              <input
+                class="radio-input__input visually-hidden"
+                type="radio"
+                id="weight-gain"
+                name="type-program"
+              />
+              <label class="radio-input__label" for="weight-gain"
+                >Набор массы</label
+              >
+            </li>
+            <li class="type-program__item radio-input">
+              <input
+                class="radio-input__input visually-hidden"
+                type="radio"
+                id="advice"
+                name="type-program"
+              />
+              <label class="radio-input__label" for="advice"
+                >Не знаю (Нужен ваш совет)</label
+              >
+            </li>
+          </ul>
+        </section>
         <section class="form__section"></section>
         <section class="form__section"></section>
         <section class="form__section"></section>

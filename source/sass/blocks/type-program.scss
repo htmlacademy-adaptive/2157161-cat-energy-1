@@ -1,0 +1,16 @@
+.type-program {
+  padding: 22px 0 18px;
+  border-bottom: 1px solid $background-color-11;
+}
+
+.type-program__list {
+  @include list-reset;
+}
+
+.type-program__item {
+  margin: 0 0 13px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
