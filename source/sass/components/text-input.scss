@@ -7,9 +7,13 @@
 }
 
 .text-input__label {
+  display: block;
+  padding: 0 0 0;
+
   font: $font-label-mobile;
   text-transform: uppercase;
   color: $color-5;
+  text-wrap: nowrap;
 
   @media (min-width: $tablet-width) {
     font: $font-label-tablet;
