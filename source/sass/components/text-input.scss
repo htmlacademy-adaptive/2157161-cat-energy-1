@@ -43,4 +43,14 @@
   &::placeholder {
     color: inherit;
   }
+
+  &:hover {
+    border-color: $background-color-13;
+  }
+
+  &:focus {
+    outline: 2px solid $background-color-5;
+
+    border: none;
+  }
 }
