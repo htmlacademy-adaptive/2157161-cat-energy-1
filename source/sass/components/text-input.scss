@@ -50,7 +50,15 @@
 
   &:focus {
     outline: 2px solid $background-color-5;
+    outline-offset: -2px;
 
-    border: none;
+    border: transparent;
+  }
+
+  &:invalid {
+    outline: 2px solid $background-color-17;
+    outline-offset: -2px;
+
+    border: transparent;
   }
 }
