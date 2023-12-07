@@ -10,10 +10,10 @@
 
   min-height: 112px;
 
-  background-color: $background-color-2;
+  background-color: $background-color-4;
 
-  &--grey {
-    background-color: $background-color-4;
+  &--index {
+    background-color: $background-color-2;
   }
 
   @media (min-width: $tablet-width) {
