@@ -1,15 +1,40 @@
+.additional {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+
+    background-color: $background-color-3;
+  }
+}
+
 .additional__title {
-  @include margin-reset;
-  font: $font-title-medium-mobile;
-  line-height: 1.08;
+  padding: 0 0 0 20px;
+
+  width: 181px;
+
+  background-color: $background-color-2;
 }
 
-.additional__button-submit {
-  font: $font-button-catalog-mobile;
+.additional__list {
+  @include list-reset;
 }
 
-.additional__required-text {
-  @include margin-reset;
-  font: $font-text-medium-mobile;
-  line-height: 1.14;
+.additional__item {
+  margin: 0 0 13px;
+
+  min-height: 40px;
+
+  &:last-child {
+    margin: 0;
+  }
 }
