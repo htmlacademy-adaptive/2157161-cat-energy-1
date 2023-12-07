@@ -1,10 +1,13 @@
 .button {
   @include link-reset;
-  background-color: $background-color-3;
+  @include button-reset;
+
   color: $color-2;
-  font-family: "Oswald", "Arial", sans-serif;
+  font: $font-button-mobile;
   text-transform: uppercase;
   text-align: center;
+
+  background-color: $background-color-3;
 
   &:hover {
     background-color: $background-color-14;

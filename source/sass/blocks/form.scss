@@ -1,0 +1,18 @@
+.form {
+  padding: 0 0 31px;
+}
+
+.form__button {
+  margin: 0 20px 22px;
+  padding: 10px 44px;
+
+  width: 87%;
+}
+
+.form__text-required {
+  @include indent-reset;
+  padding: 0 2px 0 0;
+
+  font: $font-text-form-small-mobile;
+  text-align: center;
+}

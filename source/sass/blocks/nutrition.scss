@@ -183,7 +183,7 @@
   margin: 0 20px;
   padding: 10px 20px 10px;
 
-  font: $font-button-nutrition-mobile;
+  font: $font-button-mobile;
 
   @media (min-width: $tablet-width) {
     width: 244px;
@@ -195,6 +195,6 @@
     position: relative;
     z-index: 4;
 
-    font: $font-button-nutrition-tablet;
+    font: $font-button-tablet;
   }
 }
