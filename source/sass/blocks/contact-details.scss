@@ -1,5 +1,5 @@
 .contact-details {
-  padding: 27px 0 0;
+  padding: 27px 0 20px;
 
   position: relative;
 
@@ -21,6 +21,7 @@
 
 .contact-details__title {
   padding: 0 0 0 20px;
+  margin: 0 0 35px;
 
   width: 227px;
 
@@ -31,5 +32,17 @@
 
   &::before {
     top: 15px;
+  }
+}
+
+.contact-details__list {
+  @include list-reset;
+}
+
+.contact-details__item {
+  margin: 0 0 14px;
+
+  &:last-child {
+    margin: 0;
   }
 }
