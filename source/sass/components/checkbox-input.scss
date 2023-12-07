@@ -43,7 +43,17 @@
 
   &:hover {
     cursor: pointer;
+
+    &::before {
+      border-color: $background-color-18;
+    }
   }
+}
+
+.checkbox-input__label[disabled] {
+  pointer-events: none;
+
+  opacity: 0.3;
 }
 
 .checkbox-input__input:checked + .checkbox-input__label::after {
