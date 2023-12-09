@@ -14,7 +14,7 @@
         center;
 
       position: absolute;
-      bottom: 0;
+      bottom: -1px;
       left: 50%;
 
       transform: translateX(-50%);
@@ -33,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    padding: 0 0 525px 91px;
+    padding: 0 0 525px 90px;
 
     width: 709px;
   }
@@ -132,6 +132,7 @@
 .nutrition__title {
   @include margin-reset;
   margin: 0 auto 25px;
+  padding: 0;
 
   width: 280px;
 
@@ -190,7 +191,7 @@
     min-height: 54px;
 
     margin: 0;
-    padding: 17px 0 14px;
+    padding: 14px 0;
 
     position: relative;
     z-index: 4;

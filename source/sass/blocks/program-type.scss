@@ -80,14 +80,14 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 28px;
-    padding: 76px 54px 50px;
+    padding: 68px 54px 50px;
 
     min-height: 372px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 77px 53px 50px;
+    padding: 68px 53px 50px;
 
     width: 570px;
     min-height: 374px;
@@ -173,12 +173,12 @@
   font: $font-title-medium-mobile;
   text-transform: uppercase;
 
-  margin: 0 0 30px;
-  padding: 6px 0 0 69px;
+  margin: 0 0 35px;
+  padding: 12px 0 0 69px;
 
   @media (min-width: $tablet-width) {
     padding: 1px 1px 0;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
 
     font: $font-title-medium-tablet;
 
@@ -186,7 +186,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 73px;
+    margin: 0 0 65px;
     padding: 0 0 0 161px;
   }
 }
