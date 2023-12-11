@@ -30,4 +30,13 @@
 
     border: 1px solid transparent;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 13px 14px 19px;
+
+    width: calc(82% - 2px);
+    height: 175px;
+
+    font: $font-label-tablet;
+  }
 }

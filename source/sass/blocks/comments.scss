@@ -26,8 +26,22 @@
   width: 161px;
 
   background-color: $background-color-2;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 62px 30px;
+    padding: 0 0 0 40px;
+
+    width: 262px;
+
+    position: relative;
+    top: -17px;
+  }
 }
 
 .comments__textarea {
   margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 68px 0 70px;
+  }
 }
