@@ -1,6 +1,6 @@
 .form-page__title {
-  margin: 0;
-  padding: 0;
+  margin: 0 0 37px;
+  padding: 27px 0 0 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 54px;
@@ -16,13 +16,5 @@
     padding: 0 0 0 69px;
 
     width: 400px;
-  }
-}
-
-.form__section {
-  @media (min-width: $tablet-width) {
-    &:nth-child(2) {
-      margin: 0 70px 45px;
-    }
   }
 }

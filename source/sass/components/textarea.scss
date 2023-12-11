@@ -2,7 +2,7 @@
   padding: 14px 13px 14px 14px;
   border: 1px solid $background-color-16;
 
-  width: 87%;
+  width: calc(100% - 40px);
   height: 150px;
 
   font: $font-label-mobile;
