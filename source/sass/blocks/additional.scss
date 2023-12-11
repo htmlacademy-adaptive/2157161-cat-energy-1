@@ -26,15 +26,34 @@
   width: 181px;
 
   background-color: $background-color-2;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 32px 30px;
+    padding: 0 0 0 39px;
+
+    width: 292px;
+
+    position: relative;
+    top: -17px;
+  }
 }
 
 .additional__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 70px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px 123px;
+  }
 }
 
 .additional__item {
   margin: 0 0 13px;
 
+  min-width: 221px;
   min-height: 30px;
 
   &:last-child {

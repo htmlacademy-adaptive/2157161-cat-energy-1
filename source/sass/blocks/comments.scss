@@ -17,6 +17,10 @@
 
     background-color: $background-color-3;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 71px;
+  }
 }
 
 .comments__title {
