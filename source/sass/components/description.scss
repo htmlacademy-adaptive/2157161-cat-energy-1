@@ -8,9 +8,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 325px;
-
-    font: $font-description-large-mobile;
+    font: $font-description-large-tablet;
   }
 
   @media (min-width: $desktop-width) {

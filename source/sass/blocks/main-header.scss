@@ -1,6 +1,10 @@
 .main-header {
   &--line {
     border-bottom: 1px solid $background-color-11;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
