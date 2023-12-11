@@ -8,6 +8,10 @@
   &:last-child {
     margin: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
 }
 
 .text-input__label {
@@ -24,6 +28,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 10px 0 0;
+
     font: $font-label-tablet;
   }
 
@@ -64,5 +70,13 @@
     outline-offset: -2px;
 
     border: 1px solid transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 19px;
+
+    height: 52px;
+
+    font: $font-label-tablet;
   }
 }

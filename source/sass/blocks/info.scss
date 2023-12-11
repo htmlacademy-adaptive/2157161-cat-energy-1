@@ -1,6 +1,10 @@
 .info {
   padding: 0 0 23px;
   border-bottom: 1px solid $background-color-11;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .info__list {
@@ -9,4 +13,8 @@
 
 .info__item {
   margin: 0 0 14px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px;
+  }
 }
