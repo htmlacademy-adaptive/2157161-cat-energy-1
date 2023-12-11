@@ -17,6 +17,11 @@
 
     background-color: $background-color-3;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .contact-details__title {
@@ -33,6 +38,13 @@
   &::before {
     top: 15px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 0 0 39px;
+    margin: 0 0 68px 30px;
+
+    width: 591px;
+  }
 }
 
 .contact-details__list {
@@ -44,5 +56,9 @@
 
   &:last-child {
     margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px;
   }
 }
