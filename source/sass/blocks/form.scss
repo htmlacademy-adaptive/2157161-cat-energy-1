@@ -13,6 +13,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
+    padding: 0 0 50px;
 
     display: flex;
     column-gap: 80px;
@@ -39,12 +40,6 @@
 }
 
 .form__section {
-  @media (min-width: $tablet-width) {
-    &:nth-child(2) {
-      margin: 0 70px 45px;
-    }
-  }
-
   @media (min-width: $desktop-width) {
     &:nth-child(2) {
       margin: 0;

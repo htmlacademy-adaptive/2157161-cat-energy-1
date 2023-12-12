@@ -45,10 +45,25 @@
 
     width: 591px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 68px 30px;
+  }
 }
 
 .contact-details__list {
   @include list-reset;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 81px;
+    row-gap: 40px;
+
+    width: 1220px;
+  }
 }
 
 .contact-details__item {
@@ -60,5 +75,12 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+
+    width: 569px;
+    min-height: 52px;
   }
 }
