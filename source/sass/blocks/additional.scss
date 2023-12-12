@@ -53,6 +53,14 @@
       flex-wrap: wrap;
       gap: 22px 123px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 auto;
+
+      gap: 30px 104px;
+
+      width: 1220px;
+    }
   }
 
   .additional__item {
@@ -62,6 +70,10 @@
     min-height: 30px;
 
     &:last-child {
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
       margin: 0;
     }
   }
