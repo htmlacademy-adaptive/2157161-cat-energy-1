@@ -4,11 +4,15 @@
   @media (min-width: $tablet-width) {
     padding: 0 0 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 79px;
+  }
 }
 
 .form__wrapper-info {
-  @media (max-width: $tablet-width-only) {
-    display: none;
+  @media (min-width: $tablet-width) {
+    padding: 0 0 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,6 +27,16 @@
   }
 }
 
+.form__container-submit {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+
+    width: 1220px;
+
+    display: flex;
+  }
+}
+
 .form__button {
   margin: 0 20px 22px;
   padding: 10px 44px;
@@ -30,12 +44,18 @@
   width: calc(100% - 40px);
 
   @media (min-width: $tablet-width) {
-    margin: 0 55px 0 70px;
+    margin: 0 57px 0 70px;
 
     width: 284px;
     min-height: 54px;
 
     font: $font-button-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 78px 0 0;
+
+    width: 570px;
   }
 }
 
@@ -55,10 +75,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
-
-    position: relative;
-    top: -5px;
+    padding: 17px 0 0 0;
 
     font: $font-text-form-small-tablet;
   }
