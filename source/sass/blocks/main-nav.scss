@@ -147,6 +147,7 @@
   text-align: center;
 
   display: block;
+
   padding: 22px 15px 24px;
   border-bottom: 1px solid $background-color-9;
 
@@ -208,6 +209,10 @@
       right: 0;
 
       background-color: $background-color-3;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -1px;
     }
   }
 }

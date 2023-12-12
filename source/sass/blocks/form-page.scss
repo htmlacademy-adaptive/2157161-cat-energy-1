@@ -6,15 +6,36 @@
     margin: 0 0 54px;
     padding: 0 0 0 69px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 55px;
+    padding: 46px 0 0;
+
+    width: 1220px;
+  }
 }
 
 .form-page__description {
   margin: 0 0 39px;
+
+  @media (max-width: $tablet-width-only) {
+    br {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 0 66px;
     padding: 0 0 0 69px;
 
     width: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 0;
+
+    width: 1220px;
+    // max-width: 390px;
   }
 }
