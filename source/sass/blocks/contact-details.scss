@@ -22,6 +22,11 @@
     padding: 0 0 73px;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 78px;
+    margin: 0;
+  }
 }
 
 .contact-details__title {

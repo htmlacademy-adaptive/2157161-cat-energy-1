@@ -39,4 +39,12 @@
 
     font: $font-label-tablet;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 13px 14px 19px;
+
+    display: block;
+
+    width: 1220px;
+  }
 }
