@@ -46,7 +46,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 53px 30px;
+    margin: 0 0 53px -650px;
+
+    position: relative;
+    left: 50%;
   }
 }
 

@@ -44,6 +44,13 @@
     position: relative;
     top: -17px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 32px -650px;
+
+    position: relative;
+    left: 50%;
+  }
 }
 
 .additional__list {
