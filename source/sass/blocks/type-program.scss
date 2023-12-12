@@ -8,6 +8,10 @@
 
     min-height: 196px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .type-program__list {

@@ -45,6 +45,14 @@
       top: -5px;
       left: -1px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 40px;
+      height: 40px;
+
+      top: -3px;
+      left: 0;
+    }
   }
 
   &::after {
@@ -70,6 +78,11 @@
       top: 6px;
       left: 10px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 8px;
+      left: 11px;
+    }
   }
 
   &:hover {
@@ -84,6 +97,10 @@
     padding: 0 0 0 59px;
 
     font: $font-label-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 2px 0 0 59px;
   }
 }
 

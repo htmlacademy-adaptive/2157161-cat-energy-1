@@ -63,94 +63,97 @@
       </p>
 
       <form class="form" action="#">
-        <section class="form__section info">
-          <h2 class="visually-hidden">Тип информации кота</h2>
-          <ul class="info__list">
-            <li class="info__item text-input">
-              <label for="name" class="text-input__label">ИМЯ:*</label>
-              <input
-                class="text-input__input"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Барсик"
-                value="Барсик"
-                required
-              />
-            </li>
-            <li class="info__item text-input">
-              <label for="weight" class="text-input__label">Вес (кг):*</label>
-              <input
-                class="text-input__input"
-                type="text"
-                id="weight"
-                name="weight"
-                placeholder="7"
-                value="7"
-                required
-              />
-            </li>
-            <li class="info__item text-input">
-              <label for="age" class="text-input__label">Возраст (лет):</label>
-              <input
-                class="text-input__input"
-                type="text"
-                id="age"
-                name="age"
-                placeholder="7"
-                value="7"
-                required
-              />
-            </li>
-          </ul>
-        </section>
+        <div class="form__wrapper-info">
+          <section class="form__section info">
+            <h2 class="visually-hidden">Тип информации кота</h2>
+            <ul class="info__list">
+              <li class="info__item text-input">
+                <label for="name" class="text-input__label">ИМЯ:*</label>
+                <input
+                  class="text-input__input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Барсик"
+                  value="Барсик"
+                  required
+                />
+              </li>
+              <li class="info__item text-input">
+                <label for="weight" class="text-input__label">Вес (кг):*</label>
+                <input
+                  class="text-input__input"
+                  type="text"
+                  id="weight"
+                  name="weight"
+                  placeholder="7"
+                  value="7"
+                  required
+                />
+              </li>
+              <li class="info__item text-input">
+                <label for="age" class="text-input__label"
+                  >Возраст (лет):</label
+                >
+                <input
+                  class="text-input__input"
+                  type="text"
+                  id="age"
+                  name="age"
+                  placeholder="7"
+                  value="7"
+                  required
+                />
+              </li>
+            </ul>
+          </section>
 
-        <section class="form__section type-program">
-          <h2 class="visually-hidden">Выбор программы</h2>
-          <ul class="type-program__list">
-            <li class="type-program__item radio-input">
-              <input
-                class="radio-input__input visually-hidden"
-                type="radio"
-                id="weight-loss"
-                name="type-program"
-                value="weight-loss"
-                required
-                checked
-              />
-              <label class="radio-input__label" for="weight-loss"
-                >Похудение</label
-              >
-            </li>
-            <li class="type-program__item radio-input">
-              <input
-                class="radio-input__input visually-hidden"
-                type="radio"
-                id="weight-gain"
-                name="type-program"
-                value="weight-gain"
-                required
-              />
-              <label class="radio-input__label" for="weight-gain"
-                >Набор массы</label
-              >
-            </li>
-            <li class="type-program__item radio-input">
-              <input
-                class="radio-input__input visually-hidden"
-                type="radio"
-                id="advice"
-                name="type-program"
-                value="advice"
-                required
-              />
-              <label class="radio-input__label" for="advice"
-                >Не знаю (Нужен ваш совет)</label
-              >
-            </li>
-          </ul>
-        </section>
-
+          <section class="form__section type-program">
+            <h2 class="visually-hidden">Выбор программы</h2>
+            <ul class="type-program__list">
+              <li class="type-program__item radio-input">
+                <input
+                  class="radio-input__input visually-hidden"
+                  type="radio"
+                  id="weight-loss"
+                  name="type-program"
+                  value="weight-loss"
+                  required
+                  checked
+                />
+                <label class="radio-input__label" for="weight-loss"
+                  >Похудение</label
+                >
+              </li>
+              <li class="type-program__item radio-input">
+                <input
+                  class="radio-input__input visually-hidden"
+                  type="radio"
+                  id="weight-gain"
+                  name="type-program"
+                  value="weight-gain"
+                  required
+                />
+                <label class="radio-input__label" for="weight-gain"
+                  >Набор массы</label
+                >
+              </li>
+              <li class="type-program__item radio-input">
+                <input
+                  class="radio-input__input visually-hidden"
+                  type="radio"
+                  id="advice"
+                  name="type-program"
+                  value="advice"
+                  required
+                />
+                <label class="radio-input__label" for="advice"
+                  >Не знаю (Нужен ваш совет)</label
+                >
+              </li>
+            </ul>
+          </section>
+        </div>
         <section class="form__section contact-details">
           <h2 class="contact-details__title title-medium">
             Контактные данные (владельца кота)
