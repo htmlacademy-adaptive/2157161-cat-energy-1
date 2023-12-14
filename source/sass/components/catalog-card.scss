@@ -1,0 +1,54 @@
+.catalog-card {
+  padding: 22px 20px 24px;
+  border-top: 1px solid $background-color-19;
+
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: auto auto;
+  row-gap: 20px;
+}
+
+.catalog-card__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.catalog-card__heading {
+  @include indent-reset;
+  margin: 0 0 14px;
+
+  width: 80px;
+
+  font: $font-heading-catalog-card-mobile;
+  text-transform: uppercase;
+  color: $color-8;
+}
+
+.catalog-card__quantity {
+  @include indent-reset;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-card__quantity-item {
+  font: $font-text-catalog-card-mobile;
+  color: $color-5;
+}
+
+.catalog-card__text {
+  @include indent-reset;
+  font: $font-text-catalog-card-mobile;
+}
+
+.catalog-card__link {
+  padding: 10px 20px;
+
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+
+  font: $font-button-mobile;
+}
