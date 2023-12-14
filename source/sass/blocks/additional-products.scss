@@ -1,4 +1,6 @@
 .additional-products {
+  padding: 0 0 35px;
+
   position: relative;
 
   &::before {
@@ -48,9 +50,42 @@
 
 .additional-product__list {
   @include indent-reset;
+  margin: 0 0 34px;
+}
+
+.additional-products__gift {
+  margin: 0 auto;
+  padding: 58px 0 0;
+
+  position: relative;
+
+  width: 280px;
+  min-height: 290px;
+
+  background: url("../img/bg-additional-products-gift-mobile.jpg") no-repeat
+    center;
+  background-size: 280px 290px;
+}
+
+.additional-products__gift-icon {
+  display: block;
+
+  margin: 0 auto 48px;
 }
 
 .additional-products__gift-text {
   @include indent-reset;
+  margin: 0 auto;
+
+  width: 170px;
+
   font: $font-text-gift-mobile;
+  color: $color-2;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
 }
