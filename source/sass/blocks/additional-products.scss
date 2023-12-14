@@ -17,8 +17,21 @@
   }
 }
 
+.additional-product__item .additional-product-card {
+  border-top: 1px solid $background-color-13;
+}
+
+.additional-product__item {
+  &:last-child {
+    .additional-product-card {
+      border-bottom: 1px solid $background-color-13;
+    }
+  }
+}
+
 .additional-products__title {
   @include indent-reset;
+  margin: 0 0 35px;
   padding: 0 20px 0;
 
   position: relative;
