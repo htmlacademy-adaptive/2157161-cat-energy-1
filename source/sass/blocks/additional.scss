@@ -16,6 +16,14 @@
 
     background-color: $background-color-3;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0px 51px;
+  }
 }
 
 .additional__title {
@@ -31,17 +39,39 @@
   background-color: $background-color-2;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 30px;
+    margin: 0 0 32px 30px;
     padding: 0 0 0 40px;
 
     width: 292px;
 
     top: -17px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 32px -650px;
+
+    left: 50%;
+  }
 }
 
 .additional__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 0 70px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+
+    width: 1220px;
+
+    gap: 20px 104px;
+  }
 }
 
 .additional__item {
@@ -51,5 +81,9 @@
 
   &:last-child {
     margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 221px;
   }
 }
