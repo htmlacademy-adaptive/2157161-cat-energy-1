@@ -16,4 +16,18 @@
   &:active {
     color: rgba($color-2, 0.3);
   }
+
+  &--grey {
+    background-color: $background-color-4;
+
+    color: $color-5;
+
+    &:hover {
+      background-color: $background-color-19;
+    }
+
+    &:active {
+      color: rgba($color-5, 100%);
+    }
+  }
 }

@@ -1,0 +1,47 @@
+.card-show-more {
+  padding: 25px 20px 24px;
+  border-top: 1px solid $background-color-19;
+  border-bottom: 1px solid $background-color-19;
+}
+
+.card-show-more__image {
+  display: block;
+
+  margin: 0 0 24px;
+
+  position: relative;
+  top: 1px;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.card-show-more__heading {
+  @include indent-reset;
+  margin: 0 auto 9px;
+
+  width: 220px;
+
+  font: $font-heading-catalog-card-mobile;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-show-more__text {
+  @include indent-reset;
+  margin: 0 auto 20px;
+
+  width: 220px;
+
+  font: $font-text-catalog-card-mobile;
+  color: $color-5;
+  text-align: center;
+}
+
+.card-show-more__link {
+  padding: 10px 20px;
+
+  display: block;
+
+  width: 100%;
+}
