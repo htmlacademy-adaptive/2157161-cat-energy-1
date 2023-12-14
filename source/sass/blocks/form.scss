@@ -29,11 +29,13 @@
 
 .form__container-submit {
   @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
     margin: 0 auto;
 
     width: 1220px;
-
-    display: flex;
   }
 }
 

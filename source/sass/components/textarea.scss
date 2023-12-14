@@ -9,6 +9,8 @@
   text-transform: uppercase;
   color: $color-5;
 
+  resize: none;
+
   &::placeholder {
     color: inherit;
   }
