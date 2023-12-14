@@ -24,7 +24,7 @@
       width: 552px;
       height: 499px;
 
-      background-image: url("../img/nutrition-package-desktop.png");
+      background-image: url("../img/nutrition-package-desktop.jpg");
 
       top: 0;
       left: 58%;
@@ -118,9 +118,9 @@
     left: 0;
     z-index: -1;
 
-    @media (min-resolution: 2dppx) {
-      background: url("../img/bg-nutrition-mobile@2x.png");
-    }
+    // @media (min-resolution: 2dppx) {
+    //   background: url("../img/bg-nutrition-mobile@2x.png");
+    // }
 
     @media (min-width: $tablet-width) {
       display: none;
