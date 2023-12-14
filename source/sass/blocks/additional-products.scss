@@ -55,7 +55,7 @@
 
 .additional-products__gift {
   margin: 0 auto;
-  padding: 58px 0 0;
+  padding: 58px 0 43px;
 
   position: relative;
 
@@ -64,7 +64,7 @@
 
   background: url("../img/bg-additional-products-gift-mobile.jpg") no-repeat
     center;
-  background-size: 280px 290px;
+  background-size: cover;
 }
 
 .additional-products__gift-icon {
