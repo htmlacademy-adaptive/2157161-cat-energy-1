@@ -29,6 +29,15 @@
   width: 181px;
 
   background-color: $background-color-2;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 30px;
+    padding: 0 0 0 40px;
+
+    width: 292px;
+
+    top: -17px;
+  }
 }
 
 .additional__list {
