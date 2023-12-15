@@ -82,37 +82,4 @@
 
 .additional-products__gift {
   margin: 0 auto;
-  padding: 58px 0 43px;
-
-  position: relative;
-
-  width: 280px;
-  min-height: 290px;
-
-  background: url("../img/bg-additional-products-gift-mobile.jpg") no-repeat
-    center;
-  background-size: cover;
-}
-
-.additional-products__gift-icon {
-  display: block;
-
-  margin: 0 auto 48px;
-}
-
-.additional-products__gift-text {
-  @include indent-reset;
-  margin: 0 auto;
-
-  width: 170px;
-
-  font: $font-text-gift-mobile;
-  color: $color-2;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    br {
-      display: none;
-    }
-  }
 }
