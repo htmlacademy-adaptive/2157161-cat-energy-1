@@ -1,4 +1,9 @@
 .catalog-page__title {
   @include indent-reset;
   padding: 27px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 166px;
+    padding: 0 30px 0;
+  }
 }

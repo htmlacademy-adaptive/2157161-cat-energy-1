@@ -6,6 +6,19 @@
   grid-template-columns: repeat(2, 2fr);
   grid-template-rows: auto auto;
   row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 37px 40px;
+
+    grid-template-columns: auto;
+    grid-template-rows: 139px auto auto;
+    row-gap: 22px;
+
+    width: 324px;
+    min-height: 430px;
+
+    background-color: $background-color-4;
+  }
 }
 
 .catalog-card__image {
@@ -14,6 +27,10 @@
   left: 50%;
 
   transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    transform: translate(-50%, -69%);
+  }
 }
 
 .catalog-card__heading {
@@ -25,6 +42,10 @@
   font: $font-heading-catalog-card-mobile;
   text-transform: uppercase;
   color: $color-8;
+
+  @media (min-width: $tablet-width) {
+    font: $font-heading-catalog-card-tablet;
+  }
 }
 
 .catalog-card__quantity {
@@ -37,6 +58,10 @@
 .catalog-card__quantity-item {
   font: $font-text-catalog-card-mobile;
   color: $color-5;
+
+  @media (min-width: $tablet-width) {
+    font: $font-text-catalog-card-tablet;
+  }
 }
 
 .catalog-card__text {
