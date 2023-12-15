@@ -362,13 +362,21 @@
           </li>
           <li class="catalog__item">
             <article class="card-show-more">
-              <img
-                class="card-show-more__image"
-                src="./img/catalog-show-more.svg"
-                width="30"
-                height="30"
-                alt="показать ещё"
-              />
+              <picture>
+                <source
+                  media="(min-width: 769px)"
+                  srcset="./img/catalog-show-more-tablet.svg"
+                  width="60"
+                  height="60"
+                />
+                <img
+                  class="card-show-more__image"
+                  src="./img/catalog-show-more-mobile.svg"
+                  width="30"
+                  height="30"
+                  alt="показать ещё"
+                />
+              </picture>
               <h3 class="card-show-more__heading">
                 Показать еще 100500 товаров
               </h3>
