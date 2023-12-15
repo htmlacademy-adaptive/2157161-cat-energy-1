@@ -16,6 +16,10 @@
     top: 15px;
     left: 0;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
   }
 }
 
@@ -43,9 +47,16 @@
 
   background-color: $background-color-2;
 
-  font: $font-title-medium-mobile;
-  line-height: 1;
-  color: $color-1;
+  font: $font-title-additional-products-mobile;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 30px;
+    padding: 0 0 0 40px;
+
+    width: 418px;
+
+    font: $font-title-additional-products-tablet;
+  }
 }
 
 .additional-product__list {

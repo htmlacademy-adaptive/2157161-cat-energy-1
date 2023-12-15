@@ -1,5 +1,9 @@
 .catalog {
   padding: 0 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 68px;
+  }
 }
 
 .catalog__list {
