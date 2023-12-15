@@ -21,6 +21,10 @@
       top: 22px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 75px;
+  }
 }
 
 .additional-product__item .additional-product-card {
@@ -73,7 +77,7 @@
   margin: 0 0 34px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
+    margin: 0 auto 69px;
     border: 1px solid $background-color-21;
 
     width: calc(100% - 60px);

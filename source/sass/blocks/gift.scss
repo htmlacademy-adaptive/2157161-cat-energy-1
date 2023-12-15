@@ -8,12 +8,29 @@
 
   background: url("../img/bg-gift-mobile.jpg") no-repeat center;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 57px 78px 50px;
+
+    display: flex;
+
+    background: url("../img/bg-gift-tablet.jpg") no-repeat center;
+    background-size: cover;
+
+    width: 707px;
+    min-height: 200px;
+  }
 }
 
 .gift__icon {
   display: block;
 
   margin: 0 auto 48px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 266px 0 0;
+  }
 }
 
 .gift__text {
@@ -27,8 +44,9 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    br {
-      display: none;
-    }
+    margin: 0;
+    padding: 14px 0 0;
+
+    text-align: left;
   }
 }
