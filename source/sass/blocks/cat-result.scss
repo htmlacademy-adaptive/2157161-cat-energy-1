@@ -36,7 +36,7 @@
 
   overflow: hidden;
 
-  background-color: lightblue;
+  background-color: $background-color-7;
 }
 
 .cat-result__item--before {
@@ -45,7 +45,6 @@
   width: 50%;
 
   transition: width 2s;
-  background-color: blue;
 }
 
 .cat-result__item--after {
@@ -112,4 +111,12 @@
   @media (min-width: $tablet-width) {
     height: 512px;
   }
+}
+
+.cat-result__list--after + .cat-result__control {
+  left: 0;
+}
+
+.cat-result__list--before + .cat-result__control {
+  left: 100%;
 }
