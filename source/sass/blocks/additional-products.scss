@@ -25,12 +25,21 @@
 
 .additional-product__item .additional-product-card {
   border-top: 1px solid $background-color-13;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    border-bottom: 1px solid $background-color-21;
+  }
 }
 
 .additional-product__item {
   &:last-child {
     .additional-product-card {
       border-bottom: 1px solid $background-color-13;
+
+      @media (min-width: $tablet-width) {
+        border-bottom: none;
+      }
     }
   }
 }
@@ -50,7 +59,7 @@
   font: $font-title-additional-products-mobile;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 30px;
+    margin: 0 0 80px 30px;
     padding: 0 0 0 40px;
 
     width: 418px;
@@ -60,8 +69,15 @@
 }
 
 .additional-product__list {
-  @include indent-reset;
+  @include list-reset;
   margin: 0 0 34px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    border: 1px solid $background-color-21;
+
+    width: calc(100% - 60px);
+  }
 }
 
 .additional-products__gift {
