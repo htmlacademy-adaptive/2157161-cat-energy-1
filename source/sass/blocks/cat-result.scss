@@ -1,56 +1,115 @@
 .cat-result {
-  display: flex;
-  justify-content: center;
-
-  margin: 0 20px;
+  margin: 0 auto;
 
   position: relative;
-  z-index: 1;
+
+  width: 280px;
+  height: 256px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-
-    left: -47px;
-
-    width: 100vw;
-
-    &::after {
-      content: "";
-
-      width: 100%;
-      height: 462px;
-
-      position: absolute;
-      bottom: -99px;
-      left: 0px;
-      z-index: -1;
-
-      background-color: $background-color-7;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: -137px 0 0;
-
     width: 560px;
     height: 512px;
-
-    &::after {
-      display: none;
-    }
   }
+}
+
+.cat-result__list {
+  @include list-reset;
+
+  position: relative;
+
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.cat-result__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  background-color: lightblue;
+}
+
+.cat-result__item--before {
+  z-index: 5;
+
+  width: 50%;
+
+  transition: width 2s;
+  background-color: blue;
+}
+
+.cat-result__item--after {
+  z-index: 2;
+}
+
+.cat-result__list--after .cat-result__item--before {
+  width: 0;
+}
+
+.cat-result__list--before .cat-result__item--before {
+  width: 100%;
 }
 
 .cat-result__image {
-  &:first-child {
-    margin-right: 3px;
+  width: 280px;
+  height: 256px;
+
+  position: relative;
+  z-index: 5;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
   }
 }
 
-.cat-result__button-range {
-  @include button-reset;
+.cat-result__control {
+  border: 2px solid $background-color-22;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
 
   position: absolute;
-  top: 0;
-  left: 121px;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+
+  cursor: pointer;
+
+  transform: translate(-50%, -50%);
+
+  transition: left 2s;
+}
+
+.cat-result__control::before {
+  content: "";
+
+  height: 256px;
+  width: 4px;
+
+  border-radius: 4px;
+
+  background-color: $background-color-22;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
 }
