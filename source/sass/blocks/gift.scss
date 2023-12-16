@@ -21,6 +21,19 @@
     width: 707px;
     min-height: 200px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+
+    display: block;
+
+    width: 245px;
+    min-height: 288px;
+
+    background: url("../img/bg-gift-desktop.jpg") no-repeat center;
+    background-size: cover;
+  }
 }
 
 .gift__icon {
