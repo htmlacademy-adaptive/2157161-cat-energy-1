@@ -48,6 +48,10 @@
       @media (min-width: $tablet-width) {
         border-bottom: none;
       }
+
+      @media (min-width: $desktop-width) {
+        border-bottom: 1px solid $background-color-21;
+      }
     }
   }
 }
@@ -109,7 +113,6 @@
     margin: 0 81px 0 0;
     border: none;
     border-top: 1px solid $background-color-21;
-    border-bottom: 1px solid $background-color-21;
 
     width: 896px;
   }
