@@ -19,6 +19,15 @@
 
     background-color: $background-color-4;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 38px 40px;
+
+    width: 245px;
+    min-height: 430px;
+
+    row-gap: 12px;
+  }
 }
 
 .catalog-card__image {
@@ -51,6 +60,10 @@
     font: $font-heading-catalog-card-tablet;
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 25px 4px;
+  }
 }
 
 .catalog-card__quantity {
@@ -67,6 +80,11 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 8px;
+    padding: 0 0 8px;
   }
 }
 

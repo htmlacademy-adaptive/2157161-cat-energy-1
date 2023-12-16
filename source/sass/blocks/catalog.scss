@@ -18,4 +18,10 @@
 
     width: 708px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+
+    gap: 144px 80px;
+  }
 }

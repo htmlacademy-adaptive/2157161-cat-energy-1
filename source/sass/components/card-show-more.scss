@@ -11,6 +11,13 @@
 
     border: 2px solid $background-color-4;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 48px 35px 38px;
+
+    width: 245px;
+    min-height: 430px;
+  }
 }
 
 .card-show-more__image {
@@ -26,6 +33,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 40px;
   }
 }
 
@@ -46,6 +57,10 @@
 
     font: $font-heading-catalog-card-tablet;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 28px;
+  }
 }
 
 .card-show-more__text {
@@ -64,6 +79,10 @@
     width: 170px;
 
     font: $font-text-catalog-card-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 92px;
   }
 }
 
