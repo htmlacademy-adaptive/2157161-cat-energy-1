@@ -14,9 +14,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin-left: -97px;
+
+    position: relative;
+    top: -134px;
+    right: 50%;
 
     background-color: transparent;
   }
@@ -65,11 +67,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    // position: absolute;
+    background-color: $background-color-4;
 
-    // &::before {
-    //   display: none;
-    // }
+    &::before {
+      height: 134px;
+    }
   }
 }
 

@@ -35,9 +35,12 @@
 
 .living-example__wrapper {
   @media (min-width: $desktop-width) {
+    margin: 0 0 0 -610px;
     padding: 70px 0 0 0;
 
+    position: relative;
     z-index: 3;
+    left: 50%;
   }
 }
 
@@ -56,8 +59,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 76px;
-    padding: 0 0 0 110px;
+    margin: 0 0 76px -610px;
+    padding: 0 0 0 0;
+
+    position: relative;
+    left: 50%;
 
     max-width: 700px;
   }
@@ -88,6 +94,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 70px;
+    padding: 0;
 
     max-width: 433px;
     min-height: auto;
@@ -107,6 +114,7 @@
     flex-direction: column;
 
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -142,6 +150,10 @@
 
     width: 162px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 29px 20px;
+  }
 }
 
 .living-example__item-heading {
@@ -163,6 +175,10 @@
     width: 162px;
 
     font: $font-title-living-example-heading-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 30px 20px;
   }
 }
 
@@ -287,6 +303,10 @@
     padding: 0 0 0;
 
     position: static;
+
+    height: 378px;
+
+    background-color: transparent;
 
     &::before {
       display: none;
