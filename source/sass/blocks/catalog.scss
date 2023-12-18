@@ -1,0 +1,27 @@
+.catalog {
+  padding: 0 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 68px;
+  }
+}
+
+.catalog__list {
+  @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 141px 60px;
+
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+
+    gap: 144px 80px;
+  }
+}

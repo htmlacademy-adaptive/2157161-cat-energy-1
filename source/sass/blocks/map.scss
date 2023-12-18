@@ -1,0 +1,54 @@
+.map {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.map__image {
+  display: flex;
+
+  margin: auto;
+
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: auto;
+
+    object-fit: cover;
+  }
+}
+
+.map__iframe {
+  width: 100%;
+  height: 362px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+
+    // object-fit: cover;
+  }
+}

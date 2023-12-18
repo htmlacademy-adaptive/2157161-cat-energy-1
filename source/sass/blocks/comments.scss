@@ -1,0 +1,66 @@
+.comments {
+  padding: 0 0 22px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    position: absolute;
+    top: 14px;
+    left: 0;
+    z-index: -1;
+
+    background-color: $background-color-3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 79px;
+  }
+}
+
+.comments__title {
+  margin: 0 0 37px;
+  padding: 0 0 0 20px;
+
+  width: 161px;
+
+  background-color: $background-color-2;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 62px 30px;
+    padding: 0 0 0 40px;
+
+    width: 262px;
+
+    position: relative;
+    top: -17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 53px -650px;
+
+    position: relative;
+    left: 50%;
+  }
+}
+
+.comments__textarea {
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 68px 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,38 @@
+.social {
+  @include list-reset;
+  margin: 0 auto 40px;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 48%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    width: 132px;
+
+    gap: 10px 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 21px;
+  }
+}
+
+.social__link {
+  &:hover {
+    path {
+      fill: $background-color-3;
+    }
+  }
+
+  &:active {
+    path {
+      opacity: 0.3;
+    }
+  }
+}

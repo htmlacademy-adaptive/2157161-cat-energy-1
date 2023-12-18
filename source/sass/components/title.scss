@@ -1,0 +1,11 @@
+.title {
+  font: $font-title-x-large-mobile;
+
+  @media (min-width: $tablet-width) {
+    font: $font-title-x-large-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $font-title-x-large-desktop;
+  }
+}

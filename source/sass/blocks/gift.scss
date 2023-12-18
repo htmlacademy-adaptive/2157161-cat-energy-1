@@ -1,0 +1,78 @@
+.gift {
+  padding: 58px 65px 43px;
+
+  position: relative;
+
+  width: calc(100% - 40px);
+  min-height: 290px;
+
+  background: url("../img/bg-gift-mobile.jpg") no-repeat center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 57px 116px 50px 78px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background: url("../img/bg-gift-tablet.jpg") no-repeat center;
+    background-size: cover;
+
+    width: calc(100% - 60px);
+    min-height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 57px 38px 41px;
+
+    display: block;
+
+    width: 245px;
+    min-height: 288px;
+
+    background: url("../img/bg-gift-desktop.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.gift__icon {
+  display: block;
+
+  margin: 0 auto 48px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 266px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 46px;
+    padding: 0;
+  }
+}
+
+.gift__text {
+  @include indent-reset;
+  margin: 0 auto;
+
+  width: 170px;
+
+  font: $font-text-gift-mobile;
+  color: $color-2;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 14px 0 0;
+
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+  }
+}

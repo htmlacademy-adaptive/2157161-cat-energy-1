@@ -1,0 +1,107 @@
+.location {
+  position: relative;
+
+  min-height: 474px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 600px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 95px;
+    padding-bottom: 105px;
+
+    min-height: 400px;
+
+    overflow: hidden;
+  }
+}
+
+.location__invation {
+  padding: 26px 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  min-height: 113px;
+
+  background-color: $background-color-4;
+
+  &--index {
+    background-color: $background-color-2;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 70px 60px;
+
+    min-height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 75px 40px 80px;
+    margin: 0 0 0 -610px;
+
+    width: 565px;
+    min-height: 200px;
+
+    position: relative;
+    top: 0;
+    left: 50%;
+    z-index: 4;
+
+    background-color: $background-color-2;
+  }
+}
+
+.location__invation-title {
+  @include margin-reset;
+
+  font: $font-title-location-mobile;
+  text-transform: uppercase;
+
+  min-width: 125px;
+  max-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+
+    font: $font-title-location-tablet;
+  }
+}
+
+.location__address {
+  width: 160px;
+}
+
+.location__address-text {
+  @include margin-reset;
+
+  font: $font-text-location-mobile;
+  color: $color-5;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 19px;
+
+    font: $font-text-location-tablet;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.location__address-city {
+  @include margin-reset;
+  font: $font-text-location-mobile;
+  color: $color-5;
+
+  @media (min-width: $tablet-width) {
+    font: $font-text-location-tablet;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}

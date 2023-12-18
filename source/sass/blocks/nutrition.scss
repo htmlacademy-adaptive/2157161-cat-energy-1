@@ -1,0 +1,209 @@
+.nutrition {
+  padding: 0 0 20px;
+
+  position: relative;
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      display: block;
+      width: 709px;
+      height: 609px;
+
+      background: url("../img/nutrition-package-tablet.png") no-repeat top
+        center;
+
+      position: absolute;
+      bottom: -1px;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 552px;
+      height: 499px;
+
+      background-image: url("../img/nutrition-package-desktop.jpg");
+
+      top: 0;
+      left: 58%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 0 0 525px 90px;
+
+    width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+
+    width: auto;
+
+    &::before {
+      content: "";
+
+      width: 50%;
+      height: calc(100% + 59px);
+
+      background: url("../img/bg-nutrition-desktop.png") no-repeat top right;
+      background-size: cover;
+
+      position: absolute;
+      top: -141px;
+      right: 0;
+    }
+  }
+}
+
+.nutrition__block {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 82px 0px 266px 80px;
+
+    width: 1220px;
+  }
+}
+
+.nutrition__wrapper {
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    width: 280px;
+    height: 270px;
+
+    position: absolute;
+    bottom: -135px;
+    left: 50%;
+    z-index: 3;
+
+    transform: translateX(-50%);
+
+    background: url("../img/nutrition-package-mobile.png") no-repeat top center;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/nutrition-package-mobile@2x.png");
+    }
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.nutrition__container-description {
+  margin: 0 0 138px;
+  padding: 28px 0 163px;
+
+  position: relative;
+  z-index: 2;
+
+  &::after {
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    background: $background-color-10 url("../img/bg-nutrition-mobile.png")
+      no-repeat top center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    // @media (min-resolution: 2dppx) {
+    //   background: url("../img/bg-nutrition-mobile@2x.png");
+    // }
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 49px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 51px;
+  }
+}
+
+.nutrition__title {
+  @include margin-reset;
+  margin: 0 auto 25px;
+  padding: 0;
+
+  width: 280px;
+
+  font: $font-title-x-large-mobile;
+  color: $color-2;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include margin-reset;
+    margin-bottom: 41px;
+
+    font: $font-title-x-large-tablet;
+    color: $color-1;
+    text-align: left;
+
+    width: 534px;
+  }
+}
+
+.nutrition__text {
+  @include margin-reset;
+  margin: 0 auto;
+
+  width: 280px;
+
+  font: $font-text-nutrition-mobile;
+  text-transform: uppercase;
+  color: $color-2;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include margin-reset;
+
+    width: auto;
+
+    color: $color-1;
+    font: $font-text-nutrition-tablet;
+    text-align: left;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 440px;
+  }
+}
+
+.nutrition__link {
+  display: block;
+
+  margin: 0 20px;
+  padding: 10px 20px 10px;
+
+  font: $font-button-mobile;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    min-height: 54px;
+
+    margin: 0;
+    padding: 14px 0;
+
+    position: relative;
+    z-index: 4;
+
+    font: $font-button-tablet;
+  }
+}

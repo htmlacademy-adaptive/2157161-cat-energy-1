@@ -1,0 +1,132 @@
+.main-footer {
+  position: relative;
+
+  background-color: $background-color-4;
+}
+
+.main-footer__location {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.main-footer__wrapper {
+  min-height: 240px;
+
+  margin: 0 20px;
+  padding: 40px 0 0 0;
+
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $background-color-11;
+
+    position: absolute;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &::before {
+    top: 81px;
+    left: 0;
+  }
+
+  &::after {
+    bottom: 96px;
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 60px 30px 30px;
+
+    min-height: 147px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 72px 0 0;
+
+    width: 1220px;
+    min-height: 169px;
+  }
+}
+
+.main-footer__logo {
+  display: block;
+
+  margin: 0 auto;
+  margin-bottom: 37px;
+
+  width: 128px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 40px 0 0;
+  }
+}
+
+.main-footer__html-academy-logo {
+  @include link-reset;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font: $font-html-academy-logo;
+  color: $color-5;
+
+  position: relative;
+
+  &:hover {
+    path {
+      fill: $background-color-3;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: -7px 0 0 -4px;
+    padding: 0 0 0 7px;
+
+    width: 168px;
+    min-height: 37px;
+
+    align-self: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -7px 0 0;
+    padding: 0;
+
+    width: 163px;
+  }
+}
+
+.main-footer__html-academy-text {
+  @media (min-width: $tablet-width) {
+    max-width: 120px;
+  }
+}
