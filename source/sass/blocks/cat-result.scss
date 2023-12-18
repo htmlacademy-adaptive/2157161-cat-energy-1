@@ -12,6 +12,14 @@
 
     background-color: $background-color-2;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: transparent;
+  }
 }
 
 .cat-result__list {
@@ -39,6 +47,30 @@
   overflow: hidden;
 
   background-color: $background-color-7;
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      display: block;
+
+      width: 100%;
+      height: 152px;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      background-color: $background-color-2;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    // position: absolute;
+
+    // &::before {
+    //   display: none;
+    // }
+  }
 }
 
 .cat-result__item--before {
@@ -78,10 +110,6 @@
 
       width: 100%;
       height: 100px;
-
-      background-color: $background-color-2;
-
-      // position: absolute;
     }
   }
 }
