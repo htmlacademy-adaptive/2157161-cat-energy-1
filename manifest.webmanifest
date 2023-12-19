@@ -1,0 +1,14 @@
+{
+  "icons": [
+    {
+      "src": "./source/img/apple-icon-114x114.png",
+      "type": "image/png",
+      "sizes": "114x114"
+    },
+    {
+      "src": "./source/img/apple-icon-57x57.png",
+      "type": "image/png",
+      "sizes": "57x57"
+    }
+  ]
+}
