@@ -27,13 +27,15 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin-left: 113px;
+
       width: 552px;
       height: 499px;
 
       background-image: url("../img/nutrition-package-desktop.png");
 
       top: 0;
-      left: 58%;
+      left: 50%;
 
       @media (min-resolution: 2dppx) {
         background: url("../img/nutrition-package-desktop@2x.png") no-repeat top
