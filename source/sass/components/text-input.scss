@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0 20px;
 
+  position: relative;
+
   display: flex;
   column-gap: 14px;
 
@@ -83,4 +85,12 @@
 
     font: $font-label-tablet;
   }
+}
+
+.text-input__icon {
+  display: block;
+
+  position: absolute;
+  top: 15px;
+  right: 34px;
 }

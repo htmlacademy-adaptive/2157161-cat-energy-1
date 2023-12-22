@@ -169,7 +169,7 @@
             Контактные данные (владельца кота)
           </h2>
           <ul class="contact-details__list">
-            <li class="contact-details__item text-input">
+            <li class="contact-details__item text-input text-input--email">
               <label for="email" class="text-input__label">E-mail:*</label>
               <input
                 class="text-input__input"
@@ -179,8 +179,23 @@
                 value="kuklachev@gmail.com"
                 required
               />
+              <svg
+                class="text-input__icon"
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.500336 5.5V13.5H17.5041V5.5M0.500336 0.5H17.5041V2.5L9.00223 8.5L0.500336 2.5V0.5Z"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </li>
-            <li class="contact-details__item text-input">
+            <li class="contact-details__item text-input text-input--phone">
               <label for="phone" class="text-input__label">Телефон:*</label>
               <input
                 class="text-input__input"
@@ -190,6 +205,21 @@
                 value="8 (960) 900-60-90"
                 required
               />
+              <svg
+                class="text-input__icon"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.00224 8H15.5041M15.5041 8L13.0036 5.5M15.5041 8L13.0036 10.5M5.50191 0.5V5.5H2.50124V10.5H5.50191V15.5H3.00135C1.50102 15.5 0.500793 14.5 0.500793 13V3C0.500793 1.5 1.50102 0.5 3.00135 0.5H5.50191Z"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </li>
           </ul>
         </section>
