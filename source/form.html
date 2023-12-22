@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="apple-touch-icon"
+      href="img/favicons/favicon-apple-180.png"
+      type="image/png"
+    />
+    <link rel="manifest" href="manifest.webmanifest" />
     <title>Подбор программы</title>
   </head>
   <body class="page-body">
@@ -282,19 +291,20 @@
           <picture>
             <source
               media="(min-width: 1440px)"
-              srcset="./img/map-desktop.png"
+              srcset="/img/map-desktop.png 1x, img/map-desktop@2x.png 2x"
               width="1440"
               height="400"
             />
             <source
               media="(min-width: 769px)"
-              srcset="./img/map-tablet.png"
+              srcset="/img/map-tablet.png 1x, img/map-tablet@2x.png 2x"
               width="768"
               height="400"
             />
             <img
               class="map__image"
-              src="./img/map-mobile.png"
+              src="/img/map-mobile.png"
+              srcset="./img/map-mobile@2x.png 2x"
               width="320"
               height="362"
               alt="Карта"
