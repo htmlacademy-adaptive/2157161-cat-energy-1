@@ -12,16 +12,6 @@
 
     background-color: $background-color-2;
   }
-
-  @media (min-width: $desktop-width) {
-    margin-left: -97px;
-
-    position: relative;
-    top: -134px;
-    right: 50%;
-
-    background-color: transparent;
-  }
 }
 
 .cat-result__list {
@@ -70,7 +60,7 @@
     background-color: $background-color-4;
 
     &::before {
-      height: 134px;
+      top: -17px;
     }
   }
 }
