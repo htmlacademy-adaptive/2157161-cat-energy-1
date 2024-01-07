@@ -25,24 +25,4 @@
 
 .social__link {
   display: block;
-
-  &:hover .social__link-icon {
-    path {
-      fill: $background-color-3;
-    }
-  }
 }
-
-// .social__link {
-//   &:hover {
-//     path {
-//       fill: $background-color-3;
-//     }
-//   }
-
-//   &:active {
-//     path {
-//       opacity: 0.3;
-//     }
-//   }
-// }
