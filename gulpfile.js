@@ -7,6 +7,7 @@ import autoprefixer from "autoprefixer";
 import browser from "browser-sync";
 import htmlmin from "gulp-htmlmin";
 import terser from "terser";
+import squoosh from "gulp-libsquoosh";
 
 // Styles
 
@@ -19,28 +20,6 @@ export const styles = () => {
     .pipe(gulp.dest("build/css", { sourcemaps: "." }))
     .pipe(browser.stream());
 };
-
-// HTML
-
-export const html = () => {
-  return gulp
-    .src("source/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("build"));
-};
-
-// Scripts
-export const scripts = () => {
-  return gulp.src("source/js/*.js").pipe(terser()).pipe(gulp.dest("build/js"));
-};
-
-// Images
-
-// WebP
-
-// SVG
-
-// Server
 
 const server = (done) => {
   browser.init({
