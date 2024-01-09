@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0 20px;
 
+  position: relative;
+
   display: flex;
   column-gap: 14px;
 
@@ -44,7 +46,7 @@
 
 .text-input__input {
   margin: 0;
-  padding: 0 14px;
+  padding: 0 40px 0 14px;
   border: 1px solid $background-color-16;
 
   width: 100%;
@@ -77,10 +79,28 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 19px;
+    padding: 0 45px 0 19px;
 
     height: 52px;
 
     font: $font-label-tablet;
+  }
+}
+
+.text-input__icon {
+  display: block;
+
+  position: absolute;
+  top: 15px;
+  right: 34px;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+    right: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 19px;
+    right: 16px;
   }
 }

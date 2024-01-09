@@ -1,5 +1,5 @@
 .gift {
-  padding: 58px 65px 43px;
+  padding: 58px 35px 43px;
 
   position: relative;
 
@@ -8,6 +8,11 @@
 
   background: url("../img/bg-gift-mobile.jpg") no-repeat center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/bg-gift-mobile@2x.jpg") no-repeat center;
+    background-size: 100% auto;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -21,6 +26,11 @@
 
     width: calc(100% - 60px);
     min-height: 200px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/bg-gift-tablet@2x.jpg") no-repeat center;
+      background-size: 100% auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -34,6 +44,11 @@
 
     background: url("../img/bg-gift-desktop.jpg") no-repeat center;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/bg-gift-desktop@2x.jpg") no-repeat center;
+      background-size: 245px auto;
+    }
   }
 }
 

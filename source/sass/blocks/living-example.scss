@@ -301,15 +301,9 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 0 0;
+    margin: 0 -610px 0 0;
 
-    position: static;
-
-    height: 378px;
-
-    background-color: transparent;
-
-    &::before {
-      display: none;
-    }
+    top: -135px;
+    right: 50%;
   }
 }
