@@ -11,7 +11,7 @@ import terser from "gulp-terser";
 import squoosh from "gulp-libsquoosh";
 import svgo from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
-// import del from "del";
+import { deleteAsync } from "del";
 
 // Styles
 
@@ -47,20 +47,20 @@ const scripts = () => {
 
 const optimizeImages = () => {
   return gulp
-    .src("source/img/**/*.{jpg, png}")
+    .src("source/img/**/*.{jpg,png}")
     .pipe(squoosh())
     .pipe(gulp.dest("build/img"));
 };
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{jpg, png}").pipe(gulp.dest("build/img"));
+  return gulp.src("source/img/**/*.{jpg,png}").pipe(gulp.dest("build/img"));
 };
 
 //WebP
 
 const createWebp = () => {
   return gulp
-    .src("source/img/**/*.{jpg, png}")
+    .src("source/img/**/*.{jpg,png}")
     .pipe(
       squoosh({
         webp: {},
@@ -94,19 +94,25 @@ const sprite = () => {
 
 const copy = (done) => {
   gulp
-    .src(["source/fonts/*.{woff2,woff}", "source/*.ico"], {
-      base: "source",
-    })
+    .src(
+      [
+        "source/fonts/**/*.{woff2,woff}",
+        "source/*.ico",
+        "source/manifest.webmanifest",
+      ],
+      {
+        base: "source",
+      }
+    )
     .pipe(gulp.dest("build"));
   done();
 };
 
 // Clean
 
-// const clean = () => {
-//   return del("build");
-// };
-
+const clean = () => {
+  return deleteAsync("build");
+};
 // Server
 
 const server = (done) => {
@@ -139,7 +145,7 @@ const watcher = () => {
 // Build
 
 const build = gulp.series(
-  // clean,
+  clean,
   copy,
   optimizeImages,
   gulp.parallel(styles, html, scripts, svg, sprite, createWebp)
