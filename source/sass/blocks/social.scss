@@ -25,4 +25,20 @@
 
 .social__link {
   display: block;
+
+  color: $color-22;
+
+  outline: none;
+
+  &:hover {
+    color: $color-3;
+  }
+
+  &:active {
+    color: rgba($color-3, 30%);
+  }
+
+  &:focus-visible {
+    color: $color-3;
+  }
 }

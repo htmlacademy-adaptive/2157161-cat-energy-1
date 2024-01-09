@@ -93,18 +93,22 @@
   align-items: center;
 
   font: $font-html-academy-logo;
-  color: $color-5;
+  color: $color-22;
 
   position: relative;
 
   &:hover {
-    path {
-      fill: $background-color-3;
-    }
+    color: $color-3;
+  }
+
+  &:focus-visible {
+    outline: none;
+
+    color: $color-3;
   }
 
   &:active {
-    opacity: 0.3;
+    opacity: 30%;
   }
 
   @media (min-width: $tablet-width) {
@@ -129,4 +133,12 @@
   @media (min-width: $tablet-width) {
     max-width: 120px;
   }
+}
+
+.main-footer__html-academy-logo:hover .main-footer__html-academy-text {
+  color: $color-22;
+}
+
+.main-footer__html-academy-logo:focus-visible .main-footer__html-academy-text {
+  color: $color-22;
 }
