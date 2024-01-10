@@ -1,9 +1,10 @@
 .social {
   @include list-reset;
-  margin: 0 auto 40px;
+  margin: 0 auto 35px;
+  padding: 4px 0 0;
 
   display: flex;
-  justify-content: space-between;
+  column-gap: 26px;
 
   width: 48%;
 
@@ -26,23 +27,19 @@
 .social__link {
   display: block;
 
-  &:hover .social__link-icon {
-    path {
-      fill: $background-color-3;
-    }
+  color: $color-22;
+
+  outline: none;
+
+  &:hover {
+    color: $color-3;
+  }
+
+  &:active {
+    color: rgba($color-3, 30%);
+  }
+
+  &:focus-visible {
+    color: $color-3;
   }
 }
-
-// .social__link {
-//   &:hover {
-//     path {
-//       fill: $background-color-3;
-//     }
-//   }
-
-//   &:active {
-//     path {
-//       opacity: 0.3;
-//     }
-//   }
-// }

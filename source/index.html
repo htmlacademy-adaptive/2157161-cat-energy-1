@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
     <link
@@ -23,7 +23,7 @@
               media="(min-width: 1440px)"
               srcset="./img/logo-icon-desktop.svg"
               width="202"
-              heigh="59"
+              height="59"
             />
             <source
               media="(min-width: 769px)"
@@ -182,34 +182,30 @@
                   <picture>
                     <source
                       type="image/webp"
-                      media="(min-width: 769px)"
+                      media="(min-width: 768px)"
                       srcset="
-                        /img/cat-before-tablet@1x.webp  1x,
+                        ./img/cat-before-tablet.webp    1x,
                         ./img/cat-before-tablet@2x.webp 2x
                       "
                     />
                     <source
                       type="image/webp"
                       srcset="
-                        /img/cat-before-mobile@1x.webp  1x,
+                        ./img/cat-before-mobile.webp    1x,
                         ./img/cat-before-mobile@2x.webp 2x
                       "
                     />
                     <source
-                      media="(min-width: 769px)"
+                      media="(min-width: 768px)"
                       srcset="
-                        ./img/cat-before-tablet.png  1x,
-                        img/cat-before-tablet@2x.png 2x
+                        ./img/cat-before-tablet.png    1x,
+                        ./img/cat-before-tablet@2x.png 2x
                       "
-                      width="560"
-                      height="512"
                     />
                     <img
                       class="cat-result__image"
-                      src="/img/cat-before-mobile.png"
-                      srcset="/img/cat-before-mobile@2x.png 2x"
-                      width="280"
-                      height="256"
+                      src="./img/cat-before-mobile.png"
+                      srcset="./img/cat-before-mobile@2x.png 2x"
                       alt="кот до того"
                     />
                   </picture>
@@ -220,15 +216,15 @@
                       type="image/webp"
                       media="(min-width: 769px)"
                       srcset="
-                        img/cat-after-tablet@1x.webp 1x,
+                        img/cat-after-tablet.webp    1x,
                         img/cat-after-tablet@2x.webp 2x
                       "
                     />
                     <source
                       type="image/webp"
                       srcset="
-                        img/cat-after-mobile@1x.webp 1x,
-                        img/cat-after-mobile@2x.webp 2x
+                        ./img/cat-after-mobile.webp    1x,
+                        ./img/cat-after-mobile@2x.webp 2x
                       "
                     />
                     <source
@@ -330,21 +326,21 @@
           <li class="social__item">
             <a href="#" class="social__link" aria-label="Вконтакте">
               <svg class="social__link-icon" width="29" height="22">
-                <use xlink:href="img/sprite.svg#vkontakte-icon"></use>
+                <use xlink:href="img/sprite.svg#vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link" aria-label="Ютуб">
               <svg class="social__link-icon" width="29" height="22">
-                <use xlink:href="img/sprite.svg#youtube-icon"></use>
+                <use xlink:href="img/sprite.svg#youtube"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link" aria-label="Телеграм">
               <svg class="social__link-icon" width="29" height="22">
-                <use xlink:href="img/sprite.svg#telegram-icon"></use>
+                <use xlink:href="img/sprite.svg#telegram"></use>
               </svg>
             </a>
           </li>
