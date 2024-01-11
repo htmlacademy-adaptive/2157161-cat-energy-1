@@ -38,6 +38,18 @@
 
   margin-left: auto;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.main-nav__item {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 /* закрытое меню */
@@ -128,6 +140,10 @@
 
     width: 450px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 /* меню без js */
@@ -136,9 +152,7 @@
 }
 
 .main-nav--nojs .main-nav__list {
-  display: flex;
-
-  // width: 100%;
+  display: block;
 }
 
 .main-nav__link {
