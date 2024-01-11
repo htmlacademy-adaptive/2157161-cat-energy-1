@@ -19,6 +19,7 @@
 
 .living-example__block {
   @media (min-width: $desktop-width) {
+    margin-bottom: -50px;
     padding: 0 110px 0;
 
     display: flex;
@@ -36,7 +37,8 @@
 .living-example__wrapper {
   @media (min-width: $desktop-width) {
     margin: 0 0 0 -610px;
-    padding: 70px 0 0 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
 
     position: relative;
     z-index: 3;
@@ -302,6 +304,8 @@
   @media (min-width: $desktop-width) {
     padding: 0 0 0;
     margin: 0 -610px 0 0;
+
+    background-color: $background-color-4;
 
     top: -135px;
     right: 50%;
