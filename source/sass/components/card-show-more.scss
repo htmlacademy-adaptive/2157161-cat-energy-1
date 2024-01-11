@@ -19,6 +19,9 @@
     min-height: 430px;
   }
 }
+.catalog-show-more__link-description {
+  @include link-reset;
+}
 
 .card-show-more__image {
   display: block;
@@ -32,11 +35,7 @@
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 51px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 0 40px;
+    margin: 0;
   }
 }
 
@@ -52,6 +51,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 25px;
+    padding: 50px 0 0;
 
     width: 135px;
 
@@ -60,6 +60,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto 28px;
+    padding: 40px 0 0;
   }
 }
 
