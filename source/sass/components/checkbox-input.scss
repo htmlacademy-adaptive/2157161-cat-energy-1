@@ -90,8 +90,9 @@
   }
 }
 
-.checkbox-input__input[disabled] {
+.checkbox-input__input[disabled] + .checkbox-input__label {
   pointer-events: none;
+  cursor: default;
 
   opacity: 0.3;
 }

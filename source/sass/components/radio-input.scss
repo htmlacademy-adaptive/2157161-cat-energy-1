@@ -114,14 +114,16 @@
   }
 }
 
-.radio-input__input[disabled] {
+.radio-input__input[disabled] + .radio-input__label {
   pointer-events: none;
+  cursor: default;
 
   opacity: 0.3;
 }
 
 .radio-input__label[disabled] {
   pointer-events: none;
+  cursor: default;
 
   opacity: 0.3;
 }
