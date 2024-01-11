@@ -119,6 +119,10 @@
   transform: translate(-50%, -50%);
 
   transition: left 2s;
+
+  &:focus-visible {
+    outline: 2px solid $background-color-3;
+  }
 }
 
 .cat-result__control-icon {

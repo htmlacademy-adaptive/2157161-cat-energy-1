@@ -47,6 +47,10 @@
   @media (min-width: $desktop-width) {
     grid-template-rows: 151px auto;
   }
+
+  &:focus-visible {
+    outline: 2px solid $background-color-3;
+  }
 }
 
 .catalog-card__image {

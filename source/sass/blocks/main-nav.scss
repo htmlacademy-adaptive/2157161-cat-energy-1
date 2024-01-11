@@ -178,6 +178,12 @@
     color: rgba($background-color-1, 30%);
   }
 
+  &:focus-visible {
+    outline: none;
+
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     font: $font-text-nav-list-tablet;
 
@@ -204,6 +210,12 @@
 
     &:active {
       color: rgba($color-2, 30%);
+    }
+
+    &:focus-visible {
+      outline: none;
+
+      color: rgba($color-2, 60%);
     }
   }
 }

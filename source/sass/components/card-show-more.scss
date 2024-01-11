@@ -21,6 +21,10 @@
 }
 .catalog-show-more__link-description {
   @include link-reset;
+
+  &:focus-visible {
+    outline: 2px solid $background-color-3;
+  }
 }
 
 .card-show-more__image {

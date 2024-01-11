@@ -126,6 +126,10 @@
   opacity: 0.3;
 }
 
+.radio-input__input:focus-visible + .radio-input__label::before {
+  border-color: $background-color-18;
+}
+
 .radio-input__input:checked + .radio-input__label::after {
   display: block;
 }

@@ -52,6 +52,12 @@
     opacity: 0.6;
   }
 
+  &:focus-visible {
+    outline: none;
+
+    opacity: 0.8;
+  }
+
   @media (min-width: $tablet-width) {
     top: -8px;
     left: 0;

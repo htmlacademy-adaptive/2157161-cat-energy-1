@@ -17,6 +17,12 @@
     color: rgba($color-2, 0.3);
   }
 
+  &:focus-visible {
+    outline: none;
+
+    background-color: $background-color-14;
+  }
+
   &--grey {
     background-color: $background-color-4;
 
@@ -28,6 +34,12 @@
 
     &:active {
       color: rgba($color-5, 100%);
+    }
+
+    &:focus-visible {
+      outline: none;
+
+      background-color: $background-color-19;
     }
   }
 }
