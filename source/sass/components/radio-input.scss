@@ -5,11 +5,21 @@
 
   min-height: 30px;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
 
     min-height: 40px;
   }
+}
+
+.radio-input[disabled] {
+  pointer-events: none;
+
+  opacity: 0.3;
 }
 
 .radio-input__label {
@@ -102,6 +112,12 @@
   @media (min-width: $desktop-width) {
     padding: 2px 0 0 59px;
   }
+}
+
+.radio-input__input[disabled] {
+  pointer-events: none;
+
+  opacity: 0.3;
 }
 
 .radio-input__label[disabled] {

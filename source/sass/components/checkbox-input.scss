@@ -6,6 +6,12 @@
   }
 }
 
+.checkbox-input[disabled] {
+  pointer-events: none;
+
+  opacity: 0.3;
+}
+
 .checkbox-input__label {
   display: block;
 
@@ -82,6 +88,12 @@
   @media (min-width: $tablet-width) {
     padding: 5px 0 0 60px;
   }
+}
+
+.checkbox-input__input[disabled] {
+  pointer-events: none;
+
+  opacity: 0.3;
 }
 
 .checkbox-input__label[disabled] {
