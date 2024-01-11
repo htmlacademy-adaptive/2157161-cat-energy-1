@@ -6,11 +6,13 @@
   width: calc(100% - 40px);
   min-height: 290px;
 
-  background: url("../img/bg-gift-mobile.jpg") no-repeat center;
+  background: $background-color-3 url("../img/bg-gift-mobile.jpg") no-repeat
+    center;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/bg-gift-mobile@2x.jpg") no-repeat center;
+    background: $background-color-3 url("../img/bg-gift-mobile@2x.jpg")
+      no-repeat center;
     background-size: 100% auto;
   }
 
@@ -21,14 +23,16 @@
     display: flex;
     justify-content: space-between;
 
-    background: url("../img/bg-gift-tablet.jpg") no-repeat center;
+    background: $background-color-3 url("../img/bg-gift-tablet.jpg") no-repeat
+      center;
     background-size: cover;
 
     width: calc(100% - 60px);
     min-height: 200px;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/bg-gift-tablet@2x.jpg") no-repeat center;
+      background: $background-color-3 url("../img/bg-gift-tablet@2x.jpg")
+        no-repeat center;
       background-size: 100% auto;
     }
   }
@@ -42,11 +46,13 @@
     width: 245px;
     min-height: 288px;
 
-    background: url("../img/bg-gift-desktop.jpg") no-repeat center;
+    background: $background-color-3 url("../img/bg-gift-desktop.jpg") no-repeat
+      center;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/bg-gift-desktop@2x.jpg") no-repeat center;
+      background: $background-color-3 url("../img/bg-gift-desktop@2x.jpg")
+        no-repeat center;
       background-size: 245px auto;
     }
   }
