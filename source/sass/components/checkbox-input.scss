@@ -6,6 +6,12 @@
   }
 }
 
+.checkbox-input[disabled] {
+  pointer-events: none;
+
+  opacity: 0.3;
+}
+
 .checkbox-input__label {
   display: block;
 
@@ -84,10 +90,21 @@
   }
 }
 
+.checkbox-input__input[disabled] + .checkbox-input__label {
+  pointer-events: none;
+  cursor: default;
+
+  opacity: 0.3;
+}
+
 .checkbox-input__label[disabled] {
   pointer-events: none;
 
   opacity: 0.3;
+}
+
+.checkbox-input__input:focus-visible + .checkbox-input__label::before {
+  border-color: $background-color-18;
 }
 
 .checkbox-input__input:checked + .checkbox-input__label::after {

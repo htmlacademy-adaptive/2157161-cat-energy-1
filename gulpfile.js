@@ -22,7 +22,7 @@ export const styles = () => {
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([autoprefixer(), csso()]))
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css", { sourcemaps: '.' }))
+    .pipe(gulp.dest("build/css", { sourcemaps: "." }))
     .pipe(browser.stream());
 };
 
@@ -123,7 +123,7 @@ const server = (done) => {
     cors: true,
     notify: false,
     ui: false,
-    browser: "chrome",
+    browser: ["chrome", "firefox"],
   });
   done();
 };
@@ -138,14 +138,14 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(scripts));
-  gulp.watch('source/*.html', gulp.series(html, reload));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/js/script.js", gulp.series(scripts));
+  gulp.watch("source/*.html", gulp.series(html, reload));
 };
 
 // Build
 
-const build = gulp.series(
+export const build = gulp.series(
   clean,
   copy,
   optimizeImages,

@@ -12,6 +12,27 @@
       type="image/png"
     />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link
+      rel="preload"
+      href="./fonts/oswald/oswaldmedium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/oswald/oswaldregular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/lato/Lato-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
     <title>Подбор программы</title>
   </head>
 
@@ -27,7 +48,7 @@
               height="59"
             />
             <source
-              media="(min-width: 769px)"
+              media="(min-width: 768px)"
               srcset="./img/logo-icon-tablet.svg"
               width="174"
               height="52"
@@ -41,7 +62,7 @@
             />
           </picture>
         </a>
-        <nav class="main-header__nav main-nav main-nav--closed">
+        <nav class="main-header__nav main-nav main-nav--nojs main-nav--closed">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -67,8 +88,7 @@
     <main class="main-container form-page">
       <h1 class="form-page__title title">Подбор программы</h1>
       <p class="form-page__description description">
-        Заполните анкету, и мы подберем<br />
-        программу питания для вашего кота
+        Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
 
       <form class="form" action="#">
@@ -89,7 +109,9 @@
                 />
               </li>
               <li class="info__item text-input">
-                <label for="weight" class="text-input__label">Вес (кг):*</label>
+                <label for="weight" class="text-input__label"
+                  >Вес&nbsp;(кг):*</label
+                >
                 <input
                   class="text-input__input"
                   type="text"
@@ -102,7 +124,7 @@
               </li>
               <li class="info__item text-input">
                 <label for="age" class="text-input__label"
-                  >Возраст (лет):</label
+                  >Возраст&nbsp;(лет):</label
                 >
                 <input
                   class="text-input__input"
@@ -170,7 +192,9 @@
           </h2>
           <ul class="contact-details__list">
             <li class="contact-details__item text-input text-input--email">
-              <label for="email" class="text-input__label">E-mail:*</label>
+              <label for="email" class="text-input__label"
+                >E&hyphen;mail:&ast;</label
+              >
               <input
                 class="text-input__input"
                 type="email"
@@ -194,7 +218,7 @@
               <label for="phone" class="text-input__label">Телефон:*</label>
               <input
                 class="text-input__input"
-                type="text"
+                type="tel"
                 id="phone"
                 placeholder="8 (960) 900-60-90"
                 value="8 (960) 900-60-90"
@@ -315,7 +339,7 @@
               height="400"
             />
             <source
-              media="(min-width: 769px)"
+              media="(min-width: 768px)"
               srcset="/img/map-tablet.png 1x, img/map-tablet@2x.png 2x"
               width="768"
               height="400"
@@ -376,7 +400,7 @@
         </ul>
 
         <a
-          href="https://up.htmlacademy.ru/"
+          href="https://htmlacademy.ru/intensive/adaptive"
           class="main-footer__html-academy-logo"
           aria-label="Страница Html academy"
         >

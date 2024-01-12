@@ -12,6 +12,27 @@
       type="image/png"
     />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link
+      rel="preload"
+      href="./fonts/oswald/oswaldmedium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/oswald/oswaldregular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/lato/Lato-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
     <title>Главная</title>
   </head>
   <body class="page-body page-body--index">
@@ -26,7 +47,7 @@
               height="59"
             />
             <source
-              media="(min-width: 769px)"
+              media="(min-width: 768px)"
               srcset="./img/logo-icon-tablet.svg"
               width="174"
               height="52"
@@ -40,7 +61,7 @@
             />
           </picture>
         </a>
-        <nav class="main-header__nav main-nav main-nav--closed">
+        <nav class="main-header__nav main-nav main-nav--nojs main-nav--closed">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -154,7 +175,8 @@
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
               на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
               При этом он не менял своих привычек и по-прежнему спит по 16 часов
-              <br />в день.
+              <br />
+              в день.
             </p>
             <div class="living-example__description-container">
               <dl class="living-example__list">
@@ -201,11 +223,15 @@
                         ./img/cat-before-tablet.png    1x,
                         ./img/cat-before-tablet@2x.png 2x
                       "
+                      width="560"
+                      height="512"
                     />
                     <img
                       class="cat-result__image"
                       src="./img/cat-before-mobile.png"
                       srcset="./img/cat-before-mobile@2x.png 2x"
+                      width="280"
+                      height="256"
                       alt="кот до того"
                     />
                   </picture>
@@ -214,7 +240,7 @@
                   <picture>
                     <source
                       type="image/webp"
-                      media="(min-width: 769px)"
+                      media="(min-width: 768px)"
                       srcset="
                         img/cat-after-tablet.webp    1x,
                         img/cat-after-tablet@2x.webp 2x
@@ -228,7 +254,7 @@
                       "
                     />
                     <source
-                      media="(min-width: 769px)"
+                      media="(min-width: 768px)"
                       srcset="
                         ./img/cat-after-tablet.png  1x,
                         img/cat-after-tablet@2x.png 2x
@@ -286,7 +312,7 @@
               height="400"
             />
             <source
-              media="(min-width: 769px)"
+              media="(min-width: 768px)"
               srcset="/img/map-tablet.png 1x, img/map-tablet@2x.png 2x"
               width="768"
               height="400"
@@ -347,7 +373,7 @@
         </ul>
 
         <a
-          href="https://up.htmlacademy.ru/"
+          href="https://htmlacademy.ru/intensive/adaptive"
           class="main-footer__html-academy-logo"
           aria-label="Страница Html academy"
         >
