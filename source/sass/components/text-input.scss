@@ -27,6 +27,7 @@
   font: $font-label-mobile;
   text-transform: uppercase;
   color: $color-5;
+  text-wrap: nowrap;
 
   &:hover {
     cursor: pointer;
@@ -40,30 +41,6 @@
 
   @media (min-width: $desktop-width) {
     font: $font-label-desktop;
-  }
-}
-
-.text-input:nth-child(2) .text-input__label {
-  width: 89px;
-
-  @media (min-width: $tablet-width) {
-    width: 89px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 91px;
-  }
-}
-
-.text-input:nth-child(3) .text-input__label {
-  width: 177px;
-
-  @media (min-width: $tablet-width) {
-    width: 151px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 156px;
   }
 }
 
